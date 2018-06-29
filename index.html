@@ -1,1 +1,1854 @@
-hello david
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Warriors of the Eternal Sun Classes</title>
+  <style>
+  :root{
+  	  --sidebar: 300px;
+  }
+  body { 
+	  font-family: Tahoma;
+	  }
+  p {
+	  text-align: justify;
+  }
+  h1, h2, h3, h4, h5 {
+	  border-bottom: 1px solid #aaaaaa;
+  }
+  .left {
+	  position: fixed;
+	  height: 100%;
+	  width: var(--sidebar);
+	  z-index: 1;
+	  top: 0;
+	  left: 0;
+	  overflow-x:hidden;
+	  padding-top:20px;
+  }
+  .left a {
+	  text-decoration: none;
+	  font-size: 16px;
+	  display: block;
+	  color: black;
+  }
+  .center {
+	  margin-left: calc(var(--sidebar) + 20px);
+	  padding: 0 10px;
+	  max-width: 50em;
+  }
+  td, tr, th, tbody{
+	  border-bottom: 1px solid black;
+	  padding: 3px;
+  }
+  th {
+	  padding: 10px;
+  }
+  table {
+	  border-collapse: collapse;
+  }
+  .classes td, th {
+	  text-align: center;
+  }
+  .class_description {
+/*	  margin-bottom: 12em;*/
+  }
+  hr {
+	  margin-top: 3em;
+	  margin-bottom: 3em;
+  }
+  .equipment td, .equipment th{
+	  text-align:center;
+  }
+  .equipment table{
+	  overflow-x: visible;
+  }
+  .equipment td:first-child, .equipment td:last-child{
+	  text-align:left;
+  }
+  .power_type {
+	  font-style: italic;
+  }
+  .power_title {
+	  font-weight: bold;
+  }
+  .power_text {
+  }
+  .power {
+	  border: 1px solid grey;
+	  width: 90%;
+	  padding: 6px;
+	  margin-bottom: .5em;
+  }
+  .power div {
+	  margin-bottom: .3em;
+  }
+  div.maneuvers {
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  align-items: top;
+  }
+
+
+
+  </style>
+</head>
+<body>
+<div class="left">
+<nav id="TOC">
+<ul>
+<li><a href="#attributes">Attributes</a></li>
+<li><a href="#classes">Classes</a><ul>
+<li><a href="#champion">Champion</a></li>
+<li><a href="#crusader-of-venrik">Crusader of Venrik</a></li>
+<li><a href="#disciple-of-the-enlightened">Disciple of the Enlightened</a></li>
+<li><a href="#dragon-knight-of-bahamut">Dragon Knight of Bahamut</a></li>
+<li><a href="#dwarf">Finestein Clan Dwarf</a></li>
+<li><a href="#master_of_the_five_humors">Master of the Five Humors</a></li>
+<li><a href="#ranger-of-the-southfae-woods">Ranger of the Southfae Woods</a></li>
+<li><a href="#thief">Thief</a></li>
+<li><a href="#weaponmaster">Weaponmaster</a></li>
+<li><a href="#wood_elf">Wood Elf</a></li>
+</ul></li>
+<li><a href="#equipment">Equipment</a><ul>
+<li><a href="#encumbrance">Encumbrance</a></li>
+<li><a href="#durability">Durability</a></li>
+<li><a href="#melee-weapons">Melee Weapons</a></li>
+<li><a href="#ranged-weapons">Ranged Weapons</a></li>
+<li><a href="#exotic-melee-weapons">Exotic Melee Weapons</a></li>
+<li><a href="#exotic-ranged-weapons">Exotic Ranged Weapons</a></li>
+<li><a href="#armor">Armor</a></li>
+<li><a href="#mounts-and-vehicles">Mounts and Vehicles</a></li>
+<li><a href="#special-items">Special Items</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+<div class="center">
+<div class="attributes">
+<h1 id="attributes">Attributes</h1>
+<p>Attributes are rated from 0-10. To determine your starting attribute, roll 2d6-2 for each one.</p>
+<p>Attributes are mostly meant to determine what your character is like and for adjudicating certain situations (roll dexterity to pick locks for example).</p>
+<ul>
+<li>Strength
+<ul>
+<li>Examples: Smash door, climb tree</li>
+</ul></li>
+<li>Agility:
+<ul>
+<li>Examples: Balance, sneak</li>
+</ul></li>
+<li>Dexterity:
+<ul>
+<li>Examples: Picking a lock, picking a pocket</li>
+</ul></li>
+<li>Intelligence
+<ul>
+<li>Examples: Decipher script, identify magic item, identify potion</li>
+</ul></li>
+<li>Charisma
+<ul>
+<li>Examples: Diplomacy, Bluffing</li>
+</ul></li>
+<li>Wisdom:
+<ul>
+<li>Examples: Binding a wound</li>
+</ul></li>
+<li>Luck:
+<ul>
+<li>Examples: Secret</li>
+</ul></li>
+</ul>
+<p>Attributes do not change your attacks, saving throws, AC, etc.</p>
+<hr>
+</div>
+<div class="classes">
+<h1 id="classes">Classes</h1>
+<div class="class_description">
+<h2 id="champion">Champion</h2>
+<h3 id="class-table">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Damage Bonus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15</td>
+<td>+3</td>
+<td>+3</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d10</td>
+<td>+4</td>
+<td>+4</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d10</td>
+<td>+5</td>
+<td>+5</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d10</td>
+<td>+6</td>
+<td>+6</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d10</td>
+<td>+7</td>
+<td>+7</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d10</td>
+<td>+8</td>
+<td>+8</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details">Class Details</h3>
+<ul>
+<li>Proficiency with simple, martial and exotic weapons, armor and shields.</li>
+</ul>
+<h3 id="damage-bonus">Damage Bonus</h3>
+<p>Champions can add their Damage Bonus (as given in their class table) whenever they roll damage, for any reason.</p>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="crusader-of-venrik">Crusader of Venrik</h2>
+<h3 id="class-table-1">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Maneuvers Known</th>
+<th>Stances</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15</td>
+<td>+1</td>
+<td>+1</td>
+<td>5</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d10</td>
+<td>+2</td>
+<td>+2</td>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d10</td>
+<td>+3</td>
+<td>+3</td>
+<td>6</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d10</td>
+<td>+4</td>
+<td>+4</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d10</td>
+<td>+5</td>
+<td>+5</td>
+<td>8</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d10</td>
+<td>+6</td>
+<td>+6</td>
+<td>8</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-1">Class Details</h3>
+<ul>
+<li>+1 Fort Saves, +1 Will Saves</li>
+<li>Proficiency with simple and martial weapons, armor and shields.</li>
+</ul>
+<h3 id="maneuvers">Maneuvers</h3>
+<p>Due to your weak tie to Venrik, you occasionally are seized with divine inspiration. When not stressed due to battle or other extenuating circumstances, choose 5 of the maneuvers you know. Those maneuvers are prepared for you.</p>
+<p>Management of maneuvers is simulated by use of playing cards. Each card represents one of the maneuvers you have prepared. At the beginning of your first turn of the encounter draw three (3) cards at random from the 5 maneuvers you've prepared. At the beginning of your following turns, draw an additional card from the maneuvers you haven't drawn yet. When you use a maneuver, place the card in your discard pile. If you have no more maneuvers you can draw, discard your current hand of cards and shuffle it into your discard pile. That pile then becomes the new pool you can draw from. Immediately draw two cards.</p>
+<p>At higher levels you will know more maneuvers than you can prepare. To change your prepared maneuvers, you can spend 10 minutes meditating and praying to Venrik.</p>
+<p>When you gain a level in this class, you can choose a maneuver you know and replace it with a different maneuver of the same level.</p>
+<p>There are 3 kinds of maneuvers: Strikes, Counters and Boosts.</p>
+<p>Unless otherwise specified, strikes are a standard action to use and involve you making a melee standard attack. Counters are always a reaction action. Unless otherwise specified, boosts are swift actions.</p>
+<h4 id="st-level-maneuvers">1st level maneuvers</h4>
+
+<div class="maneuvers">
+<div class="power">
+<div class="power_title"> Battle Blessing </div>
+<div class="power_type"> Boost (Swift Action) </div>
+<div class="power_text"> You and your allies get +1 attack and +1 to saves until the beginning of your next turn.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Burning Smite </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> On a hit, forces the target to make a reflex save (DC 15) or catch on fire (1d6).  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Cleansing Fire </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> Adds 1d6+level radiant damage to the victim.  If the victim is undead or a demon, maximize all damage dice (from this maneuver and from the weapon).  </div>
+</div>
+
+
+<div class="power">
+<div class="power_title"> Douse the Flames </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> If you hit, the victim cannot make attacks of opportunity until the beginning of your next turn.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Hero's Strike </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> If you hit, you or an ally within 30 feet gain 1d6 + your level temporary hit points.  These temporary hit points last until the end of the battle.
+</div>
+</div>
+
+<div class="power">
+<div class="power_title"> Ironskin </div>
+<div class="power_type"> Boost (swift action) </div>
+<div class="power_text"> You or an ally gain 1d6 + your level DR until the beginning of your next turn.  </div>
+</div>
+
+
+<div class="power">
+<div class="power_title"> Leading the Attack </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> If you hit, your allies get a +4 bonus to attack that target until the beginning of your next turn.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Shield of Faith </div>
+<div class="power_type"> Boost (swift action) </div>
+<div class="power_text"> You or an ally within 30 feet gains +2 AC until the beginning of your next turn.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Thunderous Smite </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> Hit forces target to make a fortitude save (DC 15) or be thrown back 10 feet </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Wrathful Smite </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> Hit forces target to make a will save (DC 15) or be frightened of you (save ends).  </div>
+</div>
+
+
+</div>
+
+<h4 id="rd-level-maneuvers">3rd level maneuvers</h4>
+<div class="maneuvers">
+
+
+<div class="power">
+<div class="power_title"> Armorcrushing Strike </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> +1d6 damage and victim's armor is damaged by 1 point of AC </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Defensive Rebuke </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> If you hit your target must attack you or suffer attack of opportunity if they attack </div>
+</div>
+
+
+<div class="power">
+<div class="power_title"> Overwhelming Strike </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> +1d6 damage, hit causes victim to lose their move action on their next turn </div>
+</div>
+ 
+<div class="power">
+<div class="power_title"> Venrik's Mercy </div>
+<div class="power_type"> Boost (swift action) </div>
+<div class="power_text"> An ally can immediately make a new saving throw to end an ongoing effect.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Venrik's Gambit </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> Immediately after making your attack, your victim can make an immediate free melee standard attack against you. You can then immediately make an immediate melee standard attack against them. If they missed you with their free attack, you get +4 on this attack and deal an extra 1d6 damage. You may only attempt this gambit if the target is capable of making a melee attack against you. The opponent can choose not to make the counter attack, in which case you still get your free attack but not the bonus to attack and damage.  </div>
+</div>
+
+
+</div>
+
+<h4 id="th-level-maneuvers">5th level maneuvers</h4>
+
+<div class="maneuvers">
+
+<div class="power">
+<div class="power_title"> Deadly Rebuke </div>
+<div class="power_type"> Counter (reaction) </div>
+<div class="power_text"> Triggered by an enemy hitting you with an attack or including you in the area of a harmful effect. You may make an immediate free melee attack against them. If you hit, it's automatically a critical hit with no need to confirm.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Order Forged From Chaos </div>
+<div class="power_type"> Boost (swift action) </div>
+<div class="power_text"> All allies may take an extra move action this turn.  </div>
+</div>
+
+
+<div class="power">
+<div class="power_title"> Staggering Smite </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> +2d6 damage, hit forces target to make a fortitude save (DC 15) or be stunned until the beginning of your next turn.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Tactical Strike </div>
+<div class="power_type"> Strike (standard action) </div>
+<div class="power_text"> If you hit, an ally may make an immediate free melee standard attack against the victim.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Valor of Venrik </div>
+<div class="power_type"> Boost (standard action) </div>
+<div class="power_text"> This boost is a standard action.  An ally may take an extra standard action this turn.  </div>
+</div>
+
+</div>
+<h3 id="stances">Stances</h3>
+<p>You can enter a stance as a free action, but only once per turn. The stances effects last until you choose to leave the stance or enter a different stance. You can only be in one stance at a time.</p>
+<p>When you gain a level in this class, you can choose a stance you know and replace it with a different stance.</p>
+<h4 id="the-stances">The Stances</h4>
+
+<div class="maneuvers">
+
+<div class="power">
+<div class="power_title"> Leading the Charge </div>
+<div class="power_type"> Stance </div>
+<div class="power_text"> Allies get +1/level damage in first round of battle to enemies within your reach.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Martial Spirit </div>
+<div class="power_type"> Stance </div>
+<div class="power_text"> Grant yourself or an ally 2 temporary hit points every time you hit with a melee attack.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Master Tactics </div>
+<div class="power_type"> Stance </div>
+<div class="power_text"> You and allies deal +1/level damage when they have the high ground.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Protector's Vigil </div>
+<div class="power_type"> Stance </div>
+<div class="power_text"> Enemies within your reach take -4 to attack your allies.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Punisher's Glare </div>
+<div class="power_type"> Stance </div>
+<div class="power_text"> Your attacks of opportunity deal an extra d6 of damage.  </div>
+</div>
+
+<div class="power">
+<div class="power_title"> The Mountain </div>
+<div class="power_type"> Stance </div>
+<div class="power_text"> +10 bonus on checks against bull rush and trip and gain DR 2 </div>
+</div>
+
+<div class="power">
+<div class="power_title"> Thicket of Blades </div>
+<div class="power_type"> Stance </div>
+<div class="power_text"> Any movement by an enemy provokes attacks of opportunity from you, including withdraw actions, forced movement or special granted movement </div>
+</div>
+
+</div>
+
+<hr>
+</div>
+<div class="class_description">
+<h2 id="disciple-of-the-enlightened">Disciple of the Enlightened</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Unarmed Damage</th>
+<th>Unarmored AC</th>
+<th>Class Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>18</td>
+<td>+1</td>
+<td>+3</td>
+<td>d6</td>
+<td>15</td>
+<td>Enlightened Focus, Unarmed and Unarmored</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d12</td>
+<td>+2</td>
+<td>+4</td>
+<td>d8</td>
+<td>15</td>
+<td>Disciple Discovery</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d12</td>
+<td>+3</td>
+<td>+5</td>
+<td>d8</td>
+<td>16</td>
+<td>Disciple Discovery</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d12</td>
+<td>+4</td>
+<td>+6</td>
+<td>d10</td>
+<td>16</td>
+<td>Disciple Discovery</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d12</td>
+<td>+5</td>
+<td>+7</td>
+<td>d10</td>
+<td>17</td>
+<td>Disciple Discovery</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d12</td>
+<td>+6</td>
+<td>+8</td>
+<td>d12</td>
+<td>17</td>
+<td>Disciple Discovery</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-2">Class Details</h3>
+<ul>
+<li>Proficiency with the spear, quarterstaff, sling, greataxe and orcish shotput.</li>
+</ul>
+<h3 id="enlightened-focus">Enlightened Focus</h3>
+<p>As a disiciple of the enlightened, you have gained the ability to bring order to the chaotic elements of your soul. By meditating for 10 minutes, you can remove the chaos from your system.</p>
+<p>This state of balance lasts until it is disrupted. Roll a d6 at the beginning of each turn in a stressful situation like combat. If you roll a 4, 5, or 6, your balance is disrupted. By disrupting it, you achieve a temporary state of enlightenment, walking in the footsteps of those that came before you — Gentle Breeze and Kruglauk.</p>
+<p>While in this state of enlightenment, you gain the following benefits:</p>
+<ul>
+<li>You partially ignore the tragedy of flesh — You take half damage from all sources.</li>
+<li>Your mind is shielded from the influence of others — You automatically succeed on any saving throws against fear, rage, or other mental effects such as mind control.</li>
+<li>Your blows strike swift and true — You can make a melee standard attack as a free action each round.</li>
+</ul>
+<p>These benefits last until your are unconscious, the battle is over or 10 minutes pass, whichever comes soonest.</p>
+<h3 id="unarmed-and-unarmored">Unarmed and Unarmored</h3>
+<p>While wearing no armor, your base AC is higher than 10. The value is given in your class table. You are deftly able to dodge blows due to your ability to perceive reality in a different way.</p>
+<p>Additionally, while wearing no armor your speed is increased by 10.</p>
+<p>You are deadly with the fist. Your unarmed strikes deal extra damage. Additionally, if you take the rapid attack action and only attack with unarmed strikes, you ignore the normal penalties from the action.</p>
+<p>You do not need to be unarmed to make unarmed attacks.</p>
+<h3 id="disciple-discoveries">Disciple Discoveries</h3>
+<p>As each Disciple of the enlightened makes their way in the world, they discover new fragments of enlightenment. Choose a discovery from the list below.</p>
+<ul>
+<li>Empty Body — You have discovered how to very briefly not be somewhere and then immediately reappear. It is so brief that it requires great reflexes to achive, but is very useful when trying to avoid a dragon's breath. When you make a reflex saving throw to take half damage, you take no damage on a succesful saving throw and half damage on a failed saving throw.</li>
+<li>Abundant Step — You have discovered that movement is an illusion, as all is one. This discovery is hard to wrap your mind around, but allows you to appear wherever you desire, as there is no &quot;where&quot;. You can appear at any &quot;location&quot; you can see instantaneously as a free action up to &quot;600 feet away&quot;. You cannot bring anything with you except the clothes on your back and what you hold in your hands. Once you have done this, you will need to meditate as even after you perform it you form pearls of doubt. You can't do this again until you complete your 10 minute meditation where you remove chaos from your system.</li>
+<li>Purity of Body — You have discovered that hunger and thirst are illusions. You no longer need to eat or drink and cannot be diseased or poisoned.</li>
+<li>The Thickness of Air — You have discovered that air is as thick as we choose to perceive it to be. You can use this fact to slow and cushion your movements. You take no damage from being thrown or falling.</li>
+<li>Leap of the Clouds — Your jump distance is no longer limited by your speed, height or size.</li>
+<li>Uncanny Awareness — You have discovered the presence of a vestigial, ethereal third eye that we all have. You are never surprised or flat-footed.</li>
+<li>Deflection — You can deflect arrows as a reaction, taking no damage from the one missile. As a full-round action, you can deflect all missiles that would strike you until the beginning of your next turn.</li>
+<li>The Laws of Momentum — You can use an enemy's momentum against them. Whenever an enemy attacks you but misses, you make make a standard melee attack against them as a reaction.</li>
+<li>Tongue of the Sun and Moon — You have discovered the proto-language of all humanoids. You can speak to any humanoids via it, although the concepts you can communicate are limited to basic ones.</li>
+</ul>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="dragon-knight-of-bahamut">Dragon Knight of Bahamut</h2>
+<h3 id="class-table-2">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Maneuvers Known</th>
+<th>Maneuvers Readied</th>
+<th>Stances</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15</td>
+<td>+1</td>
+<td>+1</td>
+<td>3</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d10</td>
+<td>+2</td>
+<td>+2</td>
+<td>4</td>
+<td>3</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d10</td>
+<td>+3</td>
+<td>+3</td>
+<td>5</td>
+<td>3</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d10</td>
+<td>+4</td>
+<td>+4</td>
+<td>6</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d10</td>
+<td>+5</td>
+<td>+5</td>
+<td>7</td>
+<td>4</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d10</td>
+<td>+6</td>
+<td>+6</td>
+<td>8</td>
+<td>4</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-3">Class Details</h3>
+<ul>
+<li>+1 Fort Saves, +1 Reflex Saves</li>
+<li>Proficiency with simple and martial weapons, armor and shields.</li>
+</ul>
+<h3 id="maneuvers-1">Maneuvers</h3>
+<p>The Dragon Knights of Bahamut train vigorously and are rewarded with special powers. Outside of battle, choose to ready a number of maneuvers as given by your class table. You cannot ready the same maneuver more than once. When a battle starts, you have immediate access to the maneuvers you have readied. Once you have used one of the maneuvers you have readied, you cannot use it again until you are recentered.</p>
+<p>You can recenter by taking a refocus action. This action grants you a standard melee attack.</p>
+<p>At higher levels you will know more maneuvers than you can prepare. To change your prepared maneuvers, you can spend 10 minutes meditating.</p>
+<p>When you gain a level in this class, you can choose a maneuver you know and replace it with a different maneuver of the same level.</p>
+<h4 id="st-level-maneuvers-1">1st level maneuvers</h4>
+<ul>
+<li>Tail Lash — Strike, Attack two opponents</li>
+<li>Brazen Strike — Strike, +4 bonus on this attack, but you suffer -4 AC until beginning of next turn</li>
+<li>Counter Charge — Counter, Make an immediate attack against an enemy who charged you before they deliver their attack. If you hit, roll normal damage and they lose their chance to attack you.</li>
+<li>Focused Mind — Strike, roll two (2) d20s and choose which one you use. If you use the lower one, you deal an extra 1d6 damage.</li>
+<li>Sudden Leap — Boost, Jump as a swift action</li>
+<li>The Dragon's Claws — Strike, attack with two weapons without penalty.</li>
+<li>Douse the Flames — Strike, hit suppresses attacks of opportunity.</li>
+<li>Dragonskin — Strike, hit or miss you gain 1d6+level DR until the beginning of your next turn.</li>
+<li>Leading the Attack — Strike, hit grants allies +4 to attacks against victim.</li>
+</ul>
+<h4 id="rd-level-maneuvers-1">3rd level maneuvers</h4>
+<ul>
+<li>Dragon's Fury — Strike, may make an additional attack.</li>
+<li>Wall of Teeth — Counter, replace AC with attack result.</li>
+<li>Clever Positioning — Strike, if you hit, you and the enemy swap positions.</li>
+<li>Armorcrushing Strike — Strike, +1d6 damage and victim's armor is damaged by 1 point of AC</li>
+<li>Overwhelming Strike — Strike, +1d6 damage, hit causes victim to lose their move action on their next turn</li>
+<li>Leap Attack — Strike, make a jump check, deal +1d6 damage for every 5' of vertical height.</li>
+</ul>
+<h4 id="th-level-maneuvers-1">5th level maneuvers</h4>
+<ul>
+<li>Dragon Heart Surge — Boost, Remove effect, gain +2 morale bonus on attacks until beginning of next turn. You can use this maneuver even when deprived of actions, but only if suffering from a debilitating effect.</li>
+<li>Crippling Strike — Strike, on a hit victim must DC 15 fortitude save or be weakened, save ends.</li>
+<li>Lightning Recovery — Counter, Reroll an attack that misses with +2 bonus</li>
+<li>Roar of the Dragon — All who hear roar must DC 15 will save or be frightened of you, save ends.</li>
+</ul>
+<h3 id="stances-1">Stances</h3>
+<p>You can enter a stance as a free action, but only once per turn. The stances effects last until you choose to leave the stance or enter a different stance. You can only be in one stance at a time.</p>
+<p>When you gain a level in this class, you can choose a stance you know and replace it with a different stance.</p>
+<h4 id="the-stances-1">The Stances</h4>
+<ul>
+<li>Punishing Stance — +1d6 damage but -2 AC</li>
+<li>Challenger's Stance — +2 AC vs single enemy of your choice each turn, -2 AC vs everyone else</li>
+<li>Dragon's Hunger — +1 damage each time you hit until end of battle. If you leave the stance this resets.</li>
+<li>Intimidating Dragon — Enemies get -1 to morale checks, -2 to saves against fear</li>
+<li>Rampaging Dragon — +10 movement speed and +4 to overrun (mounts benefit as well)</li>
+<li>Leaping Dragon — +10 to jump </li>
+</ul>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="dwarf">Finestein Clan Dwarf</h2>
+<h3 id="class-table-3">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Skill Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15</td>
+<td>+2</td>
+<td>+1</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d10</td>
+<td>+3</td>
+<td>+2</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d10</td>
+<td>+4</td>
+<td>+3</td>
+<td>11</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d10</td>
+<td>+5</td>
+<td>+4</td>
+<td>14</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d10</td>
+<td>+6</td>
+<td>+5</td>
+<td>17</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d10</td>
+<td>+7</td>
+<td>+6</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-4">Class Details</h3>
+<ul>
+<li>+3 fortitude saves</li>
+<li>Proficiency with Heavy armor, shields and dwarven weapons</li>
+<li>Dwarven Weapons are:<ul>
+<li>Warhammer</li>
+<li>Warpick</li>
+<li>Battleaxe</li>
+<li>Heavy Crossbow</li>
+</ul></li>
+<li>Max Speed of 20 (but not hindered by armor)</li>
+<li>Immunity to Poison</li>
+</ul>
+<h3 id="skill-points">Skill Points</h3>
+<p>Dwarves can invest skill points into the following skills:</p>
+<ul>
+<li>Disarm Trap</li>
+<li>Pick Lock</li>
+<li>Geology</li>
+</ul>
+<p>If you ever would need to make an ability check to accomplish the above, you may add your ranks in that skill to the check.</p>
+<p>You can invest at most 10 points into any one skill and cannot invest more than 3 points in a skill at each level (including first level).</p>
+<p>Additionally, investing skill points have certain other effects, as described below:</p>
+<ul>
+<li>Pick Lock — If you have invested at least 3 skill points in pick lock, you can freely lock and unlock any lock you have succesfully picked.</li>
+<li>Disarm Trap — If you have invested at least 3 skill points in disarm trap, you automatically find traps on chests.</li>
+<li>Geology — If you have invested at least 3 skill points in Geology, you automatically detect the presence of slopes. </li>
+</ul>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="master_of_the_five_humors">Master of the Five Humors</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Concoctions Known</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>9</td>
+<td>+0</td>
+<td>+1</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d6</td>
+<td>+0</td>
+<td>+2</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d6</td>
+<td>+1</td>
+<td>+3</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d6</td>
+<td>+1</td>
+<td>+4</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d6</td>
+<td>+1</td>
+<td>+5</td>
+<td>6</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d6</td>
+<td>+2</td>
+<td>+6</td>
+<td>7</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-5">Class Details</h3>
+<ul>
+<li>+2 Will Saves</li>
+<li>Proficiency with weapons, light armor</li>
+</ul>
+<h3 id="alchemical-aim">Alchemical Aim</h3>
+<p>The Master of the Five Humors can add his level to attack rolls and difficulty classes of alchemical items he uses (not his concoctions).</p>
+<h3 id="chirugeon">Chirugeon</h3>
+<p>If tending to wounds, the Master of the Five Humors adds his level to the amount healed. If treating a creature that is diseased or poisoned, the creature can add the level of the Master of the Five Humors to his fortitude save.</p>
+<h3 id="concoctions">Concoctions</h3>
+<p>The Master of the Five Humors understand the needed balance of the five essential humors: Blood, Black Bile, Yellow Bile, Phlegm and Occult Bile. When these humors are out of balance, illness and other tragedy ensue. However, he also knows how to manipulate these humors for temporary positive effects. It is dangerous to manipulate a person's humors too frequently. They can do so to a single creature once per hour and each concoction lasts for 1 minute.</p>
+<p>The master can create his concoctions by spending an hour. Each concoction takes a slot. He can create as many of each as he wants.</p>
+<p>Injecting a concoction into a creature is a standard action. If the creature is unwilling, they are allowed a DC 15 reflex save to avoid. Only the master can inject these concoctions, everyone else is too dumb. Injection is a melee move.</p>
+<p>Choose concoctions from the list below:</p>
+<ul>
+<li>Concoction of Valor — 5 Temp HP and +1 saves against fear</li>
+<li>Concoction of Speed — +10 movement speed and +1 reflex saves</li>
+<li>Concoction of Fire — Can belch a 3d6 15' cone of fire at a target once as a standard action. DC 15 reflex for half.</li>
+<li>Concoction of Speed — -5 HP and can make a free standard attack once per round.</li>
+<li>Concoction of Strength — +2 to melee attacks and +2 damage.</li>
+<li>Concoction of Precision — +2 to ranged attacks and +2 damage.</li>
+<li>Concoction of Insanity — Berserk— +4 attack and damage, 50% resistance to damage, attacks until there are no creature within sight, targets randomly (includes allies).</li>
+<li>Concoction of Shrink — Shrinks to halfling size (melee attacks deal 50% damage and are small).</li>
+<li>Concoction of Light — Glow Brightly, 30 ft radius.</li>
+<li>Concoction of Frog — Turn into a giant frog.</li>
+</ul>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="ranger-of-the-southfae-woods">Ranger of the Southfae Woods</h2>
+<h3 id="class-table-4">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Class Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>12</td>
+<td>+1</td>
+<td>+1</td>
+<td>Animal Companion, Swords and Bows, Survivalist</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d8</td>
+<td>+2</td>
+<td>+2</td>
+<td>Animal Empathy</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d8</td>
+<td>+3</td>
+<td>+3</td>
+<td>Explorer</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d8</td>
+<td>+4</td>
+<td>+4</td>
+<td>Swords and Bows II</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d8</td>
+<td>+5</td>
+<td>+5</td>
+<td>Ambusher</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d8</td>
+<td>+6</td>
+<td>+6</td>
+<td>Evasion, Swords and Bows III</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-6">Class Details</h3>
+<ul>
+<li>+2 Reflex Saves</li>
+<li>Proficiency with simple and martial weapons, light and medium armor and shields.</li>
+</ul>
+<h3 id="animal-companion">Animal Companion</h3>
+<p>You start play with an animal companion from the following list:</p>
+<pre><code>* War Dog
+* Hunting Dog
+* Giant Crab
+* Giant Snake
+* Rodent of Unusual Size
+* Hawk</code></pre>
+<p>Your DM may expand or restrict this list due to the setting or campaign premise.</p>
+<p>Your animal knows the following tricks (assuming it is physically capable of them):</p>
+<pre><code>* Attack
+* Come
+* Defend
+* Down
+* Fetch
+* Guard
+* Heel
+* Perform
+* Seek
+* Stay
+* Track
+* Work</code></pre>
+<p>Your animal performs these tricks by verbal or nonverbal communication. If you wish them to perform these tricks by a different word (such as using the elvish word for attack), note this, but each trick must have a single corresponding verbal command.</p>
+<p>Your animal is a selfless and loyal companion.</p>
+<p>Due to your bond and excellent training, your companion receives the following bonuses:</p>
+<ul>
+<li>A bonus to attack equal to your level</li>
+<li>A bonus to AC equal to your level</li>
+<li>A bonus to saving throws equal to your level</li>
+<li>A bonus number of hit dice equal to your level</li>
+</ul>
+<p>Additionally, your animal companion uses a stat block that is not typical of other creatures of its kind. See below for the stat blocks. They already include the first level bonuses.</p>
+<p>If your companion perishes, you must raise a new one in order to replace them. Training a new companion takes at least 3 months. </p>
+<h3 id= "swords_and_bows">Swords and Bows</h3>
+<p>Rangers can Dual-Wield without penalty and can fire into melees without penalty.</p>
+<h3 id="survivalist">Survivalist</h3>
+<p>Some bonus to not getting lost.</p>
+<p>Can Track.</p>
+<p>Can spend day in the woods, obtain a healing kit.</p>
+<p>Campsites in the wilderness are more defensible.</p>
+<h3 id="animal-empathy">Animal Empathy</h3>
+<p>Rangers can make charisma checks to influence animals. They communicate via a combination of body gestures, sounds and smells. The animal communicates back via emotion and feeling.</p>
+<h3 id="explorer">Explorer</h3>
+<p>If a ranger is in the party, the party can &quot;see&quot; an additional hex over. Additionally, the party gains a 33% chance to avoid a random encounter while traveling in the wilderness.</p>
+<h3 id="swords-and-bows-ii">Swords and Bows II</h3>
+<p>Rangers can make an additional attack each round if dual-wielding or using a bow.</p>
+<h3 id="ambusher">Ambusher</h3>
+<p>A rangers presence in the party gives the party +4 to initiative rolls.</p>
+<h3 id="evasion">Evasion</h3>
+<p>If the ranger makes a reflex save to take half damage, they take half damage on a failed save and no damage on a success.</p>
+<h3 id="swords-and-bows-iii">Swords and Bows III</h3>
+<p>A ranger gets another extra attack when dual-wielding or firing a bow. </p>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="thief">Thief</h2>
+<h3 id="class-table-5">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Skill Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>9</td>
+<td>+0</td>
+<td>+1</td>
+<td>16</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d6</td>
+<td>+1</td>
+<td>+2</td>
+<td>20</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d6</td>
+<td>+2</td>
+<td>+3</td>
+<td>25</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d6</td>
+<td>+2</td>
+<td>+4</td>
+<td>30</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d6</td>
+<td>+3</td>
+<td>+5</td>
+<td>35</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d6</td>
+<td>+4</td>
+<td>+6</td>
+<td>40</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-7">Class Details</h3>
+<ul>
+<li>+2 Reflex Saves</li>
+<li>Proficiency with weapons, light armor</li>
+</ul>
+<h3 id="skill-points-1">Skill Points</h3>
+<p>Thieves can invest skill points into the following skills:</p>
+<ul>
+<li>Climb Wall</li>
+<li>Disarm Trap</li>
+<li>Escape (from grapples, combatants or shackles)</li>
+<li>Fast Talk</li>
+<li>Improvised Attacks</li>
+<li>Pick Lock</li>
+<li>Pick Pocket</li>
+<li>Sneak</li>
+</ul>
+<p>If you ever would need to make an ability check to accomplish the above, you may add your ranks in that skill to the check.</p>
+<p>You can invest at most 10 points into any one skill and cannot invest more than 3 points in a skill at each level (including first level).</p>
+<p>Additionally, investing skill points have certain other effects, as described below:</p>
+<ul>
+<li>Climb Wall — If you have invested at least 3 skill points in climb, you can climb at full speed instead of reduced speed.</li>
+<li>Disarm Trap — If you have invested at least 3 skill points in disarm trap, you automatically find traps on chests.</li>
+<li>Escape — If you have invested at least 3 skill points in escape, your movements do not provoke attacks of opportunity.</li>
+<li>Fast Talk — If you have invested at least 3 skill points in fast talk, your first failed lie is ignored.</li>
+<li>Improvised Attacks — You can add your ranks in this skill to non-conventional attack rolls or difficulties. For example, if you throw pocket sand in someone's eyes, that is normally a DC 10 reflex save to avoid. If you had 8 ranks in this skill, it would be DC 18 instead.</li>
+<li>Pick Lock — If you have invested at least 3 skill points in pick lock, you can freely lock and unlock any lock you have succesfully picked.</li>
+<li>Pick Pocket — If you have invested at least 3 skill points in Pick Pocket, you can pick pocket things secured to them, like necklaces or sheathed swords.</li>
+<li>Sneak — If you have invested at least 3 skill points in sneak, you can achieve basic success without rolling. An example of basic success is creeping down a hallway undetected to see what is up ahead.</li>
+</ul>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="weaponmaster">Weaponmaster</h2>
+<h3 id="class-table-6">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Weapon Talents</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>15</td>
+<td>+1</td>
+<td>+1</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d10</td>
+<td>+2</td>
+<td>+2</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d10</td>
+<td>+3</td>
+<td>+3</td>
+<td>5</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d10</td>
+<td>+4</td>
+<td>+4</td>
+<td>6</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d10</td>
+<td>+5</td>
+<td>+5</td>
+<td>7</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d10</td>
+<td>+6</td>
+<td>+6</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-8">Class Details</h3>
+<ul>
+<li>+1 all saves</li>
+<li>Proficiency with simple, martial, and exotic weapons, light, medium, and heavy armor and shields.</li>
+</ul>
+<h3 id="weapon-talents">Weapon Talents</h3>
+<p>Weaponmasters can pick weapon talents they qualify for from the lists below. Whenever a weaponmaster gains a level in this class, they can retrain a talent to a talent of the same level that they qualify for. Additionally, each level they gain a new talent, which they can pick from any talent they qualify for.</p>
+<h4 id="level-1-talents">Level 1 Talents</h4>
+<ul>
+<li>Dual-Weapon Fighting — You can dual-wield without penalties and gain a +1 bonus to AC while dual-wielding.</li>
+<li>Great-Weapon Fighting — You add double your strength bonus to damage with two-handed melee weapons instead of single your strength bonus.</li>
+<li>Small-weapon Fighting — You add double your strength bonus to damage with one-handed melee weapons instead of single your strength bonus when you fight with one one-handed melee weapon.</li>
+<li>Ranged-weapon Fighting — You do not suffer penalties for firing into a melee.</li>
+<li>Shield Fighting — You receive +1 AC when fighting with a shield. Additionally, if you would be reduced to less than 1 HP, your shield is destroyed and the damage is reduced by the hp increment of the shield * how many notches of durability it had remaining. This can only happen once per encounter.</li>
+<li>Cross-bow Fighting — You receive a +2 bonus to attacks with crossbows and may add your dexterity bonus to the damage.</li>
+<li>Bow Fighting — When shooting your bow, you may choose to suffer a -2 penalty on all of your attacks for the round. If you do, you can make an extra attack with the bow. Your attacks this round must not be special attacks.</li>
+<li>Axe-fighting — If you drop an enemy with an axe, you immediately get a free attack with it. Additionally, you have +1 attack when fighting with axes.</li>
+<li>Sword-fighting — If you are using a sword, you get double the benefit of fighting defensively. Additionally, you have +1 attack when fighting with swords.</li>
+<li>Hammer-fighting — Your critical hits with hammers also knock the target down. Additionally, you have +1 attack when fighting with hammers.</li>
+<li>Spear-fighting — You do not suffer a dead-zone when fighting with spears. Additionally, you have +1 attack when fighting with spears.</li>
+<li>Flail-fighting — Your attacks with flails ignore an enemy's shield bonus to AC. Additionally, you have +1 attack when fighting with flails.</li>
+<li>Unarmed-fighting — Your unarmed attacks deal 1d6 damage, deal lethal damage and do not provoke attacks of opportunity. Additionally, you have +1 attack when fighting unarmed and +1 to grapple checks. Unarmed attacks may be dual-wielded.</li>
+<li>Master Tripper — You get a +4 bonus to trip attempts. Additionally, if you succeed on your trip attempt you may immediately make an extra melee attack on the victim.</li>
+<li>Master Grappler — You get a +4 bonus to grapple attempts and grapple checks. Additionally, if you succeed on your grapple attempt, you may immediately deal grapple damage.</li>
+<li>Master Disarmer — You get a +4 bonus to disarm attempts. Additionally, if you have a free hand or can free your hand as a free action, you may have the item you disarmed end up in your hand instead of on the ground.</li>
+<li>Master Sunderer — You get a +4 bonus to sunder attempts. Additionally, if you succeed on your sunder attempt you may immediately make an extra melee attack on the victim.</li>
+<li>Master Bull — You get a +4 bonus to bull rush and overrun attempts. Additionally, if you succeed on your overrun attempt, you can kick them for free.</li>
+<li>Cleave — When you drop an enemy with a melee attack, you may make an extra standard attack as a free action.</li>
+<li>Combat Reflexes — You may make an additional reaction each round.</li>
+<li>Dodge — +1 dodge bonus to AC</li>
+<li>Diehard — If you would be reduced to &lt; 1 HP, you are instead reduced to 1 hp. This may happen at most once per encounter.</li>
+<li>Quick-draw — You can draw/stow items as a free-action instead of a standard action when drawing or stowing additional items each round.</li>
+<li>Run — You run at x5 speed instead of x4 speed and suffer no defensive penalties for doing so.</li>
+<li>Punisher — You receive a +4 bonus to attacks of opportunity and deal +1d6 damage if you hit with them.</li>
+</ul>
+<h4 id="level-3-talents">Level 3 Talents</h4>
+<ul>
+<li>Great-Weapon Specialization — +2 damage with two-handed melee weapons</li>
+<li>Small-Weapon Specialization — +2 damage with only one one-handed melee weapon.</li>
+<li>Dual-Weapon Specialization — +2 damage when dual-wielding</li>
+<li>Shield Specialization — You may lend your shield bonus to an adjacent ally in addition to yourself until the beginning of your next turn. Note that shield bonuses to AC do not stack.</li>
+<li>Axe Specialization — +2 damage with axes.</li>
+<li>Sword Specialization — +2 damage with swords.</li>
+<li>Hammer Specialization — +2 damage with hammers.</li>
+<li>Spear Specialization — +2 damage with spears.</li>
+<li>Flail Specialization — +2 damage with flails.</li>
+<li>Unarmed Specialization — +2 damage with unarmed strikes.</li>
+<li>Bow Specialization — +2 damage with bows.</li>
+<li>Crossbow Specialization — +2 damage with crossbows.</li>
+<li>Anvil &amp; Thunder (Hammer + Axe) — If you hit a creature with both your hammer and axe, you damage their armor by 1 notch.</li>
+<li>Slice &amp; Dice (Sword + Axe) — If you hit a creature with both your sword and axe, you may make an immediate free attack with one of them.</li>
+<li>Chain &amp; Sword (Flail + Sword) — If you hit a creature with both your flail and your sword, they become restrained (DC 10 + your strength) by the flail until the beginning of your next turn. You cannot attack with the flail or drop the flail without freeing the creature.</li>
+<li>Ringing Bell (Flail + Hammer) — If you hit a creature with both your flail and hammer, their movement speed is reduced to 0 until the beginning of your next turn.</li>
+<li>Deflect Arrows — As a reaction, you may deflect a ranged attack that would've hit you so that it misses you.</li>
+<li>Stand Still — When an enemy's movement away from you triggers an attack of opportunity, you may opt to try to stop them instead of dealing damage. If you hit them, you deal no damage and they must immediately stop moving. Their speed is reduced to 0.</li>
+<li>Deft Charge — Your movement while charging does not provoke attacks of opportunity.</li>
+</ul>
+<h4 id="level-5-talents">Level 5 Talents</h4>
+<ul>
+<li>Great-Weapon Mastery — You receive an extra half-attack when you fight with two-handed melee weapons.</li>
+<li>Small-Weapon Mastery — You receive an extra half-attack when you fight with only one one-handed melee weapons.</li>
+<li>Dual-weapon Mastery — You receive an extra half-attack when you fight with two melee weapons.</li>
+<li>Axe Mastery — You receive an extra half-attack when you fight with axes.</li>
+<li>Sword Mastery — You receive an extra half-attack when you fight with swords.</li>
+<li>Hammer Mastery — You receive an extra half-attack when you fight with hammers.</li>
+<li>Spear Mastery — You receive an extra half-attack when you fight with spears.</li>
+<li>Flail Mastery — You receive an extra half-attack when you fight with flails.</li>
+<li>Unarmed Mastery — You receive an extra half-attack when you fight with unarmed strikes.</li>
+<li>Bow Mastery — TODO</li>
+<li>Crossbow Mastery — You deal an extra d6 of damage when you fight with a crossbow.</li>
+<li>More Critical — Choose a category of weapons (axes, swords, hammers, spears, bows, crossbows, dual-wielding, great-weapons, small-weapons, dual-weapons). Your crit range with that category is 1 larger.</li>
+<li>Weapon Mastery — Choose a category of weapons (axes, swords, hammers, spears, bows, crossbows, dual-wielding, great-weapons, small-weapons, dual-weapons). When using that weapon, its base damage increases one step. 1 → d2 → d3 → d4 → d6 → d8 → d10 → d12 → 2d8 → 2d10 → 2d12</li>
+<li>Better Critical — Choose a category of weapons (axes, swords, hammers, spears, bows, crossbows, dual-wielding, great-weapons, small-weapons, dual-weapons). Your crit effect increases by 1 (aka x2 → x3).</li>
+<li>Whirlwind Attack — You can attack all creatures within your reach as a standard action.</li>
+<li>Volley — You may make a single ranged attack against 6 creatures you can see, none of which are more than 30 feet apart. Roll an attack roll for each one.</li>
+<li>Resilience — You gain DR 3</li>
+<li>Too Hard to Die — When you would go to 0 hp for the first time in a battle, you instead go to your maximum HP. You suffer -2 to all d20 rolls until you are able to sleep. This penalty stacks. </li>
+</ul>
+<hr>
+</div>
+<div class="class_description">
+<h2 id="wood_elf">Wood Elf</h3>
+<h3 id="class-table-7">Class Table</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>HP</th>
+<th>BAB</th>
+<th>BSB</th>
+<th>Class Features</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>12</td>
+<td>+2</td>
+<td>+1</td>
+<td>Elvish Accuracy</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>3d8</td>
+<td>+3</td>
+<td>+2</td>
+<td>Arcane Attack</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4d8</td>
+<td>+4</td>
+<td>+3</td>
+<td>Arcane Attack</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>5d8</td>
+<td>+5</td>
+<td>+4</td>
+<td>Arcane Attack</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>6d8</td>
+<td>+6</td>
+<td>+5</td>
+<td>Arcane Attack</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>7d8</td>
+<td>+7</td>
+<td>+6</td>
+<td>Arcane Attack</td>
+</tr>
+</tbody>
+</table>
+<h3 id="class-details-9">Class Details</h3>
+<ul>
+<li>+2 Reflex Saves</li>
+<li>Proficiency with Light armor, Shields and elvish weapons</li>
+<li>Elven Weapons are:<ul>
+<li>Longsword</li>
+<li>Shortsword</li>
+<li>Shortbow</li>
+<li>Dagger</li>
+</ul></li>
+<li>Speed of 35</li>
+<li>Trance for 4 hours instead of sleeping</li>
+</ul>
+<h3 id="elvish-accuracy">Elvish Accuracy</h3>
+<p>Elves ignore the penalty for shooting into melees and can precisely fire into grapples without any risk of attacking anyone but who they intended. Additionally, they ignore 20% concealment.</p>
+<h3 id="arcane-attack">Arcane Attack</h3>
+<p>Periodically elves discover the ability to combine magic with war.</p>
+<p>Each time you gain this feature, choose one of the special attacks below. You can use this attack once per encounter. You regain the use of them by trancing for 5 minutes.</p>
+<p>The ability is activated as a swift action and affects the next attack made. If used with a melee attack, the effect does not discharge until you actually hit an enemy or the battle is over.</p>
+<ul>
+<li>Shocking Attack — Add 1d6/level lightning damage to an attack.</li>
+<li>Translocating Attack — Choose one— You are teleported to where your attack lands. If it struck a creature, you appear next to them; OR A creature or object of medium size or smaller that you strike with this attack is teleported next to you. For example, if you make a called shot to an ogre's club, its club appears next to you.</li>
+<li>True Strike — Add +10 to your attack roll and ignore less than total cover and concealment. This effect discharges even if you miss.</li>
+<li>Acid Attack — Add 2d4 acid damage to your attack. The victim continues to take 2d4 acid damage each round for as many rounds as you have levels.</li>
+<li>Force Blanket — A foe struck by this attack deals half damage with their next succesful attack as the force blanket absorbs much of the impact.</li>
+<li>Hidden Attack — A creature or object of medium size or smaller that you strike with this attack becomes invisible for as many rounds as you have levels.</li>
+<li>Twin Strike — Your weapon is in two places at once. You can attack two targets instead of one with this attack. This effect discharges even if you miss.</li>
+</ul>
+<hr>
+</div>
+</div>
+<div class="equipment">
+<h1 id="equipment">Equipment</h1>
+<h2 id="encumbrance">Encumbrance</h2>
+<ul>
+<li>A character can carry 15 slots of items without being encumbered.</li>
+<li>They receive a -1 penalty to attack and AC for each slot beyond 15 they are carrying.</li>
+<li>Two day's worth of food is 1 slot.</li>
+<li>Weapons are 1 slot, except for two-handed weapons which are 2 slots.</li>
+</ul>
+<h2 id="durability">Durability</h2>
+<ul>
+<li>Items have 3 &quot;notches&quot; of durability.</li>
+<li>When an item is out of notches, it is destroyed or broken.</li>
+<li>A weapon gets -1 penalty to attack for each notch missing.</li>
+<li>Armor gets a -1 penalty to AC for each notch missing.</li>
+<li>Notches are usually lost from sundering, but the DM may rule that certain effects like fireballs can damage weapons too if the user fails a save.</li>
+</ul>
+<h2 id="melee-weapons">Melee Weapons</h2>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 10%" />
+<col style="width: 12%" />
+<col style="width: 18%" />
+<col style="width: 16%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weapon</th>
+<th>Damage</th>
+<th>Size</th>
+<th>Critical</th>
+<th>Item HP Inc.</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Battleaxe</td>
+<td>1d8</td>
+<td>1-handed</td>
+<td>x3</td>
+<td>5 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Club</td>
+<td>1d6</td>
+<td>1-handed</td>
+<td>20, x2</td>
+<td>5 HP</td>
+<td>Easy to make</td>
+</tr>
+<tr class="odd">
+<td>Dagger</td>
+<td>1d4</td>
+<td>Light</td>
+<td>19-20, x2</td>
+<td>5 HP</td>
+<td>Can be easily hidden</td>
+</tr>
+<tr class="even">
+<td>Flail</td>
+<td>1d8</td>
+<td>1-handed</td>
+<td>x2</td>
+<td>7 HP</td>
+<td>+2 to disarm and trip, ignores shield bonus of enemies</td>
+</tr>
+<tr class="odd">
+<td>Glaive</td>
+<td>1d10</td>
+<td>2-handed</td>
+<td>19-20, x2</td>
+<td>3 HP</td>
+<td>10' of reach (with 5' deadzone)</td>
+</tr>
+<tr class="even">
+<td>Greataxe</td>
+<td>1d12</td>
+<td>2-handed</td>
+<td>x3</td>
+<td>5 HP</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Greatclub</td>
+<td>1d10</td>
+<td>2-handed</td>
+<td>x2</td>
+<td>5 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Greatflail</td>
+<td>1d12</td>
+<td>2-handed</td>
+<td>x2</td>
+<td>5 HP</td>
+<td>+2 to disarm and trip, ignores shield bonus of enemies</td>
+</tr>
+<tr class="odd">
+<td>Greathammer</td>
+<td>1d12</td>
+<td>2-handed</td>
+<td>x3</td>
+<td>5 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Greatsword</td>
+<td>1d12</td>
+<td>2-handed</td>
+<td>19-20, x2</td>
+<td>7 HP</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Halberd</td>
+<td>1d10</td>
+<td>2-handed</td>
+<td>x3</td>
+<td>3 HP</td>
+<td>10' of reach (with 5' deadzone), +2 to trip</td>
+</tr>
+<tr class="even">
+<td>Handaxe</td>
+<td>1d6</td>
+<td>Light</td>
+<td>x3</td>
+<td>5 HP</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Lance</td>
+<td>1d8</td>
+<td>Special</td>
+<td>x3</td>
+<td>3 HP</td>
+<td>Can only be used on horseback in one hand. Has 10' of reach and deals double damage when your mount charges.</td>
+</tr>
+<tr class="even">
+<td>Longsword</td>
+<td>1d8</td>
+<td>1-handed</td>
+<td>19-20, x2</td>
+<td>7 HP</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Mace</td>
+<td>1d8</td>
+<td>1-handed</td>
+<td>x2</td>
+<td>5 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Morningstar</td>
+<td>1d8</td>
+<td>1-handed</td>
+<td>20, x2, -2 AC</td>
+<td>5 HP</td>
+<td>+2 to sunder armor</td>
+</tr>
+<tr class="odd">
+<td>Pike</td>
+<td>1d8</td>
+<td>2-handed</td>
+<td>x2</td>
+<td>3 HP</td>
+<td>15' of reach (with 5' deadzone). Cannot be brought indoors.</td>
+</tr>
+<tr class="even">
+<td>Quarterstaff</td>
+<td>1d6</td>
+<td>2-handed</td>
+<td>x2</td>
+<td>3 HP</td>
+<td>Double weapon</td>
+</tr>
+<tr class="odd">
+<td>Scimitar</td>
+<td>1d6</td>
+<td>1-handed</td>
+<td>18-20, x2</td>
+<td>7 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Shortspear</td>
+<td>1d6</td>
+<td>1-handed</td>
+<td>x2</td>
+<td>5 HP</td>
+<td>Can be thrown with 20' range increment</td>
+</tr>
+<tr class="odd">
+<td>Shortsword</td>
+<td>1d6</td>
+<td>Light</td>
+<td>19-20, x2</td>
+<td>7 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Spear</td>
+<td>1d6</td>
+<td>1-handed</td>
+<td>x2</td>
+<td>3 HP</td>
+<td>10' of reach (with 5' deadzone), can be thrown with 20' range increment</td>
+</tr>
+<tr class="odd">
+<td>Warhammer</td>
+<td>1d8</td>
+<td>1-handed</td>
+<td>x3</td>
+<td>5 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Warpick</td>
+<td>1d6</td>
+<td>1-handed</td>
+<td>x4, -2 AC</td>
+<td>5 HP</td>
+<td>+2 to sunder armor</td>
+</tr>
+<tr class="odd">
+<td>Warscythe</td>
+<td>1d10</td>
+<td>2-handed</td>
+<td>x4</td>
+<td>5 HP</td>
+<td>+2 to trip</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ranged-weapons">Ranged Weapons</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Weapon</th>
+<th>Damage</th>
+<th>Range Inc.</th>
+<th>Critical</th>
+<th>Item HP Inc.</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bow</td>
+<td>1d6</td>
+<td>60'</td>
+<td>x3</td>
+<td>3 HP</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Crossbow</td>
+<td>1d8</td>
+<td>80'</td>
+<td>19-20, x2</td>
+<td>3 HP</td>
+<td>Must spend move action to reload.</td>
+</tr>
+<tr class="odd">
+<td>Javelin</td>
+<td>1d6</td>
+<td>30'</td>
+<td>x2</td>
+<td>5 HP</td>
+<td>1-handed, thrown weapon</td>
+</tr>
+<tr class="even">
+<td>Sling</td>
+<td>1d4</td>
+<td>50'</td>
+<td>x4</td>
+<td>3 HP</td>
+<td>1-handed, but other hand must not have a shield</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exotic-melee-weapons">Exotic Melee Weapons</h2>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 11%" />
+<col style="width: 13%" />
+<col style="width: 21%" />
+<col style="width: 18%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Weapon</th>
+<th>Damage</th>
+<th>Size</th>
+<th>Critical</th>
+<th>Item HP Inc.</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Double Axe</td>
+<td>1d8</td>
+<td>2-handed</td>
+<td>x3</td>
+<td>5 HP</td>
+<td>Double Weapon</td>
+</tr>
+<tr class="even">
+<td>Double sword</td>
+<td>1d8</td>
+<td>2-handed</td>
+<td>19-20, x2</td>
+<td>5 HP</td>
+<td>Double Weapon</td>
+</tr>
+<tr class="odd">
+<td>Hooked Hammer</td>
+<td>1d8</td>
+<td>2-handed</td>
+<td>x2, free trip</td>
+<td>5 HP</td>
+<td>Double Weapon, +2 to trip</td>
+</tr>
+<tr class="even">
+<td>Dire Flail</td>
+<td>1d8</td>
+<td>2-handed</td>
+<td>x2</td>
+<td>5 HP</td>
+<td>Double Weapon, +2 to disarm and trip, ignores shield bonus of enemies</td>
+</tr>
+<tr class="odd">
+<td>Katana</td>
+<td>1d10</td>
+<td>1-handed</td>
+<td>19-20, x2</td>
+<td>10 HP</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="exotic-ranged-weapons">Exotic Ranged Weapons</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Weapon</th>
+<th>Damage</th>
+<th>Range Inc.</th>
+<th>Critical</th>
+<th>Item HP Inc.</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Oricsh Shotput</td>
+<td>1d12</td>
+<td>20'</td>
+<td>x3</td>
+<td>15 HP</td>
+<td>2-handed, thrown, exotic, 3 slots</td>
+</tr>
+</tbody>
+</table>
+<h2 id="armor">Armor</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Armor</th>
+<th>AC Bonus</th>
+<th>Armor Type</th>
+<th>Slots</th>
+<th>Speed Adj.</th>
+<th>Item HP</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Leather</td>
+<td>2</td>
+<td>Light</td>
+<td>1</td>
+<td>-0</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Chain</td>
+<td>4</td>
+<td>Medium</td>
+<td>3</td>
+<td>-5</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Plate</td>
+<td>6</td>
+<td>Heavy</td>
+<td>5</td>
+<td>-10</td>
+<td>10</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Wood Shield</td>
+<td>2</td>
+<td>Shield</td>
+<td>1</td>
+<td>-0</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Metal Shield</td>
+<td>2</td>
+<td>Shield</td>
+<td>2</td>
+<td>-0</td>
+<td>10</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Wearing Armor in hot, humid weather causes subdual damage, and eventually unconscious or death.</p>
+<h2 id="mounts-and-vehicles">Mounts and Vehicles</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Mount</th>
+<th>Combat Speed</th>
+<th>Overland Speed</th>
+<th>HP</th>
+<th>Additional Slots</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Warhorse</td>
+<td>60'</td>
+<td>4mph</td>
+<td>30</td>
+<td>20</td>
+<td>Can bear rider in battle</td>
+</tr>
+<tr class="even">
+<td>Draft Horse</td>
+<td>50'</td>
+<td>4mph</td>
+<td>18</td>
+<td>20</td>
+<td>Can pull wagon</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th>Vehicle</th>
+<th>Overland Speed</th>
+<th>Riders</th>
+<th>Cargo Slots</th>
+<th>Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Light Wagon</td>
+<td>3mph</td>
+<td>2</td>
+<td>100</td>
+<td>Can carry riders and cargo</td>
+</tr>
+<tr class="even">
+<td>Heavy Wagon</td>
+<td>3mph</td>
+<td>4</td>
+<td>250</td>
+<td>Can carry riders and cargo</td>
+</tr>
+</tbody>
+</table>
+<p>A light wagon requires 2 horses or one ox to pull. Oxen move at 2 mph instead of 3, but allow +50% slots.</p>
+<p>A heavy wagon requires 4 horses or two oxen to pull. Oxen move at 2mph instead of 3 but allow +50% slots.</p>
+<h2 id="special-items">Special Items</h2>
+<ul>
+<li>Tanglefoot bags — Make an attack roll against the space the target is in. If you hit, they must DC 15 reflex save or be entangled by the sticky goo. Takes up a slot. The goo hardens and shatters after 1d4+1 rounds.</li>
+<li>Healing Kit — A skilled healer can use this to tend to wounds. Roll a d6+3. The wounded target is healed by that amount. This cannot be done inside of combat. A healing kit has 5 uses and uses a slot.</li>
+<li>Alchemists fire — Grenade-like weapon. Target a space. Everyone in that space and adjacent to it takes 1d6 fire damage if you hit.</li>
+<li>Smokestick — Creates a 5ft thick cloud of smoke (50% concealment)</li>
+<li>Antitoxin — Grants a new save against poison at +2</li>
+<li>Lightning in a bottle — Throw at a creature. If they are in metal armor, you get +3. On a hit they suffer 2d8 lightning damage and a random creature within 5 feet of them also takes the same amount of damage.</li>
+<li>Quickfrost — Throw at a creature. On a hit, they suffer 1d20 cold damage.</li>
+<li>Flashpowder — ignite and everyone has to DC 12 fortitude save or be blinded, save ends.</li>
+<li>Potion of Healing — Heals d6+3 hp</li>
+</ul>
+<hr>
+</div>
+</div>
+</body>
+</html>
