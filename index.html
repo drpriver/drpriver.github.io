@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -47,6 +47,7 @@
   }
   table {
 	  border-collapse: collapse;
+	  width: 100%;
   }
   .classes td, th {
 	  text-align: center;
@@ -87,7 +88,9 @@
   div.maneuvers {
 	  display: grid;
 	  grid-template-columns: repeat(2, 1fr);
-	  align-items: top;
+  }
+  .even {
+	  background-color: #cccccc;
   }
 
 
@@ -122,8 +125,50 @@
 <li><a href="#mounts-and-vehicles">Mounts and Vehicles</a></li>
 <li><a href="#special-items">Special Items</a></li>
 </ul></li>
+<li><a href="#miscelaneous-adventuring-rules">Miscelaneous Adventuring Rules</a><ul>
+<li><a href="#double-jeopary">No Double Jeopardy</a></li>
+<li><a href="#natural-healing">Natural Healing</a></li>
+<li><a href="#food-and-water">Food and Water</a></li>
+<li><a href="#heat-and-humidity">Heat and Humidity</a></li>
+<li><a href="#cold-and-freezing">Cold and Freezing</a></li>
+<li><a href="#suffocation">Suffocation</a></li>
+</ul></li>
+<li><a href="#combat">Combat</a><ul>
+<li><a href="#initiative-and-the-flow-of-combat">Initiative and the Flow of Combat</a></li>
+<li><a href="#actions-in-combat">Actions in Combat</a></li>
+<li><a href="#calculating-attack-bonus">Calculating Attack Bonus</a></li>
+<li><a href="#critical-hits">Critical Hits</a></li>
+<li><a href="#attack-of-opportunity">Attack of Opportunity</a></li>
+<li><a href="#actions">Actions</a><ul>
+<li><a href="#movement-actions">Movement Actions</a></li>
+<li><a href="#melee-or-ranged-attacks">Melee or Ranged Attacks</a></li>
+<li><a href="#melee-only-attacks">Melee Only Attacks</a></li>
+<li><a href="#ranged-only-attacks">Ranged Only Attacks</a></li>
+<li><a href="#other-actions">Other Actions</a></li>
+</ul></li>
+<li><a href="#movement">Movement</a></li>
+<li><a href="#circumstantial-rules">Circumstantial Rules</a></li>
+<li><a href="#mounted-combat">Mounted Combat</a></li>
+</ul></li>
+<li><a href="#conditions">Conditions</a><ul>
+<li><a href="#ablaze">Ablaze</a></li>
+<li><a href="#blind">Blind</a></li>
+<li><a href="#confused">Confused</a></li>
+<li><a href="#dazed">Dazed</a></li>
+<li><a href="#dazzled">Dazzled</a></li>
+<li><a href="#entangled">Entangled</a></li>
+<li><a href="#fatigued-n">Fatigued (N)</a></li>
+<li><a href="#flat-footed">Flat-footed</a></li>
+<li><a href="#frightened-n">Frightened (N)</a></li>
+<li><a href="#paralyzed">Paralyzed</a></li>
+<li><a href="#prone">Prone</a></li>
+<li><a href="#stunned">Stunned</a></li>
+<li><a href="#surprised">Surprised</a></li>
+<li><a href="#unconscious">Unconscious</a></li>
+</ul></li>
 </ul>
 </nav>
+<hr>
 </div>
 <div class="center">
 <div class="attributes">
@@ -599,13 +644,13 @@
 <ul>
 <li>Empty Body<ul><li>You have discovered how to very briefly not be somewhere and then immediately reappear. It is so brief that it requires great reflexes to achive, but is very useful when trying to avoid a dragon's breath. When you make a reflex saving throw to take half damage, you take no damage on a succesful saving throw and half damage on a failed saving throw.</li></ul></li>
 <li>Abundant Step<ul><li> You have discovered that movement is an illusion, as all is one. This discovery is hard to wrap your mind around, but allows you to appear wherever you desire, as there is no &quot;where&quot;. You can appear at any &quot;location&quot; you can see instantaneously as a free action up to &quot;600 feet away&quot;. You cannot bring anything with you except the clothes on your back and what you hold in your hands. Once you have done this, you will need to meditate as even after you perform it you form pearls of doubt. You can't do this again until you complete your 10 minute meditation where you remove chaos from your system.</li> </ul></li>
-<li>Purity of Body <ul> You have discovered that hunger and thirst are illusions. You no longer need to eat or drink and cannot be diseased or poisoned.</li></ul></li>
-<li>The Thickness of Air <ul> You have discovered that air is as thick as we choose to perceive it to be. You can use this fact to slow and cushion your movements. You take no damage from being thrown or falling.</li></ul></li>
-<li>Leap of the Clouds <ul> Your jump distance is no longer limited by your speed, height or size.</li></ul></li>
-<li>Uncanny Awareness <ul> You have discovered the presence of a vestigial, ethereal third eye that we all have. You are never surprised or flat-footed.</li></ul></li>
-<li>Deflection <ul> You can deflect arrows as a reaction, taking no damage from the one missile. As a full-round action, you can deflect all missiles that would strike you until the beginning of your next turn.</li></ul></li>
-<li>The Laws of Momentum <ul> You can use an enemy's momentum against them. Whenever an enemy attacks you but misses, you make make a standard melee attack against them as a reaction.</li></ul></li>
-<li>Tongue of the Sun and Moon <ul> You have discovered the proto-language of all humanoids. You can speak to any humanoids via it, although the concepts you can communicate are limited to basic ones.</li></ul></li>
+<li>Purity of Body <ul> <li>You have discovered that hunger and thirst are illusions. You no longer need to eat or drink and cannot be diseased or poisoned.</li></ul></li>
+<li>The Thickness of Air <ul><li> You have discovered that air is as thick as we choose to perceive it to be. You can use this fact to slow and cushion your movements. You take no damage from being thrown or falling.</li></ul></li>
+<li>Leap of the Clouds <ul><li> Your jump distance is no longer limited by your speed, height or size.</li></ul></li>
+<li>Uncanny Awareness <ul><li> You have discovered the presence of a vestigial, ethereal third eye that we all have. You are never surprised or flat-footed.</li></ul></li>
+<li>Deflection <ul><li> You can deflect arrows as a reaction, taking no damage from the one missile. As a full-round action, you can deflect all missiles that would strike you until the beginning of your next turn.</li></ul></li>
+<li>The Laws of Momentum <ul><li> You can use an enemy's momentum against them. Whenever an enemy attacks you but misses, you make make a standard melee attack against them as a reaction.</li></ul></li>
+<li>Tongue of the Sun and Moon <ul><li> You have discovered the proto-language of all humanoids. You can speak to any humanoids via it, although the concepts you can communicate are limited to basic ones.</li></ul></li>
 </ul>
 <hr>
 </div>
@@ -1117,26 +1162,30 @@
 </ul>
 <h3 id="animal-companion">Animal Companion</h3>
 <p>You start play with an animal companion from the following list:</p>
-<pre><code>* War Dog
-* Hunting Dog
-* Giant Crab
-* Giant Snake
-* Rodent of Unusual Size
-* Hawk</code></pre>
+<ul>
+<li> War Dog
+<li> Hunting Dog
+<li> Giant Crab
+<li> Giant Snake
+<li> Rodent of Unusual Size
+<li> Hawk
+</ul>
 <p>Your DM may expand or restrict this list due to the setting or campaign premise.</p>
 <p>Your animal knows the following tricks (assuming it is physically capable of them):</p>
-<pre><code>* Attack
-* Come
-* Defend
-* Down
-* Fetch
-* Guard
-* Heel
-* Perform
-* Seek
-* Stay
-* Track
-* Work</code></pre>
+<ul>
+<li> Attack
+<li> Come
+<li> Defend
+<li> Down
+<li> Fetch
+<li> Guard
+<li> Heel
+<li> Perform
+<li> Seek
+<li> Stay
+<li> Track
+<li> Work
+</ul>
 <p>Your animal performs these tricks by verbal or nonverbal communication. If you wish them to perform these tricks by a different word (such as using the elvish word for attack), note this, but each trick must have a single corresponding verbal command.</p>
 <p>Your animal is a selfless and loyal companion.</p>
 <p>Due to your bond and excellent training, your companion receives the following bonuses:</p>
@@ -1248,14 +1297,14 @@
 <p>You can invest at most 10 points into any one skill and cannot invest more than 3 points in a skill at each level (including first level).</p>
 <p>Additionally, investing skill points have certain other effects, as described below:</p>
 <ul>
-<li>Climb Wall — If you have invested at least 3 skill points in climb, you can climb at full speed instead of reduced speed.</li>
-<li>Disarm Trap — If you have invested at least 3 skill points in disarm trap, you automatically find traps on chests.</li>
-<li>Escape — If you have invested at least 3 skill points in escape, your movements do not provoke attacks of opportunity.</li>
-<li>Fast Talk — If you have invested at least 3 skill points in fast talk, your first failed lie is ignored.</li>
-<li>Improvised Attacks — You can add your ranks in this skill to non-conventional attack rolls or difficulties. For example, if you throw pocket sand in someone's eyes, that is normally a DC 10 reflex save to avoid. If you had 8 ranks in this skill, it would be DC 18 instead.</li>
-<li>Pick Lock — If you have invested at least 3 skill points in pick lock, you can freely lock and unlock any lock you have succesfully picked.</li>
-<li>Pick Pocket — If you have invested at least 3 skill points in Pick Pocket, you can pick pocket things secured to them, like necklaces or sheathed swords.</li>
-<li>Sneak — If you have invested at least 3 skill points in sneak, you can achieve basic success without rolling. An example of basic success is creeping down a hallway undetected to see what is up ahead.</li>
+<li>Climb Wall <ul><li> If you have invested at least 3 skill points in climb, you can climb at full speed instead of reduced speed.</li></ul></li>
+<li>Disarm Trap <ul><li> If you have invested at least 3 skill points in disarm trap, you automatically find traps on chests.</li></ul></li>
+<li>Escape <ul><li> If you have invested at least 3 skill points in escape, your movements do not provoke attacks of opportunity.</li></ul></li>
+<li>Fast Talk <ul><li> If you have invested at least 3 skill points in fast talk, your first failed lie is ignored.</li></ul></li>
+<li>Improvised Attacks <ul><li> You can add your ranks in this skill to non-conventional attack rolls or difficulties.</li><li> For example, if you throw pocket sand in someone's eyes, that is normally a DC 10 reflex save to avoid. If you had 8 ranks in this skill, it would be DC 18 instead.</li></ul></li>
+<li>Pick Lock <ul><li> If you have invested at least 3 skill points in pick lock, you can freely lock and unlock any lock you have succesfully picked.</li></ul></li>
+<li>Pick Pocket <ul><li> If you have invested at least 3 skill points in Pick Pocket, you can pick pocket things secured to them, like necklaces or sheathed swords.</li></ul></li>
+<li>Sneak <ul><li> If you have invested at least 3 skill points in sneak, you can achieve basic success without rolling. An example of basic success is creeping down a hallway undetected to see what is up ahead.</li></ul></li>
 </ul>
 <hr>
 </div>
@@ -1326,54 +1375,94 @@
 <p>Weaponmasters can pick weapon talents they qualify for from the lists below. Whenever a weaponmaster gains a level in this class, they can retrain a talent to a talent of the same level that they qualify for. Additionally, each level they gain a new talent, which they can pick from any talent they qualify for.</p>
 <h4 id="level-1-talents">Level 1 Talents</h4>
 <ul>
-<li>Dual-Weapon Fighting — You can dual-wield without penalties and gain a +1 bonus to AC while dual-wielding.</li>
-<li>Great-Weapon Fighting — You add double your strength bonus to damage with two-handed melee weapons instead of single your strength bonus.</li>
-<li>Small-weapon Fighting — You add double your strength bonus to damage with one-handed melee weapons instead of single your strength bonus when you fight with one one-handed melee weapon.</li>
-<li>Ranged-weapon Fighting — You do not suffer penalties for firing into a melee.</li>
-<li>Shield Fighting — You receive +1 AC when fighting with a shield. Additionally, if you would be reduced to less than 1 HP, your shield is destroyed and the damage is reduced by the hp increment of the shield * how many notches of durability it had remaining. This can only happen once per encounter.</li>
-<li>Cross-bow Fighting — You receive a +2 bonus to attacks with crossbows and may add your dexterity bonus to the damage.</li>
-<li>Bow Fighting — When shooting your bow, you may choose to suffer a -2 penalty on all of your attacks for the round. If you do, you can make an extra attack with the bow. Your attacks this round must not be special attacks.</li>
-<li>Axe-fighting — If you drop an enemy with an axe, you immediately get a free attack with it. Additionally, you have +1 attack when fighting with axes.</li>
-<li>Sword-fighting — If you are using a sword, you get double the benefit of fighting defensively. Additionally, you have +1 attack when fighting with swords.</li>
-<li>Hammer-fighting — Your critical hits with hammers also knock the target down. Additionally, you have +1 attack when fighting with hammers.</li>
-<li>Spear-fighting — You do not suffer a dead-zone when fighting with spears. Additionally, you have +1 attack when fighting with spears.</li>
-<li>Flail-fighting — Your attacks with flails ignore an enemy's shield bonus to AC. Additionally, you have +1 attack when fighting with flails.</li>
-<li>Unarmed-fighting — Your unarmed attacks deal 1d6 damage, deal lethal damage and do not provoke attacks of opportunity. Additionally, you have +1 attack when fighting unarmed and +1 to grapple checks. Unarmed attacks may be dual-wielded.</li>
-<li>Master Tripper — You get a +4 bonus to trip attempts. Additionally, if you succeed on your trip attempt you may immediately make an extra melee attack on the victim.</li>
-<li>Master Grappler — You get a +4 bonus to grapple attempts and grapple checks. Additionally, if you succeed on your grapple attempt, you may immediately deal grapple damage.</li>
-<li>Master Disarmer — You get a +4 bonus to disarm attempts. Additionally, if you have a free hand or can free your hand as a free action, you may have the item you disarmed end up in your hand instead of on the ground.</li>
-<li>Master Sunderer — You get a +4 bonus to sunder attempts. Additionally, if you succeed on your sunder attempt you may immediately make an extra melee attack on the victim.</li>
-<li>Master Bull — You get a +4 bonus to bull rush and overrun attempts. Additionally, if you succeed on your overrun attempt, you can kick them for free.</li>
-<li>Cleave — When you drop an enemy with a melee attack, you may make an extra standard attack as a free action.</li>
-<li>Combat Reflexes — You may make an additional reaction each round.</li>
-<li>Dodge — +1 dodge bonus to AC</li>
-<li>Diehard — If you would be reduced to &lt; 1 HP, you are instead reduced to 1 hp. This may happen at most once per encounter.</li>
-<li>Quick-draw — You can draw/stow items as a free-action instead of a standard action when drawing or stowing additional items each round.</li>
-<li>Run — You run at x5 speed instead of x4 speed and suffer no defensive penalties for doing so.</li>
-<li>Punisher — You receive a +4 bonus to attacks of opportunity and deal +1d6 damage if you hit with them.</li>
+<li>Dual-Weapon Fighting <ul><li> You can dual-wield without penalties and gain a +1 bonus to AC while dual-wielding.</li></ul></li>
+<li>Great-Weapon Fighting <ul><li> You add double your strength bonus to damage with two-handed melee weapons instead of single your strength bonus.</li></ul></li>
+<li>Small-weapon Fighting <ul><li> You add double your strength bonus to damage with one-handed melee weapons instead of single your strength bonus when you fight with one one-handed melee weapon.</li></ul></li>
+<li>Ranged-weapon Fighting <ul><li> You do not suffer penalties for firing into a melee.</li></ul></li>
+<li>Shield Fighting <ul><li> You receive +1 AC when fighting with a shield. Additionally, if you would be reduced to less than 1 HP, your shield is destroyed and the damage is reduced by the hp increment of the shield * how many notches of durability it had remaining. This can only happen once per encounter.</li></ul></li>
+<li>Cross-bow Fighting <ul><li> You receive a +2 bonus to attacks with crossbows and may add your dexterity bonus to the damage.</li></ul></li>
+<li>Bow Fighting <ul><li> When shooting your bow, you may choose to suffer a -2 penalty on all of your attacks for the round. If you do, you can make an extra attack with the bow. Your attacks this round must not be special attacks.</li></ul></li>
+<li>Axe-fighting <ul><li> If you drop an enemy with an axe, you immediately get a free attack with it. Additionally, you have +1 attack when fighting with axes.</li></ul></li>
+<li>Sword-fighting <ul><li> If you are using a sword, you get double the benefit of fighting defensively. Additionally, you have +1 attack when fighting with swords.</li></ul></li>
+<li>Hammer-fighting <ul><li> Your critical hits with hammers also knock the target down. Additionally, you have +1 attack when fighting with hammers.</li></ul></li>
+<li>Spear-fighting <ul><li> You do not suffer a dead-zone when fighting with spears. Additionally, you have +1 attack when fighting with spears.</li></ul></li>
+<li>Flail-fighting <ul><li> Your attacks with flails ignore an enemy's shield bonus to AC. Additionally, you have +1 attack when fighting with flails.</li></ul></li>
+<li>Unarmed-fighting <ul><li> Your unarmed attacks deal 1d6 damage, deal lethal damage and do not provoke attacks of opportunity. Additionally, you have +1 attack when fighting unarmed and +1 to grapple checks. Unarmed attacks may be dual-wielded.</li></ul></li>
+<li>Master Tripper <ul><li> You get a +4 bonus to trip attempts. Additionally, if you succeed on your trip attempt you may immediately make an extra melee attack on the victim.</li></ul></li>
+<li>Master Grappler <ul><li> You get a +4 bonus to grapple attempts and grapple checks. Additionally, if you succeed on your grapple attempt, you may immediately deal grapple damage.</li></ul></li>
+<li>Master Disarmer <ul><li> You get a +4 bonus to disarm attempts. Additionally, if you have a free hand or can free your hand as a free action, you may have the item you disarmed end up in your hand instead of on the ground.</li></ul></li>
+<li>Master Sunderer <ul><li> You get a +4 bonus to sunder attempts. Additionally, if you succeed on your sunder attempt you may immediately make an extra melee attack on the victim.</li></ul></li>
+<li>Master Bull <ul><li> You get a +4 bonus to bull rush and overrun attempts. Additionally, if you succeed on your overrun attempt, you can kick them for free.</li></ul></li>
+<li>Cleave <ul><li> When you drop an enemy with a melee attack, you may make an extra standard attack as a free action.</li></ul></li>
+<li>Combat Reflexes <ul><li> You may make an additional reaction each round.</li></ul></li>
+<li>Dodge <ul><li> +1 dodge bonus to AC</li></ul></li>
+<li>Diehard <ul><li> If you would be reduced to &lt; 1 HP, you are instead reduced to 1 hp. This may happen at most once per encounter.</li></ul></li>
+<li>Quick-draw <ul><li> You can draw/stow items as a free-action instead of a standard action when drawing or stowing additional items each round.</li></ul></li>
+<li>Run <ul><li> You run at x5 speed instead of x4 speed and suffer no defensive penalties for doing so.</li></ul></li>
+<li>Punisher <ul><li> You receive a +4 bonus to attacks of opportunity and deal +1d6 damage if you hit with them.</li></ul></li>
 </ul>
 <h4 id="level-3-talents">Level 3 Talents</h4>
-<ul>
-<li>Great-Weapon Specialization — +2 damage with two-handed melee weapons</li>
-<li>Small-Weapon Specialization — +2 damage with only one one-handed melee weapon.</li>
-<li>Dual-Weapon Specialization — +2 damage when dual-wielding</li>
-<li>Shield Specialization — You may lend your shield bonus to an adjacent ally in addition to yourself until the beginning of your next turn. Note that shield bonuses to AC do not stack.</li>
-<li>Axe Specialization — +2 damage with axes.</li>
-<li>Sword Specialization — +2 damage with swords.</li>
-<li>Hammer Specialization — +2 damage with hammers.</li>
-<li>Spear Specialization — +2 damage with spears.</li>
-<li>Flail Specialization — +2 damage with flails.</li>
-<li>Unarmed Specialization — +2 damage with unarmed strikes.</li>
-<li>Bow Specialization — +2 damage with bows.</li>
-<li>Crossbow Specialization — +2 damage with crossbows.</li>
-<li>Anvil &amp; Thunder (Hammer + Axe) — If you hit a creature with both your hammer and axe, you damage their armor by 1 notch.</li>
-<li>Slice &amp; Dice (Sword + Axe) — If you hit a creature with both your sword and axe, you may make an immediate free attack with one of them.</li>
-<li>Chain &amp; Sword (Flail + Sword) — If you hit a creature with both your flail and your sword, they become restrained (DC 10 + your strength) by the flail until the beginning of your next turn. You cannot attack with the flail or drop the flail without freeing the creature.</li>
-<li>Ringing Bell (Flail + Hammer) — If you hit a creature with both your flail and hammer, their movement speed is reduced to 0 until the beginning of your next turn.</li>
-<li>Deflect Arrows — As a reaction, you may deflect a ranged attack that would've hit you so that it misses you.</li>
-<li>Stand Still — When an enemy's movement away from you triggers an attack of opportunity, you may opt to try to stop them instead of dealing damage. If you hit them, you deal no damage and they must immediately stop moving. Their speed is reduced to 0.</li>
-<li>Deft Charge — Your movement while charging does not provoke attacks of opportunity.</li>
-</ul>
+<div class="maneuvers">
+<div class="power">
+<div class="power_title">Great-Weapon Specialization </div>
+<div class="power_text"> +2 damage with two-handed melee weapons</div></div>
+<div class="power">
+<div class="power_title">Small-Weapon Specialization </div>
+<div class="power_text"> +2 damage with only one one-handed melee weapon.</div></div>
+<div class="power">
+<div class="power_title">Dual-Weapon Specialization </div>
+<div class="power_text"> +2 damage when dual-wielding</div></div>
+<div class="power">
+<div class="power_title">Shield Specialization </div>
+<div class="power_text"> You may lend your shield bonus to an adjacent ally in addition to yourself until the beginning of your next turn. Note that shield bonuses to AC do not stack.</div></div>
+<div class="power">
+<div class="power_title">Axe Specialization </div>
+<div class="power_text"> +2 damage with axes.</div></div>
+<div class="power">
+<div class="power_title">Sword Specialization </div>
+<div class="power_text"> +2 damage with swords.</div></div>
+<div class="power">
+<div class="power_title">Hammer Specialization </div>
+<div class="power_text"> +2 damage with hammers.</div></div>
+<div class="power">
+<div class="power_title">Spear Specialization </div>
+<div class="power_text"> +2 damage with spears.</div></div>
+<div class="power">
+<div class="power_title">Flail Specialization </div>
+<div class="power_text"> +2 damage with flails.</div></div>
+<div class="power">
+<div class="power_title">Unarmed Specialization </div>
+<div class="power_text"> +2 damage with unarmed strikes.</div></div>
+<div class="power">
+<div class="power_title">Bow Specialization </div>
+<div class="power_text"> +2 damage with bows.</div></div>
+<div class="power">
+<div class="power_title">Crossbow Specialization </div>
+<div class="power_text"> +2 damage with crossbows.</div></div>
+<div class="power">
+<div class="power_title">Anvil &amp; Thunder (Hammer + Axe) </div>
+<div class="power_text"> If you hit a creature with both your hammer and axe, you damage their armor by 1 notch.</div></div>
+<div class="power">
+<div class="power_title">Slice &amp; Dice (Sword + Axe) </div>
+<div class="power_text"> If you hit a creature with both your sword and axe, you may make an immediate free attack with one of them.</div></div>
+<div class="power">
+<div class="power_title">Chain &amp; Sword (Flail + Sword) </div>
+<div class="power_text"> If you hit a creature with both your flail and your sword, they become restrained (DC 10 + your strength) by the flail until the beginning of your next turn. You cannot attack with the flail or drop the flail without freeing the creature.</div></div>
+<div class="power">
+<div class="power_title">Ringing Bell (Flail + Hammer) </div>
+<div class="power_text"> If you hit a creature with both your flail and hammer, their movement speed is reduced to 0 until the beginning of your next turn.</div></div>
+<div class="power">
+<div class="power_title">Deflect Arrows </div>
+<div class="power_text"> As a reaction, you may deflect a ranged attack that would've hit you so that it misses you.</div></div>
+<div class="power">
+<div class="power_title">Stand Still </div>
+<div class="power_text"> When an enemy's movement away from you triggers an attack of opportunity, you may opt to try to stop them instead of dealing damage. If you hit them, you deal no damage and they must immediately stop moving. Their speed is reduced to 0.</div></div>
+<div class="power">
+<div class="power_title">Deft Charge </div>
+<div class="power_text"> Your movement while charging does not provoke attacks of opportunity.</div></div>
+
+</div>
+
 <h4 id="level-5-talents">Level 5 Talents</h4>
 <ul>
 <li>Great-Weapon Mastery — You receive an extra half-attack when you fight with two-handed melee weapons.</li>
@@ -1398,7 +1487,7 @@
 <hr>
 </div>
 <div class="class_description">
-<h2 id="wood_elf">Wood Elf</h3>
+<h2 id="wood_elf">Wood Elf</h2>
 <h3 id="class-table-7">Class Table</h3>
 <table>
 <thead>
@@ -1505,21 +1594,13 @@
 </ul>
 <h2 id="melee-weapons">Melee Weapons</h2>
 <table>
-<colgroup>
-<col style="width: 15%" />
-<col style="width: 10%" />
-<col style="width: 12%" />
-<col style="width: 18%" />
-<col style="width: 16%" />
-<col style="width: 26%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Weapon</th>
 <th>Damage</th>
 <th>Size</th>
 <th>Critical</th>
-<th>Item HP Inc.</th>
+<th>Item&nbsp;HP&nbsp;Inc.</th>
 <th>Properties</th>
 </tr>
 </thead>
@@ -1527,7 +1608,7 @@
 <tr class="odd">
 <td>Battleaxe</td>
 <td>1d8</td>
-<td>1-handed</td>
+<td>1&#8209;handed</td>
 <td>x3</td>
 <td>5 HP</td>
 <td></td>
@@ -1535,7 +1616,7 @@
 <tr class="even">
 <td>Club</td>
 <td>1d6</td>
-<td>1-handed</td>
+<td>1&#8209;handed</td>
 <td>20, x2</td>
 <td>5 HP</td>
 <td>Easy to make</td>
@@ -1544,14 +1625,14 @@
 <td>Dagger</td>
 <td>1d4</td>
 <td>Light</td>
-<td>19-20, x2</td>
+<td>19&#8209;20, x2</td>
 <td>5 HP</td>
 <td>Can be easily hidden</td>
 </tr>
 <tr class="even">
 <td>Flail</td>
 <td>1d8</td>
-<td>1-handed</td>
+<td>1&#8209;handed</td>
 <td>x2</td>
 <td>7 HP</td>
 <td>+2 to disarm and trip, ignores shield bonus of enemies</td>
@@ -1559,15 +1640,15 @@
 <tr class="odd">
 <td>Glaive</td>
 <td>1d10</td>
-<td>2-handed</td>
-<td>19-20, x2</td>
+<td>2&#8209;handed</td>
+<td>19&#8209;20, x2</td>
 <td>3 HP</td>
 <td>10' of reach (with 5' deadzone)</td>
 </tr>
 <tr class="even">
 <td>Greataxe</td>
 <td>1d12</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x3</td>
 <td>5 HP</td>
 <td></td>
@@ -1575,7 +1656,7 @@
 <tr class="odd">
 <td>Greatclub</td>
 <td>1d10</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x2</td>
 <td>5 HP</td>
 <td></td>
@@ -1583,7 +1664,7 @@
 <tr class="even">
 <td>Greatflail</td>
 <td>1d12</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x2</td>
 <td>5 HP</td>
 <td>+2 to disarm and trip, ignores shield bonus of enemies</td>
@@ -1591,7 +1672,7 @@
 <tr class="odd">
 <td>Greathammer</td>
 <td>1d12</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x3</td>
 <td>5 HP</td>
 <td></td>
@@ -1599,15 +1680,15 @@
 <tr class="even">
 <td>Greatsword</td>
 <td>1d12</td>
-<td>2-handed</td>
-<td>19-20, x2</td>
+<td>2&#8209;handed</td>
+<td>19&#8209;20, x2</td>
 <td>7 HP</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>Halberd</td>
 <td>1d10</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x3</td>
 <td>3 HP</td>
 <td>10' of reach (with 5' deadzone), +2 to trip</td>
@@ -1631,15 +1712,15 @@
 <tr class="even">
 <td>Longsword</td>
 <td>1d8</td>
-<td>1-handed</td>
-<td>19-20, x2</td>
+<td>1&#8209;handed</td>
+<td>19&#8209;20, x2</td>
 <td>7 HP</td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>Mace</td>
 <td>1d8</td>
-<td>1-handed</td>
+<td>1&#8209;handed</td>
 <td>x2</td>
 <td>5 HP</td>
 <td></td>
@@ -1647,15 +1728,15 @@
 <tr class="even">
 <td>Morningstar</td>
 <td>1d8</td>
-<td>1-handed</td>
-<td>20, x2, -2 AC</td>
+<td>1&#8209;handed</td>
+<td>20, x2, &#8209;2 AC</td>
 <td>5 HP</td>
 <td>+2 to sunder armor</td>
 </tr>
 <tr class="odd">
 <td>Pike</td>
 <td>1d8</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x2</td>
 <td>3 HP</td>
 <td>15' of reach (with 5' deadzone). Cannot be brought indoors.</td>
@@ -1663,7 +1744,7 @@
 <tr class="even">
 <td>Quarterstaff</td>
 <td>1d6</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x2</td>
 <td>3 HP</td>
 <td>Double weapon</td>
@@ -1671,15 +1752,15 @@
 <tr class="odd">
 <td>Scimitar</td>
 <td>1d6</td>
-<td>1-handed</td>
-<td>18-20, x2</td>
+<td>1&#8209;handed</td>
+<td>18&#8209;20, x2</td>
 <td>7 HP</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>Shortspear</td>
 <td>1d6</td>
-<td>1-handed</td>
+<td>1&#8209;handed</td>
 <td>x2</td>
 <td>5 HP</td>
 <td>Can be thrown with 20' range increment</td>
@@ -1688,14 +1769,14 @@
 <td>Shortsword</td>
 <td>1d6</td>
 <td>Light</td>
-<td>19-20, x2</td>
+<td>19&#8209;20, x2</td>
 <td>7 HP</td>
 <td></td>
 </tr>
 <tr class="even">
 <td>Spear</td>
 <td>1d6</td>
-<td>1-handed</td>
+<td>1&#8209;handed</td>
 <td>x2</td>
 <td>3 HP</td>
 <td>10' of reach (with 5' deadzone), can be thrown with 20' range increment</td>
@@ -1703,7 +1784,7 @@
 <tr class="odd">
 <td>Warhammer</td>
 <td>1d8</td>
-<td>1-handed</td>
+<td>1&#8209;handed</td>
 <td>x3</td>
 <td>5 HP</td>
 <td></td>
@@ -1711,15 +1792,15 @@
 <tr class="even">
 <td>Warpick</td>
 <td>1d6</td>
-<td>1-handed</td>
-<td>x4, -2 AC</td>
+<td>1&#8209;handed</td>
+<td>x4, &#8209;2 AC</td>
 <td>5 HP</td>
 <td>+2 to sunder armor</td>
 </tr>
 <tr class="odd">
 <td>Warscythe</td>
 <td>1d10</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x4</td>
 <td>5 HP</td>
 <td>+2 to trip</td>
@@ -1730,12 +1811,12 @@
 <table>
 <thead>
 <tr class="header">
-<th>Weapon</th>
-<th>Damage</th>
-<th>Range Inc.</th>
-<th>Critical</th>
-<th>Item HP Inc.</th>
-<th>Properties</th>
+  <th>Weapon</th>
+  <th>Damage</th> 
+  <th>Range Inc.</th> 
+  <th>Critical</th> 
+  <th>Item HP Inc.</th> 
+  <th>Properties</th>
 </tr>
 </thead>
 <tbody>
@@ -1748,14 +1829,22 @@
 <td></td>
 </tr>
 <tr class="even">
-<td>Crossbow</td>
+<td>Light&nbsp;Crossbow</td>
 <td>1d8</td>
 <td>80'</td>
-<td>19-20, x2</td>
+<td>19&#8209;20, x2</td>
 <td>3 HP</td>
 <td>Must spend move action to reload.</td>
 </tr>
 <tr class="odd">
+<td>Heavy&nbsp;Crossbow</td>
+<td>1d10</td>
+<td>80'</td>
+<td>19&#8209;20, x2</td>
+<td>3 HP</td>
+<td>Must spend standard action to reload. 3 slots</td>
+</tr>
+<tr class="even">
 <td>Javelin</td>
 <td>1d6</td>
 <td>30'</td>
@@ -1763,7 +1852,7 @@
 <td>5 HP</td>
 <td>1-handed, thrown weapon</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Sling</td>
 <td>1d4</td>
 <td>50'</td>
@@ -1775,21 +1864,13 @@
 </table>
 <h2 id="exotic-melee-weapons">Exotic Melee Weapons</h2>
 <table>
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 11%" />
-<col style="width: 13%" />
-<col style="width: 21%" />
-<col style="width: 18%" />
-<col style="width: 16%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Weapon</th>
 <th>Damage</th>
 <th>Size</th>
 <th>Critical</th>
-<th>Item HP Inc.</th>
+<th>Item&nbsp;HP&nbsp;Inc.</th>
 <th>Properties</th>
 </tr>
 </thead>
@@ -1797,7 +1878,7 @@
 <tr class="odd">
 <td>Double Axe</td>
 <td>1d8</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x3</td>
 <td>5 HP</td>
 <td>Double Weapon</td>
@@ -1805,15 +1886,15 @@
 <tr class="even">
 <td>Double sword</td>
 <td>1d8</td>
-<td>2-handed</td>
-<td>19-20, x2</td>
+<td>2&#8209;handed</td>
+<td>19&#8209;20, x2</td>
 <td>5 HP</td>
 <td>Double Weapon</td>
 </tr>
 <tr class="odd">
 <td>Hooked Hammer</td>
 <td>1d8</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x2, free trip</td>
 <td>5 HP</td>
 <td>Double Weapon, +2 to trip</td>
@@ -1821,7 +1902,7 @@
 <tr class="even">
 <td>Dire Flail</td>
 <td>1d8</td>
-<td>2-handed</td>
+<td>2&#8209;handed</td>
 <td>x2</td>
 <td>5 HP</td>
 <td>Double Weapon, +2 to disarm and trip, ignores shield bonus of enemies</td>
@@ -1829,8 +1910,8 @@
 <tr class="odd">
 <td>Katana</td>
 <td>1d10</td>
-<td>1-handed</td>
-<td>19-20, x2</td>
+<td>1&#8209;handed</td>
+<td>19&#8209;20, x2</td>
 <td>10 HP</td>
 <td></td>
 </tr>
@@ -1850,7 +1931,7 @@
 </thead>
 <tbody>
 <tr class="odd">
-<td>Oricsh Shotput</td>
+<td>Orcish Shotput</td>
 <td>1d12</td>
 <td>20'</td>
 <td>x3</td>
@@ -1995,6 +2076,562 @@
 </ul>
 <hr>
 </div>
+
+<div class="rules">
+
+<h1 id="miscelaneous-adventuring-rules">Miscelaneous Adventuring Rules</h1>
+<h2 id ="double-jeopary">No Double Jeopardy</h2>
+<p>In almost all cases, the same action cannot be attempted twice. For example, if a character fails to pick a lock, the party cannot retry that lock. They will need to do something substantively different, usually escalating the situation.</p>
+<h2 id="natural-healing">Natural Healing</h2>
+<p>Characters heal their level in hit points each night. If they rest all day, they heal twice as much.</p>
+<h2 id="food-and-water">Food and Water</h2>
+<p>After 3 days, a character makes a fortitude save (DC 10 + 1 for each day without food beyond the 3 days) each day, or suffer 1d6 unhealable damage.</p>
+<p>Each day of food heals 1d6 of this damage.</p>
+<p>After 1 day without water, a character makes a fortitude save (DC 10 + 5 for each day without water) each day or suffer 3d6 unhealable damage.</p>
+<p>Each day of water heals 1d6 of this damage.</p>
+<p>If characters go on half-rations, they suffer -2 to all d20 rolls but eat half as many rations each day and stave off the starvation damage.</p>
+<h2 id="heat-and-humidity">Heat and Humidity</h2>
+<p>A character in excessive clothing or wearing armor suffers 1d6 unhealable heat exhaustion damage each hour in hot and humid climates.</p>
+<p>An hour in cool shade with water heals 1d6 of this damage.</p>
+<h2 id="cold-and-freezing">Cold and Freezing</h2>
+<p>A characer in inadequate clothing suffers 1d6 unhealable freezing damage each hour in cold or arctic climates.</p>
+<p>An hour in shelter with fire heals 1d6 of this damage.</p>
+<p>In even extremer cold, the rate of damage is increased.</p>
+<h2 id="suffocation">Suffocation</h2>
+<p>A character without air suffers 1d6 unhealable suffocation damage each minute without air.</p>
+<p>10 minutes with air heals 1d6 of this damage.</p>
+<h1 id="combat">Combat</h1>
+<h2 id="initiative-and-the-flow-of-combat">Initiative and the Flow of Combat</h2>
+<p>At the beginning of combat, each side rolls a d20. The side of the high roller gets to go first. Each turn after that alternates between the two sides.</p>
+<p>All characters on a side can take their turns and actions at the same time on their side's turn, or process them one at a time.</p>
+<p>The beginning or end of a turn for a character is synonymous with the beginning or end of a turn for that character's side.</p>
+<p>If one side has achieved surprise over the other, they get a free round before initiative is rolled. During this round, the members of their side can only take a single standard action each. The side that has been surprised is considered flat-footed.</p>
+<p>If the d20 roll is a tie, it is a simultaneous turn. First one of the players goes, then one of the monsters goes, then one of the players goes, etc. The players can choose who they want to go, but they must choose within 10 seconds or lose their chance to go.</p>
+<h2 id="actions-in-combat">Actions in Combat</h2>
+<p>During each round, you may take a move-action, standard-action, swift-action and reaction.</p>
+<p>A standard-action and a move-action may be combined together to take a full-action.</p>
+<p>A standard-action can be used to take a move-action.</p>
+<p>A standard-action can be readied to be performed contingent on some other visible action or effect. Readying an action this way does not require your reaction. The trigger must be perceivable by the character from an in-game perspective. For example, you can ready an action for when someone attacks any ally or draws their weapon, but not contingent on the start of someone's turn.</p>
+<p>Swift-actions must happen during your turn. Any action that requires a swift-action will specify when it may be used. No other action type may be substituted for a swift-action.</p>
+<p>Reactions can be taken during your turn or during anothers turn. Once you have taken a reaction you cannot take one until the beginning of your next turn.</p>
+<p>A free action does not require the use of any action (it is free). However, some free actions may be limited in how many times they can be repeated.</p>
+<h2 id="calculating-attack-bonus">Calculating Attack Bonus</h2>
+<p>Normally, your attack bonus is your Base Attack Bonus (BAB) from your class, plus any circumstantial modifiers. Some items, class features or other effects might also grant you a bonus to your attacks.</p>
+<h2 id="critical-hits">Critical Hits</h2>
+<p>If you roll a natural 20 (or another natural number in your weapon's critical hit range), you have threatened a critical hit. Immediately make another attack roll with the same bonus. If that attack roll hits, then you have confirmed the critical hit. By default, weapons have a x2 critical hit multiplier. This means you roll your damage and add your bonuses twice. For example, if you deal 1d6+3 damage on a normal hit, a critical hit will deal 1d6+3 + 1d6+3 = 2d6+6 damage.</p>
+<p>Some weapons have x3 or even x4 critical hit multipliers. In those cases, roll your damage and add your bonuses that many times instead.</p>
+<p>Spells with attack rolls can critically hit. They threaten on a natural 20 and have a x2 multiplier. If the spell does not deal damage, then critical hits have no extra effect.</p>
+<p>Some weapons specify a special effect upon a critical hit. Look to those weapons for the description.</p>
+<h2 id="attack-of-opportunity">Attack of Opportunity</h2>
+<p>An attack of opportunity is a reaction that is performed in response to some activity that lowers the opponent's guard.</p>
+<p>Some actions specify they provoke an attack of opportunity.</p>
+<p>Additionally, a character moving away from you or moving within your reach provokes an attack of opportunity from you.</p>
+<p>If a character has reach and you attempt to move beyond the edge of their reach towards them, you also provoke an attack of opportunity, even if you are moving into their deadzone.</p>
+<p>Ranged Attacks provoke an attack of opportunity.</p>
+<p>Most spells provoke attacks of opportunity. Melee attack spells, touch spells cast on allies, or spells originating from the caster with a length or radius of 15 ft or less do not provoke attacks of opportunity.</p>
+<p>Drinking a potion or getting something out of your pack provokes an attack of opportunity.</p>
+<p>Standing up from prone provokes an attack of opportunity.</p>
+<p>If a character provokes an attack of opportunity from you, you may make an immediate, melee standard attack against them. You must be wielding a melee weapon in order to make this attack. If your unarmed strikes deal lethal damage, you are considered to be wielding a melee weapon for this purpose.</p>
+<p>If you can somehow make more than one attack of opportunity each round, you can only make one for each opportunity. In this case, movement through your threatened spaces is only considered a single opportunity.</p>
+<h2 id="actions">Actions</h2>
+<h3 id="movement-actions">Movement Actions</h3>
+<ul>
+<li>Walk
+<ul>
+<li>Move Action</li>
+<li>This round you can move your speed.</li>
+</ul></li>
+<li>Hustle
+<ul>
+<li>Full-Round Action</li>
+<li>This round you can move double your speed.</li>
+</ul></li>
+<li>Run
+<ul>
+<li>Full-Round Action</li>
+<li>This round you can move 4x your speed. You are considered flat-footed against any attack.</li>
+</ul></li>
+<li>Stand Up
+<ul>
+<li>Move Action</li>
+<li>Standing up is a move action that provokes an attack of opportunity.</li>
+</ul></li>
+<li>Withdraw
+<ul>
+<li>Full-Round Action</li>
+<li>This round you can move double your speed. Creatures who started your turn threatening you cannot take attacks of opportunity against you.</li>
+</ul></li>
+<li>5-foot Step:
+<ul>
+<li>Free Action*</li>
+<li>You may only take this action once per round and only if you haven't otherwise moved.</li>
+<li>If you are within someone's reach and threatened by them, you may only move 5 feet into or within their reach. If you are not threatened, then you can move 5 feet in any direction you like.</li>
+</ul></li>
+</ul>
+<h3 id="melee-or-ranged-attacks">Melee or Ranged Attacks</h3>
+<p>All ranged attacks provoke an attack of opportunity.</p>
+<ul>
+<li>Standard Attack
+<ul>
+<li>Standard Action</li>
+<li>Vanilla dnd attack we are all used to.</li>
+</ul></li>
+<li>Two-Weapon Attack
+<ul>
+<li>Standard Action</li>
+<li>Make an attack with each weapon in your hand, but at a -2 penalty.</li>
+<li>Each hit deals normal damage.</li>
+<li>Each weapon must be a light weapon or the two heads of a double weapon.</li>
+</ul></li>
+<li>Rapid Attack:
+<ul>
+<li>Full-round action,</li>
+<li>Make two attacks at -4 attack</li>
+<li>Each deals normal damage.</li>
+</ul></li>
+<li>Called Shot:
+<ul>
+<li>Standard Action</li>
+<li>A called shot is a special attack made at a specific location.</li>
+<li>Suffer a penalty based on which location, but inflict status effect if you hit in addition to rolling normal damage.</li>
+<li>You must be able to see your target clearly (no concealment or blindness).</li>
+<li>Choose one of the locations and roll appropriately:</li>
+<li>The DM may make specific rulings to allow other called shots or variant effects (such as attacking a tentacle in order to free a comrade from a grab).</li>
+<li>The penalty from arms and hands do not stack with one another. The penalty from leg and foot also do not stack with one another.</li>
+</ul></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Location</th>
+<th>Your Penalty</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arms</td>
+<td>-2</td>
+<td>-2 attacks with that arm until healed</td>
+</tr>
+<tr class="even">
+<td>Hands</td>
+<td>-4</td>
+<td>-4 attacks with that hand until healed</td>
+</tr>
+<tr class="odd">
+<td>Eyes</td>
+<td>-8</td>
+<td>Critical Hit (no need to confirm) and blindness until healed</td>
+</tr>
+<tr class="even">
+<td>Head</td>
+<td>-4</td>
+<td>Fortitude Save DC 15 or be dazed for 1 round</td>
+</tr>
+<tr class="odd">
+<td>Leg</td>
+<td>-2</td>
+<td>-2 AC until healed</td>
+</tr>
+<tr class="even">
+<td>Foot</td>
+<td>-4</td>
+<td>-2 AC and -10 speed until healed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="melee-only-attacks">Melee Only Attacks</h3>
+<ul>
+<li>Reckless Attack
+<ul>
+<li>Standard Action</li>
+<li>Make a single attack at +2 attack, but -2 AC until the beginning of your next turn</li>
+</ul></li>
+<li>Guarded Attack
+<ul>
+<li>Standard Action,</li>
+<li>Make a single attack at -2 attack, but +2 AC until the beginning of your next turn</li>
+</ul></li>
+<li>Charge Attack
+<ul>
+<li>Full-round action</li>
+<li>Move up to double your speed in a straight line, at the end of which make a Reckless Attack,</li>
+<li>Drive Back or Bull Rush Attack.</li>
+<li>If you charge on a mount, you deal double damage with a lance if you hit.</li>
+</ul></li>
+<li>Drive Back Attack
+<ul>
+<li>Standard Action</li>
+<li>Your opponent either moves back 5 feet or stands still. If they move back 5 feet, you can follow and make a single standard attack against them at -2. If they choose to stand still, you can make a single standard attack against them at +2.</li>
+<li>If they move back 5 feet, you may immediately take the walk action to grant yourself movement.</li>
+</ul></li>
+<li>Mark
+<ul>
+<li>Standard Action</li>
+<li>Choose an enemy you threaten.</li>
+<li>If that enemy attacks anyone other than you with their first attack on their turn, you may take an attack of opportunity against them.</li>
+<li>They remain marked until you no longer threaten them.</li>
+</ul></li>
+<li>Grapple Attack
+<ul>
+<li>Standard Action</li>
+<li>A grapple check is rolled by making an unarmed attack roll. Creatures larger than medium get +4 for each category larger and creatures smaller than medium get a -4 penalty for each category smaller.</li>
+<li>To start a grapple, you and the opponent make opposed grapple check.</li>
+<li>If you win this check, you and your opponent are now grappling (both grappled) and you deal damage as if you hit with an unarmed strike. You can't force a creature two sizes larger than you to grapple and such a creature can automatically escape such a grapple if he finds himself in one.</li>
+<li>You and your opponent are both considered to be occupying both your space and their space.</li>
+<li>Any ranged attacks into the grapple are equally likely to hit the other person instead on accident.</li>
+<li>If the creatures are of different size, the ratio is adjusted accordingly.</li>
+<li>Multiple creatures can be in a grapple. Once a grapple is initiated, it is an attack to join the grapple, but you do not need to beat any grapple check to join. If you need to roll an opposed check while in the grapple, pick an enemy grappler at random to oppose you.</li>
+<li>If you are grappled:
+<ul>
+<li>You don't threaten any spaces with attacks of opportunity.</li>
+<li>You are considered flat-footed against attackers not in the grapple.</li>
+<li>You can't move from the grapple (see below).</li>
+<li>You can't attack with weapons larger than light weapons.</li>
+<li>You can't attack outside of the grapple.</li>
+<li>You can't cast most spells (exception: instant teleports)</li>
+<li>You can't draw weapons (see below) or items.</li>
+<li>You can't dual-wield.</li>
+</ul></li>
+<li>Attacks while grappling:
+<ul>
+<li>Attack with a natural or light weapon at a -4 penalty.</li>
+<li>Damage your opponent. Make an opposed grapple check. If you win, you deal unarmed strike damage.</li>
+<li>Draw a light-weapon. This is a standard action and requires winning an opposed grapple check.</li>
+<li>Move the grapple. You can move the grapple up to half your speed by winning an opposed grapple check.</li>
+<li>Escape the grapple. You must win an opposed grapple check (you may use Escape) against the enemy grappler in the grapple. He gets +2 to this check for every ally he has in the grapple.</li>
+<li>Pin an opponent. You must win an opposed grapple check (he may use Escape) against the enemy grappler in the grapple. You get +2 to this check for every ally you have in the grapple.</li>
+<li>Break a pin on self or other. You must win an opposed grapple check against the grappler pinning. He gets +2 to this check for every ally he has in the grapple.</li>
+<li>Attack with another's light weapon. You must win an opposed grapple check against them. If you succeed, you can make a normal attack against them without penalty with that weapon.</li>
+<li>Other: the DM will need to rule on what other things are possible or impossible.</li>
+</ul></li>
+<li>If you are pinned:
+<ul>
+<li>You can't do anything but attempt to escape the pin. This is the same as trying to escape the grapple, but you are at -4 and if you succeed you are still grappled, just not pinned.</li>
+<li>You suffer a -2 penalty to AC in addition to the flat-footed penalty from grappling against those not in the grapple.</li>
+<li>Other grappling consequences still apply.</li>
+</ul></li>
+<li>If you are pinning:
+<ul>
+<li>You may make the normal grapple actions above, but they must be directed against who you are pinning. You get +4 on these checks.</li>
+<li>You may also attempt to disarm them of well-secured items. They get +4 to resist this disarm.</li>
+<li>You can release them from the pin as a free action.</li>
+</ul></li>
+</ul></li>
+<li>Grab Attack
+<ul>
+<li>Special</li>
+<li>Grab is a special attack that monsters have, such as those with pincers.</li>
+<li>It works in many ways like grapple. All opposed checks are calculated the same, except that the monster is treated as one size smaller for this purpose.</li>
+<li>If you are grabbed:
+<ul>
+<li>You don't threaten any spaces with attacks of opportunity.</li>
+<li>You are considered flat-footed against anyone but the monster.</li>
+<li>You can't move.</li>
+<li>If the monster moves, you move with him.</li>
+<li>You can't attack with weapons larger than light (and even so at a -4 penalty).</li>
+<li>You can't cast most spells (exception: instant teleports)</li>
+<li>You can't attack anyone but the monster.</li>
+<li>You can't draw weapons or items without winning an opposed grapple check.</li>
+<li>You can't dual-wield.</li>
+<li>You can make a grapple or Escape check to escape.</li>
+<li>Allies can make a grapple check against the monster to free you. (They don't need to join a grapple or anything.)</li>
+<li>If you are held in the monster's mouth, you automatically fail saving throws against the monster's breath weapon.</li>
+</ul></li>
+<li>The monster:
+<ul>
+<li>Can't use the limb or appendage except against you.</li>
+<li>Can fling you away as an attack. You are flung 10' per size category of the monster above medium (10 for large, 20 for huge, etc.), minimum 10'. You suffer 1d6 damage for every 10' you are flung (doubled if you hit a rigid object like a wall).</li>
+<li>Can fling you at a creature as an attack. This works the same as above, except the monster needs to make an attack roll against the target. If they hit, both you and the target take the same amount of damage.</li>
+<li>Can deal damage with the grabbing limb or appendage by winning an opposed grapple check. Some monsters deal bonus damage by doing this.</li>
+<li>Can use the held creature as a shield. (+2 shield bonus to AC)</li>
+<li>Otherwise suffers no consequences.</li>
+</ul></li>
+</ul></li>
+<li>Trip Attack
+<ul>
+<li>Standard Action</li>
+<li>You and the opponent make opposed attack rolls.</li>
+<li>Creatures larger than medium get +4 for each category larger and creatures smaller than medium get a -4 penalty for each category smaller.</li>
+<li>Some weapons give a bonus to this attack roll.</li>
+<li>If you win the opposed check, the defender is knocked prone in their space. Standing up from prone is a move action that provokes an attack of opportunity.</li>
+</ul></li>
+<li>Bull-rush Attack
+<ul>
+<li>Standard Action</li>
+<li>Bull-rush an opponent by moving into an opponent's space. <ul>
+<li>You and the opponent make opposed attack rolls. 
+<li>Creatures larger than medium get +4 for each category larger and creatures smaller than medium get a -4 penalty for each category smaller. 
+<li>If you were charging, you may add +2 to this check.</li></ul></li>
+<li>If you win the opposed check, you can move the opponent back 5 feet + 5 feet for every 5 points you beat the defender by (your choice as to exactly how far), but you must spend movement as normal and move with your opponent to drive them back.<ul>
+<li>You may take a move action to walk while resolving this action.</li></ul> </li>
+<li>Any movement caused by this maneuver provokes attacks of opportunity as normal, except from the two characters involved in the struggle.<ul>
+<li>You and the defender don't provoke from each other, but you and the defender may provoke attacks from bystanders.</li></ul></li>
+</ul></li>
+<li>Disarm Attack
+<ul>
+<li>Standard Action</li>
+<li>Make opposed attack rolls with the target. Users of two-handed weapons get +4 to this roll.
+<ul>
+<li>You can make an unarmed disarm attempt, but you suffer -4 on this roll.</li>
+<li>Creatures larger than medium get +4 for each category larger, and creatures smaller than medium get a -4 penalty for each category smaller.</li>
+</ul></li>
+<li>If the attacker wins this roll, the weapon is now out of the defender's hands and is on the ground in his space or in a space next to him (attacker's choice which space). If the attacker was attempting an unarmed disarm attempt the weapon may be in his hand instead of on the ground.</li>
+<li>Loosely secured items can be grabbed off a target by following the same procedure above.
+<ul>
+<li>Well-secured items (like a helmet or gauntlet) can only be disarmed if you have pinned the other character and the defender gets a +4 bonus.</li>
+</ul></li>
+</ul></li>
+<li>Lock Weapons
+<ul>
+<li>Standard Action</li>
+<li>Make a disarm attack, but at +4.</li>
+<li>If you succeed, you have locked weapons with your opponent.<ul>
+<li>Neither of you can use that weapon.</li>
+<li>The instigator can end this condition as a free action at any time.</li>
+<li>The victim can end the condition by succeeding on an opposed disarm check or by dropping their weapon.</li>
+<li>If the instigator has a free hand, they can pick up the weapon as a reaction.</li>
+<li>This condition also ends when the victim is no longer within the instigator's reach.</li></ul></li>
+</ul></li>
+<li>Sunder Weapon Attack
+<ul>
+<li>Standard Action</li>
+<li>Make opposed attack rolls with the target. Users of two-handed weapons get +4 to this roll.
+<ul>
+<li>Creatures larger than medium get +4 for each category larger, and creatures smaller than medium get a -4 penalty for each category smaller.</li>
+</ul></li>
+<li>If the attacker wins this roll, he may roll damage to the weapon.
+<ul>
+<li>For each HP increment's worth of damage he deals to the weapon, one notch of durability is subtracted from the weapon.</li>
+<li>A weapon with no notches of durability is destroyed. See the weapon for specific HP increment.</li>
+</ul></li>
+</ul></li>
+<li>Sunder Armor/Shield Attack
+<ul>
+<li>Standard Action</li>
+<li>Make an attack roll against AC 5 + armor bonus.</li>
+<li>If you hit, roll damage to the armor.<ul>
+<li>For each HP increment's worth of damage you deal to the armor, one notch of durability is subtracted from the armor.</li>
+<li>Each notch of durability lost is a -1 penalty to that armor's armor bonus to AC.</li>
+<li>Armor that grants no armor bonus to AC is destroyed.</li>
+<li>See the armor for specific HP increment.</li></ul></li>
+<li>The above rules equally apply to Shields, substituting references to armor or armor bonuses to AC with shield and shield bonuses to AC.</li>
+</ul></li>
+</ul>
+<h3 id="ranged-only-attacks">Ranged Only Attacks</h3>
+<p>All ranged attacks provoke an attack of opportunity.</p>
+<ul>
+<li>Grenade Attack
+<ul>
+<li>Standard Action</li>
+<li>Choose a space.</li>
+<li>AC is 5 + 1 for every 5' from you it is.</li>
+<li>If you hit, grenade lands in that spot.</li>
+<li>If you miss, roll 1d6-1d6 for left-right divergence and 1d6-1d6 for near-far divergence.</li>
+<li>Read the number as number of 5' spaces.</li>
+<li>Grenades must travel at least 15' from you.</li>
+<li>Where you rolled is where the grenade lands for the purpose of any effect it has.</li>
+</ul></li>
+</ul>
+<h3 id="other-actions">Other Actions</h3>
+<ul>
+<li>Total Defense
+<ul>
+<li>Standard Action</li>
+<li>You receive a +4 bonus to AC and Reflex saves until the beginning of your next turn.</li>
+</ul></li>
+<li>Draw an Item
+<ul>
+<li>Move Action*</li>
+<li>You may do this as a free action once per round.</li>
+<li>Some items may be a full-round action to draw (such as items buried in your pack).</li>
+<li>Drawing or stowing an item provokes an attack of opportunity.</li>
+<li>You can draw two-weapons at once if your hands are empty and you are going to dual-wield them.</li>
+</ul></li>
+<li>Stow an Item
+<ul>
+<li>Move Action</li>
+<li>You may do this as a free action once per round.</li>
+<li>Drawing or stowing an item provokes an attack of opportunity.</li>
+</ul></li>
+<li>Ready (equip) a Shield
+<ul>
+<li>Standard Action</li>
+</ul></li>
+<li>Loose (remove) a Shield
+<ul>
+<li>Free Action</li>
+</ul></li>
+<li>Take Cover
+<ul>
+<li>Move Action</li>
+<li>Improve your degree of cover (see cover rules).</li>
+</ul></li>
+<li>Cast A Spell
+<ul>
+<li>Spell descriptions will list what kind of action they are.</li>
+</ul></li>
+</ul>
+<p>Class and Items may have specified actions you can take during the turn. When in doubt, assume a standard action.</p>
+<h2 id="movement">Movement</h2>
+<p>You can spend movement before or after actions, given that something has granted you movement this turn such as the walk action. For example, you can take the walk action (to be able to move your speed this round), move 10 feet, make a standard action attack against a goblin, kill it, and then move 20 more feet.</p>
+<p>You can attempt to move through other creatures by making an Overrun attempt.</p>
+<p>You may overrun during the course of a charge.</p>
+<ul>
+<li>Overrun
+<ul>
+<li>You may make a single overrun attempt during your turn.</li>
+<li>You can only overrun creatures at most one size category larger than you.</li>
+<li>If you allow them to move aside and they choose to move aside, then you move through their space with no consequence (not even an attack of opportunity from the movement) and this does not count as your overrun attempt.</li>
+<li>Otherwise, you and your opponent make opposed attack rolls, adding your BAB.</li>
+<li>A creature larger than medium gets +4 for every size category larger and creatures smaller than medium get a -4 penalty for each category smaller.</li>
+<li>If you win the opposed check, then you knock your opponent prone and keep moving through them, without provoking attacks of opportunity.</li>
+<li>You must move at least 10' straight through them and are not allowed to double back.</li>
+<li>Otherwise, you are knocked prone instead and your movement immediately ends.</li>
+<li>Some creatures (like horses) are not knocked prone on a failed attempt and can attempt multiple overruns in a round. If they fail, their movement instead ceases.</li>
+</ul></li>
+</ul>
+<h2 id="circumstantial-rules">Circumstantial Rules</h2>
+<ul>
+<li>Firing into a melee
+<ul>
+<li>If you are attacking with a ranged attack at a target who is engaged in melee combat, determine randomly who you actually target.</li>
+<li>You can ignore this penalty by suffering a -4 penalty to your attack roll(s).</li>
+</ul></li>
+<li>Cover
+<ul>
+<li>A target behind cover receives a bonus to AC from attacks on the other side of cover, dependent on the extend of the cover.</li>
+<li>A creature can use a move action to &quot;take cover&quot;. This doubles the benefit of the cover until they leave it, either because they move or they take an action that requires leaving the cover.</li>
+<li>A creature behind total cover cannot be directly targeted or attacked.</li>
+</ul></li>
+</ul>
+<table style="width:90%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 11%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cover</th>
+<th>Bonus</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Partial</td>
+<td>+2</td>
+<td>Standing behind a waist-high table or wall. Hiding around a corner of a wall.</td>
+</tr>
+<tr class="even">
+<td>Greater</td>
+<td>+4</td>
+<td>Standing behind a crenellation or chest-high wall.</td>
+</tr>
+<tr class="odd">
+<td>Near Total</td>
+<td>+8</td>
+<td>Standing behind Arrow-hole.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>High Ground
+<ul>
+<li>Attacks from the high ground receive a +1 bonus.</li>
+<li>The difference in heigh needs to be at least 2 feet for melee attacks and 6 feet for ranged attacks.</li>
+</ul></li>
+<li>Flat-footed
+<ul>
+<li>A character that is flat-footed is caught unawares. Their AC is 2 points lower against attacks.</li>
+</ul></li>
+<li>Concealment
+<ul>
+<li>Some effects (such as fog, blindness, invisbility or darkness) grant some degree of concealment.</li>
+<li>Concealment is rated at either 20% or 50%.</li>
+<li>Whenever an attack is made against a target with concealment, first roll the concealment percentage to see if it misses due to concealment.</li>
+<li>If it does not, then roll the attack roll as normal.</li>
+<li>In some circumstances, the DM may rule your attack will still need to be rolled, just not against who you intended. For example, firing at a figure you can barely see when he has a crowd behind him.</li>
+</ul></li>
+</ul>
+<h2 id="mounted-combat">Mounted Combat</h2>
+<p>In battle, mounts move faster than when out of combat. A warhorse has a speed of 60 feet when in combat.</p>
+<p>If you are riding a mount, you use your actions to move the mount, but use the mount's speed. Your mount is not allowed to take actions while ridden.</p>
+<p>For example, if you want to charge while riding a destrier, you take a full-round action. The destrier moves 120 feet, at the end of which you can make a reckless attack, etc.</p>
+<p>Mounts can overrun as part of their movement. They use your attack bonus, but their size. A mount's description will list if this inflicts any trample damage.</p>
+<p>While you are mounted, you can only use 1-handed weapons, not light weapons or two-handed weapons.</p>
+<h1 id="conditions">Conditions</h1>
+<h2 id="ablaze">Ablaze</h2>
+<ul>
+<li>A creature that is ablaze is on fire.</li>
+<li>Unless otherwise specified, they suffer 1d6 fire damage at the beginning of their turn unless they succeed at a DC 15 reflex save to put the fire out.</li>
+<li>Rolling on the ground grants a new save against the fire at +4.</li>
+<li>Dousing the flame immediately puts the fire out.</li>
+</ul>
+<h2 id="blind">Blind</h2>
+<ul>
+<li>A blinded creature suffers -4 AC.</li>
+<li>Any attack they made is against 50% concealment.</li>
+<li>They threaten no spaces.</li>
+</ul>
+<h2 id="confused">Confused</h2>
+<p>A confused character’s actions are determined by rolling d% at the beginning of his turn: 01-10, attack caster with melee or ranged weapons (or close with caster if attacking is not possible); 11-20, act normally; 21-50, do nothing but babble incoherently; 51-70, flee away from caster at top possible speed; 71-100, attack nearest creature (for this purpose, a familiar counts as part of the subject’s self). A confused character who can’t carry out the indicated action does nothing but babble incoherently. Attackers are not at any special advantage when attacking a confused character. Any confused character who is attacked automatically attacks its attackers on its next turn, as long as it is still confused when its turn comes. A confused character does not make attacks of opportunity against any creature that it is not already devoted to attacking (either because of its most recent action or because it has just been attacked).</p>
+<h2 id="dazed">Dazed</h2>
+<ul>
+<li>A dazed creature can only take one standard action on its turn and cannot take reactions.</li>
+</ul>
+<h2 id="dazzled">Dazzled</h2>
+<ul>
+<li>A dazzled creature makes attacks at 20% concealment.</li>
+</ul>
+<h2 id="entangled">Entangled</h2>
+<ul>
+<li>An entangled creature is gooed up or tangled up in something.</li>
+<li>An entangled creature moves at half speed and has -2 AC.</li>
+<li>If the entanglement would affect their attacks, they get -2 to their attacks.</li>
+<li>For example, a tanglefoot bag entangles the feet so it has no effect on attacks, but being tangled up in a net would.</li>
+</ul>
+<h2 id="fatigued-n">Fatigued (N)</h2>
+<ul>
+<li>A fatigued creature gets -2 to attacks, saves, ability checks for each level of fatigue they have.</li>
+</ul>
+<h2 id="flat-footed">Flat-footed</h2>
+<ul>
+<li>A flat-footed creatures gets -2 AC.</li>
+</ul>
+<h2 id="frightened-n">Frightened (N)</h2>
+<ul>
+<li>A creature suffers -2 to attacks, saves and ability checks for each level of fear they have.</li>
+<li>An NPC with frightened 2 or 3 must immediately check morale.</li>
+</ul>
+<h2 id="paralyzed">Paralyzed</h2>
+<ul>
+<li>All attacks against a paralyzed creature hits and are critical hits.</li>
+<li>A paralyzed creature cannot take actions or reactions.</li>
+</ul>
+<h2 id="prone">Prone</h2>
+<ul>
+<li>A character that is prone gets -4 to AC against melee attacks and may have cover against ranged attacks.</li>
+<li>It is a move action to stand up.</li>
+<li>A character that is prone cannot make attacks.</li>
+</ul>
+<h2 id="stunned">Stunned</h2>
+<ul>
+<li>A stunned creature cannot take actions or reactions.</li>
+</ul>
+<h2 id="surprised">Surprised</h2>
+<ul>
+<li>A surprised creature is flat-footed and can't take reactions.</li>
+</ul>
+<h2 id="unconscious">Unconscious</h2>
+<ul>
+<li>Any attack against an unconscious creature automatically hits and triggers a save or die.</li>
+</ul>
+
+</div>
+
 </div>
 </body>
 </html>
