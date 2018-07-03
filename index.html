@@ -119,7 +119,7 @@
 <li><a href="#crusader-of-venrik">Crusader of Venrik</a></li>
 <li><a href="#disciple-of-the-enlightened">Disciple of the Enlightened</a></li>
 <li><a href="#dragon-knight-of-bahamut">Dragon Knight of Bahamut</a></li>
-<li><a href="#dwarf">Finestein Clan Dwarf</a></li>
+<li><a href="#dwarf">Feinstein Clan Dwarf</a></li>
 <li><a href="#wood-elf">Leafcrown Elf</a></li>
 <li><a href="#master_of_the_five_humors">Master of the Five Humors</a></li>
 <li><a href="#ranger-of-the-southfae-woods">Ranger of the Southfae Woods</a></li>
@@ -129,6 +129,7 @@
 <li><a href="#equipment">Equipment</a><ul>
 <li><a href="#encumbrance">Encumbrance</a></li>
 <li><a href="#durability">Durability</a></li>
+<li><a href="#range-increment">Range Increment</a></li>
 <li><a href="#melee-weapons">Melee Weapons</a></li>
 <li><a href="#ranged-weapons">Ranged Weapons</a></li>
 <li><a href="#exotic-melee-weapons">Exotic Melee Weapons</a></li>
@@ -138,6 +139,7 @@
 <li><a href="#special-items">Special Items</a></li>
 </ul></li>
 <li><a href="#miscelaneous-adventuring-rules">Miscelaneous Adventuring Rules</a><ul>
+<li><a href="#jumping">Jumping</a></li>
 <li><a href="#double-jeopary">No Double Jeopardy</a></li>
 <li><a href="#natural-healing">Natural Healing</a></li>
 <li><a href="#food-and-water">Food and Water</a></li>
@@ -660,7 +662,7 @@
 <li>Abundant Step<ul><li> You have discovered that movement is an illusion, as all is one. This discovery is hard to wrap your mind around, but allows you to appear wherever you desire, as there is no &quot;where&quot;. You can appear at any &quot;location&quot; you can see instantaneously as a free action up to &quot;600 feet away&quot;. You cannot bring anything with you except the clothes on your back and what you hold in your hands. Once you have done this, you will need to meditate as even after you perform it you form pearls of doubt. You can't do this again until you complete your 10 minute meditation where you remove chaos from your system.</li> </ul></li>
 <li>Purity of Body <ul> <li>You have discovered that hunger and thirst are illusions. You no longer need to eat or drink and cannot be diseased or poisoned.</li></ul></li>
 <li>The Thickness of Air <ul><li> You have discovered that air is as thick as we choose to perceive it to be. You can use this fact to slow and cushion your movements. You take no damage from being thrown or falling.</li></ul></li>
-<li>Leap of the Clouds <ul><li> Your jump distance is no longer limited by your speed, height or size.</li></ul></li>
+<li>Leap of the Clouds <ul><li> Your jump distance is no longer limited by your speed, height or size. In combat, you can jump once per round without it costing you any movement. You ignore any penalty for being small or slow and you can jump any vertical distance that you can roll.</li></ul></li>
 <li>Uncanny Awareness <ul><li> You have discovered the presence of a vestigial, ethereal third eye that we all have. You are never surprised or flat-footed.</li></ul></li>
 <li>Deflection <ul><li> You can deflect arrows as a reaction, taking no damage from the one missile. As a full-round action, you can deflect all missiles that would strike you until the beginning of your next turn.</li></ul></li>
 <li>The Laws of Momentum <ul><li> You can use an enemy's momentum against them. Whenever an enemy attacks you but misses, you make make a standard melee attack against them as a reaction.</li></ul></li>
@@ -939,7 +941,7 @@
 <hr>
 </div>
 <div class="class_description">
-<h2 id="dwarf">Finestein Clan Dwarf</h2>
+<h2 id="dwarf">Feinstein Clan Dwarf</h2>
 <h3 id="class-table-3">Class Table</h3>
 <table>
 <thead>
@@ -1490,49 +1492,48 @@ Giant Snake (medium)
 <td>1</td>
 <td>15</td>
 <td>+1</td>
-<td>+1</td>
+<td>+2</td>
 <td>3</td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td>3d10</td>
 <td>+2</td>
-<td>+2</td>
+<td>+3</td>
 <td>4</td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>4d10</td>
 <td>+3</td>
-<td>+3</td>
+<td>+4</td>
 <td>5</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>4d10</td>
 <td>+4</td>
-<td>+4</td>
+<td>+5</td>
 <td>6</td>
 </tr>
 <tr class="odd">
 <td>5</td>
 <td>5d10</td>
 <td>+5</td>
-<td>+5</td>
+<td>+6</td>
 <td>7</td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>5d10</td>
 <td>+6</td>
-<td>+6</td>
+<td>+7</td>
 <td>8</td>
 </tr>
 </tbody>
 </table>
 <h3 id="class-details-8">Class Details</h3>
 <ul>
-<li>+1 all saves</li>
 <li>Proficiency with normal and exotic weapons, light, medium, and heavy armor and shields.</li>
 </ul>
 <h3 id="weapon-talents">Weapon Talents</h3>
@@ -1955,6 +1956,14 @@ Too Hard to Die
 <li>Armor gets a -1 penalty to AC for each notch missing.</li>
 <li>Notches are usually lost from sundering, but the DM may rule that certain effects like fireballs can damage weapons too if the user fails a save.</li>
 </ul>
+<h2 id="range-increment">Range Increment</h2>
+<ul>
+<li>Ranged weapons and thrown weapons have a range increment.</li>
+<li>For every full range-increment you suffer a -2 penalty to the attack.<ul>
+<li>For example, if your weapon has a range increment of 15' and you attack from 35' away you suffer a -4.</li></ul></li>
+<li>Ranged weapons can attack up to 10 range increments away</li>
+<li>Thrown Weapons can attack up to 5 range increments away</li>
+</ul>
 <h2 id="melee-weapons">Melee Weapons</h2>
 <table>
 <thead>
@@ -1990,7 +1999,7 @@ Too Hard to Die
 <td>Light</td>
 <td>19&#8209;20, x2</td>
 <td>5 HP</td>
-<td>Can be easily hidden</td>
+<td>Can be easily hidden and thrown with 15' range increment.</td>
 </tr>
 <tr class="even">
 <td>Flail</td>
@@ -2092,7 +2101,7 @@ Too Hard to Die
 <td>Morningstar</td>
 <td>1d8</td>
 <td>1&#8209;handed</td>
-<td>20, x2, &#8209;2 AC</td>
+<td>20,&nbsp;x2,&nbsp;2&nbsp;AC</td>
 <td>5 HP</td>
 <td>+2 to sunder armor</td>
 </tr>
@@ -2145,6 +2154,14 @@ Too Hard to Die
 <td>10' of reach (with 5' deadzone), can be thrown with 20' range increment</td>
 </tr>
 <tr class="odd">
+<td>Throwing Axe</td>
+<td>1d4</td>
+<td>Light</td>
+<td>x3</td>
+<td>3 HP</td>
+<td>Can be thrown with 15' range increment</td>
+</tr>
+<tr class="even">
 <td>Warhammer</td>
 <td>1d8</td>
 <td>1&#8209;handed</td>
@@ -2152,7 +2169,7 @@ Too Hard to Die
 <td>5 HP</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Warpick</td>
 <td>1d6</td>
 <td>1&#8209;handed</td>
@@ -2160,7 +2177,7 @@ Too Hard to Die
 <td>5 HP</td>
 <td>+2 to sunder armor</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Warscythe</td>
 <td>1d10</td>
 <td>2&#8209;handed</td>
@@ -2443,6 +2460,14 @@ Too Hard to Die
 <div class="rules">
 
 <h1 id="miscelaneous-adventuring-rules">Miscelaneous Adventuring Rules</h1>
+<h2 id="jumping">Jumping</h2>
+<p>To determine how far you can jump horizontally, roll 2d10 + your strength.</p>
+<p>To determine how far you can jump vertically, roll d10 + your strength.</p>
+<p>In practice, the target number is typically set by what you are trying to jump across or to and you need to roll that number.</p>
+<p>You can jump a horizontal distance up to your speed and a vertical distance up to triple your height, rounded up to the nearest 5' increment.</p>
+<p>For every size category smaller than medium, you get -4 to your jump checks. For every size category larger than medium, add +4 to your jump checks.</p>
+<p>For every 5' slower than 30', you get -2 to jump. For every 5' faster than 30', you get +2 to jump.</p>
+<p>In combat, you cannot jump farther than your remaining movement for the round.</p>
 <h2 id ="double-jeopary">No Double Jeopardy</h2>
 <p>In almost all cases, the same action cannot be attempted twice. For example, if a character fails to pick a lock, the party cannot retry that lock. They will need to do something substantively different, usually escalating the situation.</p>
 <h2 id="natural-healing">Natural Healing</h2>
@@ -2539,7 +2564,7 @@ Too Hard to Die
 <li>Standard Action</li>
 <li>Vanilla dnd attack we are all used to.</li>
 </ul></li>
-<li>Two-Weapon Attack
+<li>Dual Wield Attack
 <ul>
 <li>Standard Action</li>
 <li>Make an attack with each weapon in your hand, but at a -2 penalty.</li>
@@ -2859,7 +2884,7 @@ Too Hard to Die
 <ul>
 <li>Firing into a crowd
 <ul>
-<li>Ranged attackers are obligated to target randomly between potential targets who are near one another</li>
+<li>Ranged attackers are obligated to target randomly between potential enemy targets who are near one another</li>
 <li>You can ignore this penalty by suffering a -4 penalty to your attack roll(s).</li>
 </ul></li>
 <li>Cover
