@@ -61,7 +61,7 @@
 	  border-collapse: collapse;
 	  width: 100%;
   }
-  .classes td, th {
+  .classes td, .personal td, th {
 	  text-align: center;
   }
   .class_description {
@@ -123,6 +123,7 @@
 <div class="left">
 <nav id="TOC">
 <ul>
+<li><a href="#how-to-make-a-character">How to Make a Character</a></li>
 <li><a href="#attributes">Attributes</a></li>
 <li><a href="#classes">Classes</a><ul>
 <li><a href="#champion">Champion</a></li>
@@ -151,7 +152,15 @@
 <li><a href="#exotic-ranged-weapons">Exotic Ranged Weapons</a></li>
 <li><a href="#armor">Armor</a></li>
 <li><a href="#mounts-and-vehicles">Mounts and Vehicles</a></li>
-<li><a href="#special-items">Special Items</a></li>
+<li><a href="#special-items">Special Items</a><ul>
+<li><a href="#alchemical-items">Alchemical Items</a></li>
+<li><a href="#other-items">Other Items</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#Îpersonal-details">Personal Details</a><ul>
+<li><a href="#race">Race</a></li>
+<li><a href="#height">Height</a></li>
+<li><a href="#age">Age</a></li>
 </ul></li>
 <li><a href="#miscellaneous-adventuring-rules">Miscellaneous Adventuring Rules</a><ul>
 <li><a href="#jumping">Jumping</a></li>
@@ -202,6 +211,31 @@
 <hr>
 </div>
 <div class="center">
+<div class="rules">
+<h1 id="how-to-make-a-character">How to Make a Character</h1>
+<ul>
+<li>
+Roll your attributes
+</li>
+<li>
+Pick a class
+</li>
+<li>
+Choose equipment
+</li>
+<li>
+Name your character
+</li>
+<li>
+Roll height and age
+</li>
+<li>
+Decide on other personal characteristics (personality, eye color, etc.)
+</li>
+</ul>
+
+<p>You can choose to do these in any order you like</p>
+</div>
 <div class="attributes">
 <h1 id="attributes">Attributes</h1>
 <p>Attributes are rated from 0-10. To determine your starting attribute, roll 2d6-2 for each one.</p>
@@ -1222,7 +1256,7 @@
 <li>Concoction of Valor — 5 Temp HP and +1 saves against fear</li>
 <li>Concoction of Speed — +10 movement speed and +1 reflex saves</li>
 <li>Concoction of Fire — Can belch a 3d6 15' cone of fire at a target once as a standard action. DC 15 reflex for half.</li>
-<li>Concoction of Speed — -5 HP and can make a free standard attack once per round.</li>
+<li>Concoction of Hyper — -5 HP and can make a free standard attack once per round.</li>
 <li>Concoction of Strength — +2 to melee attacks and +2 damage.</li>
 <li>Concoction of Precision — +2 to ranged attacks and +2 damage.</li>
 <li>Concoction of Insanity — Berserk— +4 attack and damage, 50% resistance to damage, attacks until there are no creature within sight, targets randomly (includes allies).</li>
@@ -2482,7 +2516,7 @@ Too Hard to Die
 <td>4mph</td>
 <td>30</td>
 <td>20</td>
-<td>Can bear rider in battle</td>
+<td>Can bear rider in battle. 1d8 trample damage.</td>
 </tr>
 <tr class="even">
 <td>Draft Horse</td>
@@ -2529,14 +2563,15 @@ Too Hard to Die
 <p>Unless otherwise specified, alchemical items are 3 to the slot.</p>
 
 <ul>
-<li>Tanglefoot bags — Make an attack roll against the space the target is in. If you hit, they must DC 15 reflex save or be entangled by the sticky goo. Takes up a slot. The goo hardens and shatters after 1d4+1 rounds.</li>
 <li>Alchemists fire — Grenade-like weapon. Target a space. Everyone in that space and adjacent to it takes 1d6 fire damage if you hit.</li>
-<li>Smokestick — Creates a 5ft thick cloud of smoke (50% concealment)</li>
 <li>Antitoxin — Grants a new save against poison at +2</li>
-<li>Lightning in a bottle — Throw at a creature. If they are in metal armor, you get +3. On a hit they suffer 2d8 lightning damage and a random creature within 5 feet of them also takes the same amount of damage.</li>
-<li>Quickfrost — Throw at a creature. On a hit, they suffer 1d20 cold damage.</li>
 <li>Flashpowder — ignite and everyone who can see it has to DC 12 fortitude save or be dazzled, save ends.</li>
+<li>Lightning in a bottle — Throw at a creature. If they are in metal armor, you get +3. On a hit they suffer 2d8 lightning damage and a random creature within 5 feet of them also takes the same amount of damage.</li>
+<li>Longfire — Grenade-like weapon. Target a space. Ignites a 5' radius area for 1 minute. Those who start their turn in the fire or pass through the fire take 1d4 fire damage.</li>
 <li>Potion of Healing — Heals d6+3 hp</li>
+<li>Quickfrost — Throw at a creature. On a hit, they suffer 1d20 cold damage.</li>
+<li>Smokestick — Creates a 5ft thick cloud of smoke (50% concealment)</li>
+<li>Tanglefoot bags — Make an attack roll against the space the target is in. If you hit, they must DC 15 reflex save or be entangled by the sticky goo. Takes up a slot. The goo hardens and shatters after 1d4+1 rounds.</li>
 </ul>
 
 <h3 id="other-items">Other Items</h3>
@@ -2545,7 +2580,73 @@ Too Hard to Die
 </ul>
 <hr>
 </div>
+<div class="personal">
 
+<h1 id="personal-details">Personal Details</h1>
+<p>Most personal details are up to you. However, below lists a few things that are mandated</p>
+<h2 id="race">Race</h2>
+
+<p>What race you can be is restricted by your class. Consult the following table:</p>
+<table>
+<thead>
+<tr><th>Class</th><th>Allowed Races</th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td>Champion</td><td>Human</td></tr>
+<tr class="even"><td>Crusader of Venrik</td><td>Human</td></tr>
+<tr class="odd"><td>Disciple of the Enlightened</td><td>Human, Half-Orc, or Orc</td></tr>
+<tr class="even"><td>Dragon Knight of Bahamut</td><td>Human or Half-Elf</td></tr>
+<tr class="odd"><td>Feinstein Clan Dwarf</td><td>Dwarf</td></tr>
+<tr class="even"><td>Leafcrown Elf</td><td>Elf (can be from the ugly or pretty tribe)</td></tr>
+<tr class="odd"><td>Master of the Five Humors</td><td>Human or Gnome</td></tr>
+<tr class="even"><td>Ranger of the Southfae Woods</td><td>Human or Half-Elf</td></tr>
+<tr class="odd"><td>Thief</td><td>Human, Halfling, or Kobold</td></tr>
+<tr class="even"><td>Weaponmsater</td><td>Human</td></tr>
+</tbody>
+</table>
+
+<h2 id="height">Height</h2>
+<p>Height is determined by your race. Roll according to the following table:</p>
+
+<table>
+<thead>
+<tr><th>Race</th><th>Height (inches) </th></tr>
+</thead>
+<tbody>
+<tr class="odd"><td>Dwarf    </td><td>46 + 2d4   </td></tr>
+<tr class="even"><td>Elf      </td><td>52 + 2d10 </td></tr>
+<tr class="odd"><td>Gnome    </td><td>36 + 2d4   </td></tr>
+<tr class="even"><td>Half-Elf </td><td>54 + 2d10 </td></tr>
+<tr class="odd"><td>Half-Orc </td><td>58 + 2d10  </td></tr>
+<tr class="even"><td>Halfling </td><td>32 + 2d4  </td></tr>
+<tr class="odd"><td>Human    </td><td>56 + 2d10  </td></tr>
+<tr class="even"><td>Kobold   </td><td>34 + 2d4  </td></tr>
+<tr class="odd"><td>Orc      </td><td>60 + 2d10  </td></tr>
+</tbody>                            
+</table>
+
+
+<h2 id="age">Age</h2>
+<p>Age is determined by your race. Roll according to the following table:</p>
+
+<table>
+<thead>
+<tr><th>Race</th><th>Age</th></tr>
+</thead>
+<tbody>
+<tr class="odd"> <td>Dwarf    </td><td> 50 + 1d60 </td></tr>
+<tr class="even"><td>Elf      </td><td>120 + 1d100</td></tr>
+<tr class="odd"> <td>Gnome    </td><td> 40 + 1d40 </td></tr>
+<tr class="even"><td>Half-Elf </td><td> 30 + 2d20 </td></tr>
+<tr class="odd"> <td>Half-Orc </td><td> 15 + 1d8 </td></tr>
+<tr class="even"><td>Halfling </td><td> 20 + 2d10 </td></tr>
+<tr class="odd"> <td>Human    </td><td> 20 + 2d10 </td></tr>
+<tr class="even"><td>Kobold   </td><td>  5 + 1d8 </td></tr>
+<tr class="odd"> <td>Orc      </td><td> 10 + 1d8 </td></tr>
+</tbody>
+</table>
+
+</div>
 <div class="rules">
 
 <h1 id="miscellaneous-adventuring-rules">Miscellaneous Adventuring Rules</h1>
@@ -2965,8 +3066,10 @@ Too Hard to Die
 <li>If you allow them to move aside and they choose to move aside, then you move through their space with no consequence (not even an attack of opportunity from the movement) and this does not count as your overrun attempt.</li>
 <li>Otherwise, you and your opponent make opposed attack rolls, adding your BAB.</li>
 <li>A creature larger than medium gets +4 for every size category larger and creatures smaller than medium get a -4 penalty for each category smaller.</li>
-<li>If you win the opposed check, then you knock your opponent prone and keep moving through them, without provoking attacks of opportunity.</li>
+<li>If you win the opposed check, then you knock your opponent prone and keep moving through them, without provoking attacks of opportunity.<ul>
 <li>You must move at least 10' straight through them and are not allowed to double back.</li>
+<li>If you or your mount deal trample damage, the damage is automatically inflicted if you win</li>
+</ul></li>
 <li>Otherwise, you are knocked prone instead and your movement immediately ends.</li>
 <li>Some creatures (like horses) are not knocked prone on a failed attempt and can attempt multiple overruns in a round. If they fail, their movement instead ceases.</li>
 </ul></li>
@@ -3049,6 +3152,7 @@ Too Hard to Die
 <p>For example, if you want to charge while riding a destrier, you take a full-round action. The destrier moves 120 feet, at the end of which you can make a reckless attack, etc.</p>
 <p>Mounts can overrun as part of their movement. They use your attack bonus, but their size. A mount's description will list if this inflicts any trample damage.</p>
 <p>While you are mounted, you can only use 1-handed weapons, not light weapons or two-handed weapons.</p>
+<p>While you are mounted and your opponent is not, you are considered to have the high ground.</p>
 <h1 id="conditions">Conditions</h1>
 <h2 id="ablaze">Ablaze</h2>
 <ul>
