@@ -104,6 +104,16 @@
   .even {
 	  background-color: #cccccc;
   }
+  #xp-rules td, th {
+	  text-align: center;
+  }
+  #xp-rules td:last-child {
+	  text-align:right;
+  }
+  .right-spacer {
+	  width: 50%;
+	  display: inline-block;
+  }
 
 
 
@@ -126,6 +136,11 @@
 <li><a href="#thief">Thief</a></li>
 <li><a href="#weaponmaster">Weaponmaster</a></li>
 </ul></li>
+<li><a href="#leveling-up">Leveling Up</a><ul>
+<li><a href="#how-to-level-up">How to Level Up</a></li>
+<li><a href="#hp-and-leveling-up">HP and Leveling Up</a></li>
+<li><a href="#xp-tables">XP Tables</a></li>
+</ul></li>
 <li><a href="#equipment">Equipment</a><ul>
 <li><a href="#encumbrance">Encumbrance</a></li>
 <li><a href="#durability">Durability</a></li>
@@ -138,7 +153,7 @@
 <li><a href="#mounts-and-vehicles">Mounts and Vehicles</a></li>
 <li><a href="#special-items">Special Items</a></li>
 </ul></li>
-<li><a href="#miscelaneous-adventuring-rules">Miscelaneous Adventuring Rules</a><ul>
+<li><a href="#miscellaneous-adventuring-rules">Miscellaneous Adventuring Rules</a><ul>
 <li><a href="#jumping">Jumping</a></li>
 <li><a href="#double-jeopary">No Double Jeopardy</a></li>
 <li><a href="#natural-healing">Natural Healing</a></li>
@@ -1941,6 +1956,78 @@ Too Hard to Die
 <hr>
 </div>
 </div>
+<div id="xp-rules" class="rules">
+<h1 id="leveling-up">Leveling Up</h1>
+<ul>
+<li>A character can level up once per kingdom turn (year).</li>
+<li>Leveling up happens after the adventure phase but before the war phase.</li>
+<li>A character who has earned sufficient XP may level up.</li>
+<li>Characters who are more than one level lower than the highest level character earn double XP.</li>
+<li>A character cannot earn more XP than the amount needed to level up.
+<ul>
+<li>In other words, when you advance to level 3, you will have exactly 4,000 XP and no more.</li>
+</ul></li>
+<li>Characters cannot level up while there are player characters of a level lower than them.</li>
+<li>Exception: If the other characters would advance to a character's current level, that character may level up.</li>
+<li>Example:
+<ul>
+<li>George the Champion is level 4 when all his friends die during an adventure.</li>
+<li>His new friends are now level 1 characters.</li>
+<li>They have some succesful adventures and George has enough XP to level up.</li>
+<li>George's friends have earned double xp up until this point.</li>
+<li>He cannot level up until they would advance to level 4.</li>
+</ul></li>
+</ul>
+<h2 id="how-to-level-up">How to Level Up</h2>
+<p>Leveling up is mostly self-explanatory: Update your values according to your class table and pick any class features that you want. Roll your HP using Sticky-Up rolling.</p>
+<h2 id="hp-and-leveling-up">HP and Leveling Up</h2>
+<ul>
+<li>HP uses the sticky-up method of HP rolling.</li>
+<li>When you gain a new level, roll the dice indicated in your classes' HP column.</li>
+<li>If you roll a number greater than your current maximum HP, what you rolled becomes your new maximum HP.</li>
+<li>If it is equal to or lower than your current maximum HP, your new maximum HP is your old maximum&nbsp;HP&nbsp;+&nbsp;1.</li>
+</ul>
+<h2 id="xp-tables">XP Tables</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Level</th>
+<th>Total XP to this level</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0<div class="right-spacer"></div></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2,000<div class="right-spacer"></div></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>4,000<div class="right-spacer"></div></td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>8,000<div class="right-spacer"></div></td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>16,000<div class="right-spacer"></div></td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>32,000<div class="right-spacer"></div></td>
+</tr>
+<tr class="odd">
+<td>???</td>
+<td>???,000<div class="right-spacer"></div></td>
+</tr>
+</tbody>
+</table>
+<br>
+</div>
 <div class="equipment">
 <h1 id="equipment">Equipment</h1>
 <h2 id="encumbrance">Encumbrance</h2>
@@ -2461,7 +2548,7 @@ Too Hard to Die
 
 <div class="rules">
 
-<h1 id="miscelaneous-adventuring-rules">Miscelaneous Adventuring Rules</h1>
+<h1 id="miscellaneous-adventuring-rules">Miscellaneous Adventuring Rules</h1>
 <h2 id="jumping">Jumping</h2>
 <p>To determine how far you can jump horizontally, roll 2d10 + your strength.</p>
 <p>To determine how far you can jump vertically, roll d10 + your strength.</p>
