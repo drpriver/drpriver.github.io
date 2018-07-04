@@ -176,6 +176,7 @@
 <li><a href="#other-actions">Other Actions</a></li>
 </ul></li>
 <li><a href="#movement">Movement</a></li>
+<li><a href="#dying">Dying</a></li>
 <li><a href="#circumstantial-rules">Circumstantial Rules</a></li>
 <li><a href="#mounted-combat">Mounted Combat</a></li>
 </ul></li>
@@ -1967,16 +1968,6 @@ Too Hard to Die
 <ul>
 <li>In other words, when you advance to level 3, you will have exactly 4,000 XP and no more.</li>
 </ul></li>
-<li>Characters cannot level up while there are player characters of a level lower than them.</li>
-<li>Exception: If the other characters would advance to a character's current level, that character may level up.</li>
-<li>Example:
-<ul>
-<li>George the Champion is level 4 when all his friends die during an adventure.</li>
-<li>His new friends are now level 1 characters.</li>
-<li>They have some succesful adventures and George has enough XP to level up.</li>
-<li>George's friends have earned double xp up until this point.</li>
-<li>He cannot level up until they would advance to level 4.</li>
-</ul></li>
 </ul>
 <h2 id="how-to-level-up">How to Level Up</h2>
 <p>Leveling up is mostly self-explanatory: Update your values according to your class table and pick any class features that you want. Roll your HP using Sticky-Up rolling.</p>
@@ -2190,7 +2181,7 @@ Too Hard to Die
 <td>Morningstar</td>
 <td>1d8</td>
 <td>1&#8209;handed</td>
-<td>20,&nbsp;x2,&nbsp;2&nbsp;AC</td>
+<td>20,&nbsp;x2,&nbsp;&#8209;2&nbsp;AC</td>
 <td>5 HP</td>
 <td>+2 to sunder armor</td>
 </tr>
@@ -2532,16 +2523,24 @@ Too Hard to Die
 <p>A light wagon requires 2 horses or one ox to pull. Oxen move at 2 mph instead of 3, but allow +50% slots.</p>
 <p>A heavy wagon requires 4 horses or two oxen to pull. Oxen move at 2mph instead of 3 but allow +50% slots.</p>
 <h2 id="special-items">Special Items</h2>
+<h3 id="alchemical-items">Alchemical Items</h3>
+
+<p>Unless otherwise specified, alchemical items are 3 to the slot.</p>
+
 <ul>
 <li>Tanglefoot bags — Make an attack roll against the space the target is in. If you hit, they must DC 15 reflex save or be entangled by the sticky goo. Takes up a slot. The goo hardens and shatters after 1d4+1 rounds.</li>
-<li>Healing Kit — A skilled healer can use this to tend to wounds. Roll a d6+3. The wounded target is healed by that amount. This cannot be done inside of combat. A healing kit has 5 uses and uses a slot.</li>
 <li>Alchemists fire — Grenade-like weapon. Target a space. Everyone in that space and adjacent to it takes 1d6 fire damage if you hit.</li>
 <li>Smokestick — Creates a 5ft thick cloud of smoke (50% concealment)</li>
 <li>Antitoxin — Grants a new save against poison at +2</li>
 <li>Lightning in a bottle — Throw at a creature. If they are in metal armor, you get +3. On a hit they suffer 2d8 lightning damage and a random creature within 5 feet of them also takes the same amount of damage.</li>
 <li>Quickfrost — Throw at a creature. On a hit, they suffer 1d20 cold damage.</li>
-<li>Flashpowder — ignite and everyone has to DC 12 fortitude save or be blinded, save ends.</li>
+<li>Flashpowder — ignite and everyone who can see it has to DC 12 fortitude save or be dazzled, save ends.</li>
 <li>Potion of Healing — Heals d6+3 hp</li>
+</ul>
+
+<h3 id="other-items">Other Items</h3>
+<ul>
+<li>Healing Kit — A skilled healer can use this to tend to wounds. Roll a d6+3. The wounded target is healed by that amount. This cannot be done inside of combat. A healing kit has 5 uses and uses a slot.</li>
 </ul>
 <hr>
 </div>
@@ -2556,6 +2555,8 @@ Too Hard to Die
 <p>You can jump a horizontal distance up to your speed and a vertical distance up to triple your height, rounded up to the nearest 5' increment.</p>
 <p>For every size category smaller than medium, you get -4 to your jump checks. For every size category larger than medium, add +4 to your jump checks.</p>
 <p>For every 5' slower than 30', you get -2 to jump. For every 5' faster than 30', you get +2 to jump.</p>
+<p>Jumping in combat is normally a part of your movement for the turn.</p>
+<p>If something allows to jump as a specific action, then the amount of distance you jump is extra movement granted by that action.</p>
 <p>In combat, you cannot jump farther than your remaining movement for the round.</p>
 <h2 id ="double-jeopary">No Double Jeopardy</h2>
 <p>In almost all cases, the same action cannot be attempted twice. For example, if a character fails to pick a lock, the party cannot retry that lock. They will need to do something substantively different, usually escalating the situation.</p>
@@ -2968,6 +2969,14 @@ Too Hard to Die
 <li>Otherwise, you are knocked prone instead and your movement immediately ends.</li>
 <li>Some creatures (like horses) are not knocked prone on a failed attempt and can attempt multiple overruns in a round. If they fail, their movement instead ceases.</li>
 </ul></li>
+</ul>
+<h2 id="dying">Dying</h2>
+<ul>
+<li>Characters die at -10 HP or when circumstances dictate they should die.</li>
+<li>A character at negative HP must roll to stabilize at a 10% chance at the beginning of their turn.</li>
+<li>Characters who are not stable loses 1 HP at the beginning of their turn</li>
+<li>A character who is healed or granted temporary hit points stabilizes</li>
+<li>A character can be stabilized by a DC 15 wisdom check as a full-round action</li>
 </ul>
 <h2 id="circumstantial-rules">Circumstantial Rules</h2>
 <ul>
