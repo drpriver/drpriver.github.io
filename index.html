@@ -195,6 +195,7 @@
 <li><a href="#stunned">Stunned</a></li>
 <li><a href="#surprised">Surprised</a></li>
 <li><a href="#unconscious">Unconscious</a></li>
+<li><a href="#weakened">Weakened</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -795,7 +796,7 @@
 <div class="power">
 <div class="power_title"> Focused Mind </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> roll two (2) d20s and choose which one you use. If you use the lower one, you deal an extra 1d6 damage.  </div>
+<div class="power_text"> Roll two (2) d20s and choose which one you use. If you use the lower one, you deal an extra 1d6 damage.  </div>
 </div>
 
 <div class="power">
@@ -807,25 +808,25 @@
 <div class="power">
 <div class="power_title"> The Dragon's Claws </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> attack with two weapons without penalty.  </div>
+<div class="power_text"> Attack with two weapons without penalty.  </div>
 </div>
 
 <div class="power">
 <div class="power_title"> Douse the Flames </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> hit suppresses attacks of opportunity.  </div>
+<div class="power_text"> Hit suppresses attacks of opportunity.  </div>
 </div>
 
 <div class="power">
 <div class="power_title"> Dragonskin </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> hit or miss you gain 1d6+level DR until the beginning of your next turn.  </div>
+<div class="power_text"> Hit or miss you gain 1d6+level DR until the beginning of your next turn.  </div>
 </div>
 
 <div class="power">
 <div class="power_title"> Leading the Attack </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> hit grants allies +4 to attacks against victim.  </div>
+<div class="power_text"> Hit grants allies +4 to attacks against victim.  </div>
 </div>
 
 </div>
@@ -839,19 +840,19 @@
 <div class="power">
 <div class="power_title"> Dragon's Fury </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> may make an additional attack.  </div>
+<div class="power_text">May make an additional standard attack when using this maneuver.</div>
 </div>
 
 <div class="power">
 <div class="power_title"> Wall of Teeth </div>
 <div class="power_type"> Counter (reaction) </div>
-<div class="power_text"> replace AC with attack result.  </div>
+<div class="power_text"> Roll an attack. Replace AC with attack result against the triggering attack.  </div>
 </div>
 
 <div class="power">
 <div class="power_title"> Clever Positioning </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> if you hit, you and the enemy swap positions.  </div>
+<div class="power_text"> If you hit, you and the enemy swap positions. Neither of your provoke attacks of opportunity from this movement. </div>
 </div>
 
 <div class="power">
@@ -870,7 +871,7 @@
 <div class="power">
 <div class="power_title"> Leap Attack </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> make a jump check, deal +1d6 damage for every 5' of vertical height.  </div>
+<div class="power_text"> Make a vertical jump check, deal +1d6 damage for every 5' of vertical height.  </div>
 </div>
 
 </div>
@@ -883,7 +884,7 @@
 <div class="power">
 <div class="power_title"> Dragon Heart Surge </div>
 <div class="power_type"> Boost (swift action) </div>
-<div class="power_text"> Remove effect, gain +2 morale bonus on attacks until beginning of next turn. You can use this maneuver even when deprived of actions, but only if suffering from a debilitating effect.  </div>
+<div class="power_text"> Remove debilitating effect (such as poison or a spell), gain +2 morale bonus on attacks until beginning of next turn. You can use this maneuver even when deprived of actions. You can onlu use this maneuver while suffering from a debilitating effect.  </div>
 </div>
 
 
@@ -891,7 +892,7 @@
 <div class="power">
 <div class="power_title"> Crippling Strike </div>
 <div class="power_type"> Strike (standard action) </div>
-<div class="power_text"> on a hit victim must DC 15 fortitude save or be weakened, save ends.  </div>
+<div class="power_text"> On a hit victim must DC 15 fortitude save or be weakened, save ends.  </div>
 </div>
 
 
@@ -3063,7 +3064,27 @@ Too Hard to Die
 <li>They threaten no spaces.</li>
 </ul>
 <h2 id="confused">Confused</h2>
-<p>A confused character’s actions are determined by rolling d% at the beginning of his turn: 01-10, attack caster with melee or ranged weapons (or close with caster if attacking is not possible); 11-20, act normally; 21-50, do nothing but babble incoherently; 51-70, flee away from caster at top possible speed; 71-100, attack nearest creature (for this purpose, a familiar counts as part of the subject’s self). A confused character who can’t carry out the indicated action does nothing but babble incoherently. Attackers are not at any special advantage when attacking a confused character. Any confused character who is attacked automatically attacks its attackers on its next turn, as long as it is still confused when its turn comes. A confused character does not make attacks of opportunity against any creature that it is not already devoted to attacking (either because of its most recent action or because it has just been attacked).</p>
+<ul>
+<li>A confused character’s actions are determined by rolling d% at the beginning of his turn (see table below).</li>
+<li>A confused character who can’t carry out the indicated action does nothing but babble incoherently.</li>
+<li>Attackers are not at any special advantage when attacking a confused character.</li>
+<li>Any confused character who is attacked automatically attacks its attackers on its next turn, as long as it is still confused when its turn comes.</li>
+<li>A confused character does not make attacks of opportunity against any creature that it is not already devoted to attacking (either because of its most recent action or because it has just been attacked).</li>
+<ul>
+
+<table>
+<thead>
+<tr><th>d%</th><th>Result</th></tr>
+</thead>
+<tbody>
+<tr><td>01-10</td><td> attack or charge an enemy or threat with melee or ranged weapons</td>
+<tr><td>11-20</td><td> act normally</td>
+<tr><td>21-50</td><td> do nothing but babble incoherently</td>
+<tr><td>51-70</td><td> flee away at top possible speed</td>
+<tr><td>71-100</td><td> attack nearest creature </td>
+</tbody>
+</table>
+
 <h2 id="dazed">Dazed</h2>
 <ul>
 <li>A dazed creature can only take one standard action on its turn and cannot take reactions.</li>
@@ -3114,6 +3135,12 @@ Too Hard to Die
 <h2 id="unconscious">Unconscious</h2>
 <ul>
 <li>Any attack against an unconscious creature automatically hits and triggers a save or die.</li>
+</ul>
+<h2 id="weakened">Weakened</h2>
+<ul>
+<li>-2 to melee attacks</li>
+<li>-2 to melee damage</li>
+<li>-4 to strength checks</li>
 </ul>
 
 </div>
