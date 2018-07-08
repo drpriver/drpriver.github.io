@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <title>Warriors of the Eternal Sun Classes</title>
   <style>
+  * {
+	  box-sizing: border-box;
+  }
+  h3,h4,h5 {
+	  color: rgb(88,24,13);
+  }
   :root{
   	  --sidebar: 300px;
   }
@@ -14,7 +20,7 @@
   p {
 	  text-align: justify;
   }
-  h1, h2, h3, h4, h5 {
+  h1, h2, h3 {
 	  border-bottom: 1px solid #aaaaaa;
   }
   .left {
@@ -90,9 +96,11 @@
   }
   .power, .statblock{
 	  border: 1px solid grey;
-	  width: 90%;
-	  padding: 6px;
+	  /*width: 90%;*/
+	  padding: 12px;
 	  margin-bottom: .5em;
+	  margin-left: 6px;
+	  margin-right: 6px;
   }
   .power div, .statblock div{
 	  margin-bottom: .3em;
@@ -100,6 +108,9 @@
   div.maneuvers, div.stats{
 	  display: grid;
 	  grid-template-columns: repeat(2, 1fr);
+  }
+  .combat div.maneuvers, .combat div.stats{
+	  grid-template-columns: repeat(1, 1fr);
   }
   .even {
 	  background-color: #cccccc;
@@ -158,7 +169,7 @@
 <li><a href="#other-items">Other Items</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#Îpersonal-details">Personal Details</a><ul>
+<li><a href="#personal-details">Personal Details</a><ul>
 <li><a href="#race">Race</a></li>
 <li><a href="#height">Height</a></li>
 <li><a href="#age">Age</a></li>
@@ -183,7 +194,15 @@
 <li><a href="#melee-or-ranged-attacks">Melee or Ranged Attacks</a></li>
 <li><a href="#melee-only-attacks">Melee Only Attacks</a></li>
 <li><a href="#ranged-only-attacks">Ranged Only Attacks</a></li>
-<li><a href="#other-actions">Other Actions</a></li>
+<li><a href="#other-actions">Other Actions</a><ul>
+<li><a href="#total-defense">Total Defense</a></li>
+<li><a href="#draw-an-item">Draw an Item</a></li>
+<li><a href="#stow-an-item">Stow an Item</a></li>
+<li><a href="#ready-a-shield">Ready a Shield</a></li>
+<li><a href="#loose-shield">Loose Shield</a></li>
+<li><a href="#take-cover">Take Cover</a></li>
+<li><a href="#cast-a-spell">Cast a Spell</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#movement">Movement</a></li>
 <li><a href="#dying">Dying</a></li>
@@ -273,6 +292,7 @@ Decide on other personal characteristics (personality, eye color, etc.)
 </ul></li>
 </ul>
 <p>Attributes do not change your attacks, saving throws, AC, etc.</p>
+<p>At the DM's discretion, they can choose to add a Comeliness stat.</p>
 <hr>
 </div>
 <div class="classes">
@@ -700,7 +720,7 @@ Decide on other personal characteristics (personality, eye color, etc.)
 <ul>
 <li>You partially ignore the tragedy of flesh — You take half damage from all sources.</li>
 <li>Your mind is shielded from the influence of others — You automatically succeed on any saving throws against fear, rage, or other mental effects such as mind control.</li>
-<li>Your blows strike swift and true — You can make a melee standard attack as a free action each round.</li>
+<li>Your blows strike swift and true — You can make an unarmed melee standard attack as a free action each round.</li>
 </ul>
 <p>These benefits last until your are unconscious, the battle is over or 10 minutes pass, whichever comes soonest.</p>
 <h3 id="unarmed-and-unarmored">Unarmed and Unarmored</h3>
@@ -2477,6 +2497,7 @@ Too Hard to Die
 </tr>
 </tbody>
 </table>
+<p>Every time an orcish shotput is thrown, it loses a notch of durability (thus suffering -1 attack). Unlike other items, the shotput does not break after losing 3 notches of durability. If it would lose a 4th notch, it doesn't.</p>
 <h2 id="armor">Armor</h2>
 <table>
 <thead>
@@ -2547,6 +2568,7 @@ Too Hard to Die
 <th>Combat Speed</th>
 <th>Overland Speed</th>
 <th>HP</th>
+<th>AC</th>
 <th>Additional Slots</th>
 <th>Properties</th>
 </tr>
@@ -2557,6 +2579,7 @@ Too Hard to Die
 <td>60'</td>
 <td>4mph</td>
 <td>30</td>
+<td>14</td>
 <td>20</td>
 <td>Can bear rider in battle. 1d8 trample damage.</td>
 </tr>
@@ -2565,6 +2588,7 @@ Too Hard to Die
 <td>50'</td>
 <td>4mph</td>
 <td>18</td>
+<td>13</td>
 <td>20</td>
 <td>Can pull wagon</td>
 </tr>
@@ -2573,6 +2597,7 @@ Too Hard to Die
 <td>45'</td>
 <td>3mph</td>
 <td>18</td>
+<td>13</td>
 <td>30</td>
 <td>Can travel through steep terrain, such as mountains.
 Cannot bear rider.</td>
@@ -2653,7 +2678,7 @@ Cannot bear rider.</td>
 </tr>
 <tr class="odd">
 <td>Hammer</td>
-<td>1</td>
+<td>1/2</td>
 </tr>
 <tr class="even">
 <td>Healing Kit</td>
@@ -2673,7 +2698,7 @@ Cannot bear rider.</td>
 </tr>
 <tr class="even">
 <td>Lock Picks</td>
-<td>1</td>
+<td>1/2</td>
 </tr>
 <tr class="odd">
 <td>Manacles</td>
@@ -2714,6 +2739,10 @@ Cannot bear rider.</td>
 <tr class="even">
 <td>Torch</td>
 <td>5 for 1 slot</td>
+</tr>
+<tr class="odd">
+<td>Quarrel of Arrows</td>
+<td>20 arrows to the slot</td>
 </tr>
 </tbody>
 </table>
@@ -2822,6 +2851,7 @@ Cannot bear rider.</td>
 <h2 id="suffocation">Suffocation</h2>
 <p>A character without air suffers 1d6 unhealable suffocation damage each minute without air.</p>
 <p>10 minutes with air heals 1d6 of this damage.</p>
+<div class="combat">
 <h1 id="combat">Combat</h1>
 <h2 id="initiative-and-the-flow-of-combat">Initiative and the Flow of Combat</h2>
 <p>At the beginning of combat, each side rolls a d20. The side of the high roller gets to go first. Each turn after that alternates between the two sides.</p>
@@ -2857,76 +2887,76 @@ Cannot bear rider.</td>
 <p>If you can somehow make more than one attack of opportunity each round, you can only make one for each opportunity. In this case, movement through your threatened spaces is only considered a single opportunity.</p>
 <h2 id="actions">Actions</h2>
 <h3 id="movement-actions">Movement Actions</h3>
-<ul>
-<li>Walk
-<ul>
-<li>Move Action</li>
-<li>This round you can move your speed.</li>
-</ul></li>
-<li>Hustle
-<ul>
-<li>Full-Round Action</li>
-<li>This round you can move double your speed.</li>
-</ul></li>
-<li>Run
-<ul>
-<li>Full-Round Action</li>
-<li>This round you can move 4x your speed. You are considered flat-footed against any attack.</li>
-</ul></li>
-<li>Stand Up
-<ul>
-<li>Move Action</li>
-<li>Standing up is a move action that provokes an attack of opportunity.</li>
-</ul></li>
-<li>Withdraw
-<ul>
-<li>Full-Round Action</li>
-<li>This round you can move double your speed. Creatures who started your turn threatening you cannot take attacks of opportunity against you.</li>
-</ul></li>
-<li>5-foot Step:
-<ul>
-<li>Free Action*</li>
-<li>You may only take this action once per round and only if you haven't otherwise moved.</li>
-<li>If you are within someone's reach and threatened by them, you may only move 5 feet into or within their reach. If you are not threatened, then you can move 5 feet in any direction you like.</li>
-</ul></li>
-</ul>
+<div class="maneuvers">
+<div class="power">
+<div class="power_title"> Walk </div>
+<div class="power_type"> Move Action </div>
+<div class="power_text"> This round you can move your speed.</div>
+</div>
+<div class="power">
+<div class="power_title"> Hustle </div>
+<div class="power_type">Full-round Action</div>
+<div class="power_text">This round you can move double your speed.</div>
+</div>
+<div class="power">
+<div class="power_title">Run</div>
+<div class="power_type">Full-round Action</div>
+<div class="power_text">This round you can move 4x your speed. You are considered flat-footed against any attack.</div>
+</div>
+<div class="power">
+<div class="power_title">Stand Up</div>
+<div class="power_type">Move Action</div>
+<div class="power_text">Standing up from prone provkes an attack of opportunity.</div>
+</div>
+<div class="power">
+<div class="power_title">Widthdraw</div>
+<div class="power_type">Full-round Action</div>
+<div class="power_text">This round you can move double your speed. Creatures who started your turn threatening you cannot take attacks of opportunity against you.</div>
+</div>
+<div class="power">
+<div class="power_title">Reposition</div>
+<div class="power_type">Free Action*</div>
+<div class="power_text">You can only take this action if you haven't otherwise moved. After taking this action, you also cannot move. You can move 5 feet without provoking attacks of opportunity as long as you remain within the reach of everyone who threatens attacks of opportunity against you.</div>
+</div>
+</div>
 <h3 id="melee-or-ranged-attacks">Melee or Ranged Attacks</h3>
 <p>All ranged attacks provoke an attack of opportunity.</p>
-<ul>
-<li>Standard Attack
-<ul>
-<li>Standard Action</li>
-<li>Vanilla dnd attack we are all used to.</li>
-</ul></li>
-<li>Dual Wield Attack
-<ul>
-<li>Standard Action</li>
+<div class="maneuvers">
+<div class="power">
+<div class="power_title">Standard Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text"><ul><li>Make an attack roll against an enemy.</li><li>If you meet or beat their AC, deal normal damage to them.</li></ul></div>
+</div>
+<div class="power">
+<div class="power_title">Dual Wield Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text"> <ul>
 <li>Make an attack with each weapon in your hand, but at a -2 penalty.</li>
 <li>Each hit deals normal damage.</li>
-<li>Each weapon must be a light weapon or the two heads of a double weapon.</li>
-</ul></li>
-<li>Rapid Attack:
+<li>Each weapon must be a light weapon or the two heads of a double weapon.</li> </ul> </div>
+</div>
+<div class="power">
+<div class="power_title">Rapid Attack</div>
+<div class="power_type">Full-round Action</div>
+<div class="power_text"><ul><li>Make two attacks at -4 attack.</li><li>Each Deals normal damage.</li></ul></div>
+</div>
+<div class="power">
+<div class="power_title">Called Shot</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Full-round action,</li>
-<li>Make two attacks at -4 attack</li>
-<li>Each deals normal damage.</li>
-</ul></li>
-<li>Called Shot:
-<ul>
-<li>Standard Action</li>
 <li>A called shot is a special attack made at a specific location.</li>
 <li>Suffer a penalty based on which location, but inflict status effect if you hit in addition to rolling normal damage.</li>
 <li>You must be able to see your target clearly (no concealment or blindness).</li>
 <li>Choose one of the locations and roll appropriately:</li>
 <li>The DM may make specific rulings to allow other called shots or variant effects (such as attacking a tentacle in order to free a comrade from a grab).</li>
 <li>The penalty from arms and hands do not stack with one another. The penalty from leg and foot also do not stack with one another.</li>
-</ul></li>
 </ul>
 <table>
 <thead>
 <tr class="header">
 <th>Location</th>
-<th>Your Penalty</th>
+<th>Your&nbsp;Penalty</th>
 <th>Effect</th>
 </tr>
 </thead>
@@ -2963,41 +2993,45 @@ Cannot bear rider.</td>
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+</div>
 <h3 id="melee-only-attacks">Melee Only Attacks</h3>
+<div class="maneuvers">
+<div class="power">
+<div class="power_title">Reckless Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text"> <ul> <li>Make a single attack at +2 attack, but suffer -2 AC until the beginning of your next turn.</li> <li>You must be threatened with attacks of opportunity by your target to take this action.</li> </ul> </div>
+</div>
+<div class="power">
+<div class="power_title">Guarded Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">Make a single attack at -2 attack, but gain +2 AC until the beginning of your next turn.</div>
+</div>
+<div class="power">
+<div class="power_title">Charge Attack</div>
+<div class="power_type">Full-round Action</div>
+<div class="power_text"><ul> <li>Move up to double your speed in a straight line, at the end of which make a Reckless Attack, Drive Back or Bull Rush Attack.</li>
+<li>If you charge on a mount, you deal double damage with a lance if you hit.</li> </ul> </div>
+</div>
+<div class="power">
+<div class="power_title">Drive Back Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Reckless Attack
+<li>Your opponent either moves back 5 feet or stands still. <ul>
+<li>If they move back 5 feet, you can follow for free and make a single standard attack against them at -2.</li>
+<li>If they choose to stand still, you can make a single standard attack against them at +2.</li>
+<li>If they move back 5 feet, you may immediately take the walk action to grant yourself movement.</li></ul></li>
+<li>The opponent must have somewhere they can move back to for you to take this action.</li>
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Grapple</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Standard Action</li>
-<li>Make a single attack at +2 attack, but -2 AC until the beginning of your next turn</li>
-</ul></li>
-<li>Guarded Attack
-<ul>
-<li>Standard Action,</li>
-<li>Make a single attack at -2 attack, but +2 AC until the beginning of your next turn</li>
-</ul></li>
-<li>Charge Attack
-<ul>
-<li>Full-round action</li>
-<li>Move up to double your speed in a straight line, at the end of which make a Reckless Attack,</li>
-<li>Drive Back or Bull Rush Attack.</li>
-<li>If you charge on a mount, you deal double damage with a lance if you hit.</li>
-</ul></li>
-<li>Drive Back Attack
-<ul>
-<li>Standard Action</li>
-<li>Your opponent either moves back 5 feet or stands still. If they move back 5 feet, you can follow and make a single standard attack against them at -2. If they choose to stand still, you can make a single standard attack against them at +2.</li>
-<li>If they move back 5 feet, you may immediately take the walk action to grant yourself movement.</li>
-</ul></li>
-<li>Mark
-<ul>
-<li>Standard Action</li>
-<li>Choose an enemy you threaten.</li>
-<li>If that enemy attacks anyone other than you with their first attack on their turn, you may take an attack of opportunity against them.</li>
-<li>They remain marked until you no longer threaten them.</li>
-</ul></li>
-<li>Grapple Attack
-<ul>
-<li>Standard Action</li>
 <li>To start a grapple, you and the opponent make opposed grapple check.</li>
 <li>A grapple check is rolled by making an unarmed attack roll. <ul>
 <li>Creatures larger than medium get +4 for each category larger and creatures smaller than medium get a -4 penalty for each category smaller.</li></ul></li>
@@ -3044,10 +3078,14 @@ Cannot bear rider.</td>
 <li>You may also attempt to disarm them of well-secured items. They get +4 to resist this disarm.</li>
 <li>You can release them from the pin as a free action.</li>
 </ul></li>
-</ul></li>
-<li>Grab Attack
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Grab Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Special</li>
 <li>Grab is a special attack that monsters have, such as those with pincers.</li>
 <li>It works in many ways like grapple. All opposed checks are calculated the same, except that the monster is treated as one size smaller for this purpose.</li>
 <li>If you are grabbed:
@@ -3074,18 +3112,37 @@ Cannot bear rider.</td>
 <li>Can use the held creature as a shield. (+2 shield bonus to AC)</li>
 <li>Otherwise suffers no consequences.</li>
 </ul></li>
-</ul></li>
-<li>Trip Attack
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Mark</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Standard Action</li>
+<li>Choose an enemy you threaten.</li>
+<li>If that enemy attacks anyone other than you with their first attack on their turn, you may take an attack of opportunity against them.</li>
+<li>They remain marked until you no longer threaten them.</li>
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Trip Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
+<ul>
 <li>You and the opponent make opposed attack rolls.</li>
 <li>Creatures larger than medium get +4 for each category larger and creatures smaller than medium get a -4 penalty for each category smaller.</li>
 <li>Some weapons give a bonus to this attack roll.</li>
 <li>If you win the opposed check, the defender is knocked prone in their space. Standing up from prone is a move action that provokes an attack of opportunity.</li>
-</ul></li>
-<li>Bull-rush Attack
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Bull-rush Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Standard Action</li>
 <li>Bull-rush an opponent by moving into an opponent's space. <ul>
 <li>You and the opponent make opposed attack rolls. 
 <li>Creatures larger than medium get +4 for each category larger and creatures smaller than medium get a -4 penalty for each category smaller. 
@@ -3094,24 +3151,29 @@ Cannot bear rider.</td>
 <li>You may take a move action to walk while resolving this action.</li></ul> </li>
 <li>Any movement caused by this maneuver provokes attacks of opportunity as normal, except from the two characters involved in the struggle.<ul>
 <li>You and the defender don't provoke from each other, but you and the defender may provoke attacks from bystanders.</li></ul></li>
-</ul></li>
-<li>Disarm Attack
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Disarm Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Standard Action</li>
-<li>Make opposed attack rolls with the target. Users of two-handed weapons get +4 to this roll.
-<ul>
+<li>Make opposed attack rolls with the target. Users of two-handed weapons get +4 to this roll.<ul>
 <li>You can make an unarmed disarm attempt, but you suffer -4 on this roll.</li>
-<li>Creatures larger than medium get +4 for each category larger, and creatures smaller than medium get a -4 penalty for each category smaller.</li>
-</ul></li>
-<li>If the attacker wins this roll, the weapon is now out of the defender's hands and is on the ground in his space or in a space next to him (attacker's choice which space). If the attacker was attempting an unarmed disarm attempt the weapon may be in his hand instead of on the ground.</li>
-<li>Loosely secured items can be grabbed off a target by following the same procedure above.
-<ul>
+<li>Creatures larger than medium get +4 for each category larger, and creatures smaller than medium get a -4 penalty for each category smaller.</li></ul></li>
+<li>If the attacker wins this roll, the weapon is now out of the defender's hands and is on the ground in his space or in a space next to him (attacker's choice which space).<ul>
+<li>If the attacker was attempting an unarmed disarm attempt the weapon may be in his hand instead of on the ground.</li></ul></li>
+<li>Loosely secured items can be grabbed off a target by following the same procedure above.</li>
 <li>Well-secured items (like a helmet or gauntlet) can only be disarmed if you have pinned the other character and the defender gets a +4 bonus.</li>
-</ul></li>
-</ul></li>
-<li>Lock Weapons
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Lock Weapons</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Standard Action</li>
 <li>Make a disarm attack, but at +4.</li>
 <li>If you succeed, you have locked weapons with your opponent.<ul>
 <li>Neither of you can move from the other.</li>
@@ -3120,12 +3182,18 @@ Cannot bear rider.</td>
 <li>The victim can end the condition by succeeding on an opposed disarm check or by dropping their weapon.</li>
 <li>If the victim drops their weapon, the instigator can cast it 10' away as a reaction</li>
 <li>This condition also ends when the victim is no longer within the instigator's reach (by forced movement).</li></ul></li>
-</ul></li>
-<li>Sunder Weapon Attack
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Sunder Weapon</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Standard Action</li>
-<li>Make opposed attack rolls with the target. Users of two-handed weapons get +4 to this roll.
+<li>Make opposed attack rolls with the target.
 <ul>
+<li>Users of two-handed weapons get +4 to this roll.</li>
+<li>The weapon must be capable of sundering things (no sundering a longsword with a spear).</li>
 <li>Creatures larger than medium get +4 for each category larger, and creatures smaller than medium get a -4 penalty for each category smaller.</li>
 </ul></li>
 <li>If the attacker wins this roll, he may roll damage to the weapon.
@@ -3133,10 +3201,14 @@ Cannot bear rider.</td>
 <li>For each HP increment's worth of damage he deals to the weapon, one notch of durability is subtracted from the weapon.</li>
 <li>A weapon with no notches of durability is destroyed. See the weapon for specific HP increment.</li>
 </ul></li>
-</ul></li>
-<li>Sunder Armor/Shield Attack
+</ul>
+</div>
+</div>
+<div class="power">
+<div class="power_title">Sunder Armor/Shield Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Standard Action</li>
 <li>Make an attack roll against AC 5 + armor bonus.</li>
 <li>If you hit, roll damage to the armor.<ul>
 <li>For each HP increment's worth of damage you deal to the armor, one notch of durability is subtracted from the armor.</li>
@@ -3144,62 +3216,92 @@ Cannot bear rider.</td>
 <li>Armor that grants no armor bonus to AC is destroyed.</li>
 <li>See the armor for specific HP increment.</li></ul></li>
 <li>The above rules equally apply to Shields, substituting references to armor or armor bonuses to AC with shield and shield bonuses to AC.</li>
-</ul></li>
 </ul>
+</div>
+</div>
+
+</div>
+
 <h3 id="ranged-only-attacks">Ranged Only Attacks</h3>
 <p>All ranged attacks provoke an attack of opportunity.</p>
+<div class="maneuvers">
+<div class="power">
+<div class="power_title">Grenade-like Attack</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
 <ul>
-<li>Grenade Attack
-<ul>
-<li>Standard Action</li>
 <li>Choose a space.</li>
 <li>AC is 5 + 1 for every 5' from you it is.</li>
 <li>If you hit, grenade lands in that spot.</li>
-<li>If you miss, roll 1d6-1d6 for left-right divergence and 1d6-1d6 for near-far divergence.</li>
+<li>If you miss, roll 1d6-1d6 for left-right divergence and 1d6-1d6 for near-far divergence.<ul>
 <li>Read the number as number of 5' spaces.</li>
-<li>Grenades must travel at least 15' from you.</li>
+<li>Grenades must travel at least 15' from you.</li></ul></li>
 <li>Where you rolled is where the grenade lands for the purpose of any effect it has.</li>
-</ul></li>
 </ul>
+</div>
+</div>
+
+</div>
+
 <h3 id="other-actions">Other Actions</h3>
+<div class="maneuvers">
+<div class="power" id="total-defense">
+<div class="power_title">Total Defense</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
+You receive a +4 bonus to AC and Reflex saves until the beginning of your next turn.
+</div>
+</div>
+<div class="power" id="draw-an-item">
+<div class="power_title">Draw an Item</div>
+<div class="power_type">Move Action*</div>
+<div class="power_text">
 <ul>
-<li>Total Defense
-<ul>
-<li>Standard Action</li>
-<li>You receive a +4 bonus to AC and Reflex saves until the beginning of your next turn.</li>
-</ul></li>
-<li>Draw an Item
-<ul>
-<li>Move Action*</li>
 <li>You may do this as a free action once per round.</li>
 <li>Some items may be a full-round action to draw (such as items buried in your pack).</li>
 <li>Drawing or stowing an item provokes an attack of opportunity.</li>
 <li>You can draw two-weapons at once if your hands are empty and you are going to dual-wield them.</li>
-</ul></li>
-<li>Stow an Item
+</ul>
+</div>
+</div>
+
+<div class="power" id ="stow-an-item">
+<div class="power_title">Stow an Item</div>
+<div class="power_type">Move Action*</div>
+<div class="power_text">
 <ul>
-<li>Move Action</li>
 <li>You may do this as a free action once per round.</li>
 <li>Drawing or stowing an item provokes an attack of opportunity.</li>
-</ul></li>
-<li>Ready (equip) a Shield
-<ul>
-<li>Standard Action</li>
-</ul></li>
-<li>Loose (remove) a Shield
-<ul>
-<li>Free Action</li>
-</ul></li>
-<li>Take Cover
-<ul>
-<li>Move Action</li>
-<li>Improve your degree of cover (see cover rules).</li>
-</ul></li>
-<li>Cast A Spell
-<ul>
-<li>Spell descriptions will list what kind of action they are.</li>
-</ul></li>
 </ul>
+</div>
+</div>
+<div class="power" id="ready-a-shield">
+<div class="power_title">Ready (equip) a Shield</div>
+<div class="power_type">Standard Action</div>
+<div class="power_text">
+</div>
+</div>
+<div class="power" id="loose-shield">
+<div class="power_title">Loose (remove) a Shield</div>
+<div class="power_type">Free Action</div>
+<div class="power_text">
+</div>
+</div>
+<div class="power" id="take-cover">
+<div class="power_title">Take Cover</div>
+<div class="power_type">Move action</div>
+<div class="power_text">
+Improve your degree of cover (see cover rules).
+</div>
+</div>
+<div class="power" id="cast-a-spell">
+<div class="power_title">Cast a Spell</div>
+<div class="power_type">Action type varies</div>
+<div class="power_text">Spell descriptions will list what kind of action they are. Casting a spell provokes an attack of opportunity.
+</div>
+</div>
+
+</div>
 <p>Class and Items may have specified actions you can take during the turn. When in doubt, assume a standard action.</p>
 <h2 id="movement">Movement</h2>
 <p>You can spend movement before or after actions, given that something has granted you movement this turn such as the walk action. For example, you can take the walk action (to be able to move your speed this round), move 10 feet, make a standard action attack against a goblin, kill it, and then move 20 more feet.</p>
@@ -3230,7 +3332,9 @@ Cannot bear rider.</td>
 <li>A character can be stabilized by a DC 15 wisdom check as a full-round action</li>
 </ul>
 <h2 id="circumstantial-rules">Circumstantial Rules</h2>
+
 <ul>
+<li>No Merry Go Rounds
 <li>Firing into a crowd
 <ul>
 <li>Ranged attackers are obligated to target randomly between potential enemy targets who are near one another</li>
@@ -3300,6 +3404,7 @@ Cannot bear rider.</td>
 <p>Mounts can overrun as part of their movement. They use your attack bonus, but their size. A mount's description will list if this inflicts any trample damage.</p>
 <p>While you are mounted, you can only use 1-handed weapons, not light weapons or two-handed weapons.</p>
 <p>While you are mounted and your opponent is not, you are considered to have the high ground.</p>
+</div>
 <h1 id="conditions">Conditions</h1>
 <h2 id="ablaze">Ablaze</h2>
 <ul>
@@ -3393,7 +3498,7 @@ Cannot bear rider.</td>
 <li>-2 to melee damage</li>
 <li>-4 to strength checks</li>
 </ul>
-
+<hr>
 </div>
 
 </div>
