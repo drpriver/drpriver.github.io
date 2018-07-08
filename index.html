@@ -167,6 +167,7 @@
 <li><a href="#mounts-and-vehicles">Mounts and Vehicles</a></li>
 <li><a href="#special-items">Special Items</a><ul>
 <li><a href="#alchemical-items">Alchemical Items</a></li>
+<li><a href="#magic-devices">Magic Devices</a></li>
 <li><a href="#other-items">Other Items</a></li>
 </ul></li>
 </ul></li>
@@ -1244,8 +1245,9 @@ Decide on other personal characteristics (personality, eye color, etc.)
 <li>Trance for 4 hours instead of sleeping</li>
 </ul>
 <h3 id="elvish-accuracy">Elvish Accuracy</h3>
-<p>Elves can target whoever they want in crowds and can precisely fire into grapples without any risk of attacking anyone but who they intended. Additionally, they ignore 20% concealment.</p>
+<p>Elves can target whoever they want in crowds and can precisely fire into grapples without any risk of attacking anyone but who they intended. Additionally, they ignore concealment of 20% or less.</p>
 <p>If an elf is hidden and succesfully strikes an opponent, they deal triple damage (roll damage 3 times).</p>
+<p>Elves can attempt to hide in combat as a standard action (DC 10 agility).</p>
 <h3 id="skill-points">Skill Points</h3>
 <p>Elves can invest skill points into the following skills:</p>
 <ul>
@@ -1267,7 +1269,7 @@ Decide on other personal characteristics (personality, eye color, etc.)
 </ul></li>
 <li>Herbalism
 <ul>
-<li>If you have invested at least 3 skill points in herbalism you heal an extra hit point when you tend to wounds with a healer's kit.</li>
+<li>If you have invested at least 3 skill points in herbalism you heal an extra hit point when you tend to wounds with a healer's kit for every 3 skill points you have invested. If you have invested 10 points, add +4 instead.</li>
 </ul></li>
 </ul>
 <hr>
@@ -1602,6 +1604,7 @@ Giant Snake (medium)
 <li>Pick Lock</li>
 <li>Pick Pocket</li>
 <li>Sneak</li>
+<li>Use Magic Device</li>
 </ul>
 <p>If you ever would need to make an ability check to accomplish the above, you may add your ranks in that skill to the check.</p>
 <p>You can invest at most 10 points into any one skill and cannot invest more than 3 points in a skill at each level (including first level).</p>
@@ -1615,6 +1618,7 @@ Giant Snake (medium)
 <li>Pick Lock <ul><li> If you have invested at least 3 skill points in pick lock, you can freely lock and unlock any lock you have succesfully picked.</li></ul></li>
 <li>Pick Pocket <ul><li> If you have invested at least 3 skill points in Pick Pocket, you can pick pocket things secured to them, like necklaces or sheathed swords.</li></ul></li>
 <li>Sneak <ul><li> If you have invested at least 3 skill points in sneak, you can achieve basic success without rolling. An example of basic success is creeping down a hallway undetected to see what is up ahead.</li></ul></li>
+<li>Use Magic Device<ul><li>If you have invested at least 3 skill points in Use Magic Device, you can use scrolls without rolling</li></ul></li>
 </ul>
 <hr>
 </div>
@@ -2735,6 +2739,75 @@ Cannot bear rider.</td>
 <li>Tanglefoot bags — Make an attack roll against the space the target is in. If you hit, they must DC 15 reflex save or be entangled by the sticky goo. Takes up a slot. The goo hardens and shatters after 1d4+1 rounds.</li>
 </ul>
 
+<h3 id="magic-devices">Magic Devices</h3>
+<p>A magic device is a scroll, wand or staff.</p>
+<p>If you are not proficient in the use of a magic device, you need to make a charisma check, with the difficulty depending on the device.</p>
+<p>A failure to activate the item is usually benign, unless a natural 1 is rolled. In which case, roll on the magical mishaps table.</p>
+<p>See the table below for difficulties.</p>
+<table style="width:50%">
+<thead>
+<tr class="header">
+<th>Magic Device</th>
+<th>Activation Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Scroll</td>
+<td>10</td>
+</tr>
+<tr class="even">
+<td>Wand</td>
+<td>15</td>
+</tr>
+<tr class="odd">
+<td>Staff</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<h4 id="magical-mishaps">Magical Mishaps</h4>
+<table>
+<thead>
+<tr class="header">
+<th>d6</th>
+<th>Mishap</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Opposition</td>
+<td>Spell or Effect works as intended, except the result is inverted. For example, an opposed fireball grants all in the area protection from fire. An opposed healing spell becomes a wounding spell.</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Reversal</td>
+<td>Spell or Effect works as intended, except the result is targeted or centered on the caster</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Useless</td>
+<td>Spell or Effect is turned into some harmless humorous effect.</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>Wild</td>
+<td>DM rolls on his wild magic table.</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Delayed</td>
+<td>Spell or Effect takes place 1d6 time units later. Time units depends on the spell effect. For instantaneous effects, it is rounds. For less than 10 minutes, it is minutes. for hours, it is hours, etc.</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Replaced</td>
+<td>Spell or Effect is replaced with another of random spell of similar power, with the same target(s).</td>
+</tr>
+</tbody>
+</table>
 <h3 id="other-items">Other Items</h3>
 <p>The below table is not exhaustive.</p>
 <table style="width:50%">
