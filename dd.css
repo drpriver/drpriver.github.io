@@ -1,0 +1,123 @@
+* {
+	box-sizing: border-box;
+}
+h3,h4,h5 {
+color: rgb(88,24,13);
+}
+:root{
+	--sidebar: 301px;
+}
+body { 
+	font-family: Tahoma;
+}
+p {
+	text-align: justify;
+}
+h1, h2, h3 {
+	border-bottom: 1px solid #aaaaaa;
+}
+.left {
+	position: fixed;
+	height: 100%;
+	width: var(--sidebar);
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x:hidden;
+	padding-top:20px;
+}
+.left a {
+	text-decoration: none;
+	font-size: 16px;
+  display: block;
+  color: black;
+}
+.center {
+	margin-left: calc(var(--sidebar) + 20px);
+	padding: 0 10px;
+  max-width: 50em;
+}
+@media only screen and (max-width: 720px) {
+	.left {
+		position: static;
+	}
+	.center {
+		margin:auto;
+		max-width: 100vw;
+	}
+	nav li ul {
+		display: none;
+	}
+}
+td, tr, th, tbody{
+	border-bottom: 1px solid black;
+	padding: 3px;
+}
+th {
+	padding: 10px;
+}
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.personal td, .personal th {
+	text-align: center;
+}
+hr {
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+.equipment td, .equipment th{
+	text-align:center;
+}
+.equipment table{
+	overflow-x: visible;
+}
+.equipment td:first-child, .equipment td:last-child{
+	text-align:left;
+}
+.power_type {
+	font-style: italic;
+}
+.power_title, .stat_title {
+	font-weight: bold;
+}
+.power_text {
+}
+.power, .statblock{
+	border: 1px solid grey;
+	padding: 12px;
+	margin-bottom: .5em;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+.power div, .statblock div{
+	margin-bottom: .3em;
+}
+div.maneuvers, div.stats{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.combat div.maneuvers, .combat div.stats{
+	grid-template-columns: repeat(1, 1fr);
+}
+.even {
+	background-color: #cccccc;
+}
+.right-spacer {
+	width: 50%;
+	display: inline-block;
+}
+table.text_table {
+	text-align: left;
+}
+table.text_table .even {
+	background-color: initial;
+}
+table.class_table {
+	text-align: center;
+}
+table ul {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
