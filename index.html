@@ -21,6 +21,7 @@
       }
       h1, h2, h3 {
       border-bottom: 1px solid #aaaaaa;
+      max-width: 50em;
       }
       .left {
       position: fixed;
@@ -41,6 +42,9 @@
       .center {
       margin-left: calc(var(--sidebar) + 20px);
       padding: 0 10px;
+      max-width: 100em;
+      }
+      .center p {
       max-width: 50em;
       }
       @media only screen and (max-width: 720px) {
@@ -58,6 +62,7 @@
       td, tr, th, tbody{
       border-bottom: 1px solid black;
       padding: 3px;
+      padding-left:12px;
       }
       th {
       padding: 10px;
@@ -96,13 +101,14 @@
       margin-bottom: .5em;
       margin-left: 6px;
       margin-right: 6px;
+      max-width: 36em;
       }
       .power div, .statblock div{
       margin-bottom: .3em;
       }
       div.maneuvers, div.stats{
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       }
       .combat div.maneuvers, .combat div.stats{
       grid-template-columns: repeat(1, 1fr);
@@ -126,6 +132,15 @@
       table ul {
       -webkit-margin-before: 0;
       -webkit-margin-after: 0;
+      }
+      table.tiny {
+      max-width: 20em;
+      }
+      table.small {
+      max-width: 30em;
+      }
+      table.medium {
+      max-width: 40em;
       }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -325,7 +340,7 @@
             and for adjudicating certain situations
             (roll dexterity to pick locks for example).
           </p>
-          <table class="text_table ">
+          <table class="text_table small">
             <thead>
               <tr class="table_header">
                 <th>Attribute</th>
@@ -383,7 +398,7 @@
           What race you can be is restricted by your class.
           Consult the following table:
         </p>
-        <table>
+        <table class="medium">
           <thead>
             <tr class="table_header">
               <th>Class</th>
@@ -428,7 +443,7 @@
               <td>Human, Halfling, or Kobold</td>
             </tr>
             <tr class="even">
-              <td>Weaponmatser</td>
+              <td>Weaponmaster</td>
               <td>Human</td>
             </tr>
           </tbody>
@@ -438,7 +453,7 @@
           Height is determined by your race.
           Roll on the following table:
         </p>
-        <table>
+        <table class="small">
           <thead>
             <tr class="table_header">
               <th>Race</th>
@@ -489,7 +504,7 @@
           Age is determined by your race.
           Roll on the following table:
         </p>
-        <table>
+        <table class="small">
           <thead>
             <tr class="table_header">
               <th>Race</th>
@@ -571,7 +586,7 @@
           Unless otherwise noted, all XP is divided evenly amongst the party.
           XP is rewarded at the end of each game session for the following:
         </p>
-        <table class="text_table xp-rewards">
+        <table class="text_table xp-rewards medium">
           <thead>
             <tr class="table_header">
               <th>Activity</th>
@@ -618,7 +633,7 @@
           </tbody>
         </table>
         <h2 id="xp-tables">XP Tables</h2>
-        <table>
+        <table class="tiny">
           <thead>
             <tr class="table_header">
               <th>Level</th>
@@ -770,7 +785,7 @@
         <div class="class_description">
           <h2 id="acolyte-of-boccob">Acolyte of Boccob</h2>
           <h3 id="acolyte-class-table">Acolyte Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -850,7 +865,7 @@
         <div class="class_description">
           <h2 id="champion">Champion</h2>
           <h3 id="champion-class-table">Champion Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -923,7 +938,7 @@
         <div class="class_description">
           <h2 id="crusader-of-venrik">Crusader of Venrik</h2>
           <h3 id="crusader-of-venrik-class-table">Crusader of Venrik Class Table</h3>
-          <table class="class_table">
+          <table class="medium class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -1377,7 +1392,7 @@
         <div class="class_description">
           <h2 id="disciple-of-the-enlightened">Disciple of the Enlightened</h2>
           <h3 id="disciple-class-table">Disciple Class Table</h3>
-          <table class="class_table">
+          <table class="medium class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -1648,7 +1663,7 @@
         <div class="class_description">
           <h2 id="dragon-knight-of-bahamut">Dragon Knight of Bahamut</h2>
           <h3 id="dragon-knight-class-table">Dragon Knight Class Table</h3>
-          <table class="class_table">
+          <table class="medium class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -2053,7 +2068,7 @@
         <div class="class_description">
           <h2 id="feinsten-clan-dwarf">Feinsten Clan Dwarf</h2>
           <h3 id="dwarf-class-table">Dwarf Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -2146,7 +2161,7 @@
             Additionally, investing skill points have certain other effects, as
             described below:
           </p>
-          <table class="text_table ">
+          <table class="text_table medium">
             <thead>
               <tr class="table_header">
                 <th>Skill</th>
@@ -2172,7 +2187,7 @@
         <div class="class_description">
           <h2 id="leafcrown-elf">Leafcrown Elf</h2>
           <h3 id="elf-class-table">Elf Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -2278,7 +2293,7 @@
             Additionally, investing skill points have certain other effects,
             as described below:
           </p>
-          <table class="text_table ">
+          <table class="text_table medium">
             <thead>
               <tr class="table_header">
                 <th>Skill</th>
@@ -2304,7 +2319,7 @@
         <div class="class_description">
           <h2 id="master-of-the-five-humors">Master of the Five Humors</h2>
           <h3 id="master-class-table">Master Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -2399,7 +2414,7 @@
           <p>
             Choose concoctions from the list below:
           </p>
-          <table class="text_table ">
+          <table class="text_table medium">
             <thead>
               <tr class="table_header">
                 <th>Concotion</th>
@@ -2437,7 +2452,7 @@
         <div class="class_description">
           <h2 id="ranger-of-the-southfae-woods">Ranger of the Southfae Woods</h2>
           <h3 id="ranger-class-table">Ranger Class Table</h3>
-          <table class="class_table">
+          <table class="medium class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -2645,7 +2660,7 @@
         <div class="class_description">
           <h2 id="shapechanger">Shapechanger</h2>
           <h3 id="shapechanger-class-table">Shapechanger Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -2863,7 +2878,7 @@
         <div class="class_description">
           <h2 id="thief">Thief</h2>
           <h3 id="thief-class-table">Thief Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -2950,7 +2965,7 @@
             Additionally, investing skill points have certain other effects, as
             described below:
           </p>
-          <table class="text_table ">
+          <table class="text_table medium">
             <thead>
               <tr class="table_header">
                 <th>Skill</th>
@@ -3030,7 +3045,7 @@
         <div class="class_description">
           <h2 id="weaponmaster">Weaponmaster</h2>
           <h3 id="weaponmaster-class-table">Weaponmaster Class Table</h3>
-          <table class="class_table">
+          <table class="small class_table">
             <thead>
               <tr class="table_header">
                 <th>Level</th>
@@ -4069,7 +4084,7 @@
                 <td>Hooked&nbsp;Hammer</td>
                 <td>1d8</td>
                 <td>2&#8209;handed</td>
-                <td>x2, free trip</td>
+                <td>x2,&nbsp;free&nbsp;trip</td>
                 <td>5 HP</td>
                 <td>Double&nbsp;Weapon, +2 to trip</td>
               </tr>
@@ -4379,7 +4394,7 @@
           <p>
             See the table below for difficulties.
           </p>
-          <table>
+          <table class="tiny">
             <thead>
               <tr class="table_header">
                 <th>Magic Device</th>
@@ -4401,7 +4416,7 @@
               </tr>
             </tbody>
           </table>
-          <table class="text_table ">
+          <table class="text_table medium">
             <thead>
               <tr class="table_header">
                 <th>d6</th>
@@ -4411,7 +4426,7 @@
             </thead>
             <tbody>
               <tr class="odd">
-                <td>1</td>
+                <td>&nbsp;1&nbsp;</td>
                 <td>Oppostion</td>
                 <td>
                                     Spell or Effect works as intended, except the result
@@ -4421,7 +4436,7 @@
                                     </td>
               </tr>
               <tr class="even">
-                <td>2</td>
+                <td>&nbsp;2&nbsp;</td>
                 <td>Reversal</td>
                 <td>
                                         Spell or Effect works as intended, except the
@@ -4429,21 +4444,21 @@
                                     </td>
               </tr>
               <tr class="odd">
-                <td>3</td>
+                <td>&nbsp;3&nbsp;</td>
                 <td>Useless</td>
                 <td>
                                     Spell or Effect is turned into some harmless humorous effect.
                                     </td>
               </tr>
               <tr class="even">
-                <td>4</td>
+                <td>&nbsp;4&nbsp;</td>
                 <td>Wild</td>
                 <td>
                                     DM rolls on his wild magic table.
                                     </td>
               </tr>
               <tr class="odd">
-                <td>5</td>
+                <td>&nbsp;5&nbsp;</td>
                 <td>Delayed</td>
                 <td>
                                     Spell or Effect takes place 1d6 time units later. 
@@ -4453,7 +4468,7 @@
                                     </td>
               </tr>
               <tr class="even">
-                <td>6</td>
+                <td>&nbsp;6&nbsp;</td>
                 <td>Replaced</td>
                 <td>
                                     Spell or Effect is replaced with another random spell 
@@ -4468,7 +4483,7 @@
           <p>
             The below table is not exhaustive
           </p>
-          <table>
+          <table class="medium">
             <thead>
               <tr class="table_header">
                 <th>Item</th>
@@ -4524,7 +4539,7 @@
               </tr>
               <tr class="odd">
                 <td>Lantern&nbsp;Oil</td>
-                <td>10 oz. for 1 slot</td>
+                <td>10&nbsp;oz.&nbsp;for&nbsp;1&nbsp;slot</td>
                 <td> </td>
               </tr>
               <tr class="even">
@@ -4554,7 +4569,7 @@
               </tr>
               <tr class="odd">
                 <td>Pitons</td>
-                <td>20 for 1 slot</td>
+                <td>20&nbsp;for&nbsp;1&nbsp;slot</td>
                 <td> </td>
               </tr>
               <tr class="even">
@@ -4579,12 +4594,12 @@
               </tr>
               <tr class="even">
                 <td>Torch</td>
-                <td>5 for 1 slot</td>
+                <td>5&nbsp;for&nbsp;1&nbsp;slot</td>
                 <td> </td>
               </tr>
               <tr class="odd">
                 <td>Quarrel&nbsp;of&nbsp;Arrows</td>
-                <td>20 arrows to the slot</td>
+                <td>20&nbsp;arrows&nbsp;to&nbsp;the&nbsp;slot</td>
                 <td> </td>
               </tr>
             </tbody>
@@ -5767,7 +5782,7 @@
         <p>
           A creature behind total cover cannot be directly targeted or attacked.
         </p>
-        <table>
+        <table class="small">
           <thead>
             <tr class="table_header">
               <th>Cover</th>
@@ -5914,7 +5929,7 @@
             attacking (either because of its most recent action or
             because it has just been attacked).
           </p>
-          <table class="text_table ">
+          <table class="text_table small">
             <thead>
               <tr class="table_header">
                 <th>d%</th>
@@ -5923,23 +5938,23 @@
             </thead>
             <tbody>
               <tr class="odd">
-                <td>01-10</td>
+                <td>01&#8209;10</td>
                 <td>attack or charge an enemy or threat with melee or ranged weapons</td>
               </tr>
               <tr class="even">
-                <td>11-20</td>
+                <td>11&#8209;20</td>
                 <td>act normally</td>
               </tr>
               <tr class="odd">
-                <td>21-50</td>
+                <td>21&#8209;50</td>
                 <td>do nothing but babble incoherently</td>
               </tr>
               <tr class="even">
-                <td>51-70</td>
+                <td>51&#8209;70</td>
                 <td>flee away at top possible speed</td>
               </tr>
               <tr class="odd">
-                <td>71-100</td>
+                <td>71&#8209;100</td>
                 <td>attack nearest creature</td>
               </tr>
             </tbody>

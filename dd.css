@@ -15,6 +15,7 @@ p {
 }
 h1, h2, h3 {
 	border-bottom: 1px solid #aaaaaa;
+	max-width: 50em;
 }
 .left {
 	position: fixed;
@@ -35,7 +36,10 @@ h1, h2, h3 {
 .center {
 	margin-left: calc(var(--sidebar) + 20px);
 	padding: 0 10px;
-  max-width: 50em;
+	max-width: 100em;
+}
+.center p {
+	max-width: 50em;
 }
 @media only screen and (max-width: 720px) {
 	.left {
@@ -52,6 +56,7 @@ h1, h2, h3 {
 td, tr, th, tbody{
 	border-bottom: 1px solid black;
 	padding: 3px;
+	padding-left:12px;
 }
 th {
 	padding: 10px;
@@ -90,13 +95,14 @@ hr {
 	margin-bottom: .5em;
 	margin-left: 6px;
 	margin-right: 6px;
+	max-width: 36em;
 }
 .power div, .statblock div{
 	margin-bottom: .3em;
 }
 div.maneuvers, div.stats{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 }
 .combat div.maneuvers, .combat div.stats{
 	grid-template-columns: repeat(1, 1fr);
@@ -120,4 +126,13 @@ table.class_table {
 table ul {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
+}
+table.tiny {
+	max-width: 20em;
+}
+table.small {
+	max-width: 30em;
+}
+table.medium {
+	max-width: 40em;
 }
