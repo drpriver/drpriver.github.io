@@ -87,15 +87,18 @@
       .equipment td:first-child, .equipment td:last-child{
       text-align:left;
       }
-      .power_type {
+      .power_type, .spell_action, .spell_range{
       font-style: italic;
       }
-      .power_title, .stat_title {
+      .power_title, .stat_title, .spell_title {
       font-weight: bold;
+      }
+      .spell p {
+      margin-left: 1em;
       }
       .power_text {
       }
-      .power, .statblock{
+      .power, .statblock, .wand{
       border: 1px solid grey;
       padding: 12px;
       margin-bottom: .5em;
@@ -103,8 +106,16 @@
       margin-right: 6px;
       max-width: 36em;
       }
-      .power div, .statblock div{
+      .power div, .statblock div, .spell div{
       margin-bottom: .3em;
+      }
+      div.spell {
+      border-top: 1px solid black;
+      padding-top: 1em;
+      }
+      .wand h3 {
+      border-bottom: none;
+      margin-top: 0em;
       }
       div.maneuvers, div.stats{
       display: grid;
@@ -301,8 +312,7 @@
             Attributes do not change your attacks, saving throws, AC, etc.
           </p>
         </div>
-      </div>
-      <div class="personal">
+      </div><div class="personal">
         <h2 id="personal-details">Personal Details</h2>
         <p>
           Most personal details are up to you.
@@ -465,8 +475,7 @@
             </tr>
           </tbody>
         </table>
-      </div>
-      <div id="xp-rules" class="rules">
+      </div><div id="xp-rules" class="rules">
         <h1 id="leveling-up">Leveling Up</h1>
         <p>
           A character who has earned sufficient XP may level up by spending
@@ -595,8 +604,7 @@
           </tbody>
         </table>
         <hr>
-      </div>
-      <div class="rules">
+      </div><div class="rules">
         <h1 id="adventuring-rules">Adventuring Rules</h1>
         <h2 id="jumping">Jumping</h2>
         <p>
@@ -694,8 +702,7 @@
           each minute without air, beginning at 2 minutes.
         </p>
         <hr>
-      </div>
-      <div class="classes">
+      </div><div class="classes">
         <h1 id="classes">Classes</h1>
         <div class="class_description">
           <h2 id="acolyte-of-boccob">Acolyte of Boccob</h2>
@@ -3692,8 +3699,7 @@
           </div>
         </div>
         <hr>
-      </div>
-      <div class="equipment">
+      </div><div class="equipment">
         <h1 id="equipment">Equipment</h1>
         <div>
           <h2 id="encumbrance">Encumbrance</h2>
@@ -4467,6 +4473,143 @@
               </tr>
             </tbody>
           </table>
+          <h3 id="wands">Wands</h3>
+          <p>
+            Wands have notches of durability, just as weapons do, also breaking
+            and being destroyed when the 3rd notch of durability is gone.
+          </p>
+          <p>
+            Unlike weapons, wands lose a notch of durability when a natural 1
+            is rolled for their attack roll.  If the wand does not have an
+            attack rule (like the wand of healing), roll a d20 when you use
+            it. On a 1, the wand loses a notch of durability. On a 20, the
+            effect of the wand is doubled.
+          </p>
+          <p>
+            Additionally, wands may have special abilities that can be used.
+            These special abilities may have a higher change of damaging a
+            notch of durability or automatically losing a notch of durability.
+          </p>
+          <p>
+            Wands cannot be repaired by any means.
+          </p>
+          <div class="wand">
+            <h3 id="wand-of-fire">Wand of Fire</h3>
+            <div class="spell">
+              <div class="spell_title">
+                Firebolt
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                60'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  You shoot a bolt of fire. Make a ranged attack roll.
+                  On a hit, deals 1d10 fire damage
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Cone of Fire
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                15' cone, extending from the wand
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Fire ignites from the wand. Those caught in the area
+                  must make a reflex save. Those who fail suffer 3d6 fire
+                  damage and catch on fire. Those who succeed suffer half
+                  as much damage and do not catch on fire.
+                  When you cast this spell, roll a d6. On a 1, the wand
+                  loses a notch of durability.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Fireball
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                20' radius, up to 100 feet away
+              </div>
+              <div class="spell_effect">
+                <p>
+                  A bead of fire flies from the tip of the wand, landing up
+                  to 100 feet away. Make a grenade-like attack against the
+                  location. Upon impact, the fireball explodes into a ball
+                  of fire. Those within the area must make a reflex save.
+                  Those who fail suffer 5d6 fire damage and catch on fire.
+                  Those who suceeed suffer half as much damage and do not
+                  catch on fire.
+                </p>
+                <p>
+                  When you cast this spell, the wand automatically loses a
+                  notch of durability.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="wand">
+            <h3 id="wand-of-healing">Wand of Healing</h3>
+            <div class="spell">
+              <div class="spell_title">
+                Cure Light Wounds
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  You heal the creature you touch for 1d6 hit points.
+                  Roll a d20 when you do so. If you roll a natural 1,
+                  a notch of durability is lost. If you roll a natural
+                  20, you heal twice as many hit points.
+                </p>
+                <p>
+                  If used on the undead, instead make an attack roll.
+                  On a successful attack, they receive 1d6 points of
+                  damage.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Mend Injury
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  You mend a signficant injury of the creature, such
+                  as a major wound, a broken limb or reattaching a
+                  severed hand. If used to heal a wound, the creature
+                  regains 15 hit points.
+                </p>
+                <p>
+                  When you cast this spell, the wand automatically
+                  loses a notch of durability.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div>
           <h3 id="other-items">Other Items</h3>
@@ -4596,8 +4739,7 @@
           </table>
         </div>
         <hr>
-      </div>
-      <div class="combat">
+      </div><div class="combat">
         <h1 id="combat">Combat</h1>
         <h2 id="initiative-and-the-flow-of-combat">Initiative and the Flow of Combat</h2>
         <p>
@@ -5861,8 +6003,7 @@
           to have the high ground.
         </p>
         <hr>
-      </div>
-      <div>
+      </div><div>
         <h1 id="conditions">Conditions</h1>
         <div class="condition">
           <h2 id="ablaze">Ablaze</h2>

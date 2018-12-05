@@ -81,15 +81,18 @@ hr {
 .equipment td:first-child, .equipment td:last-child{
 	text-align:left;
 }
-.power_type {
+.power_type, .spell_action, .spell_range{
 	font-style: italic;
 }
-.power_title, .stat_title {
+.power_title, .stat_title, .spell_title {
 	font-weight: bold;
+}
+.spell p {
+	margin-left: 1em;
 }
 .power_text {
 }
-.power, .statblock{
+.power, .statblock, .wand{
 	border: 1px solid grey;
 	padding: 12px;
 	margin-bottom: .5em;
@@ -97,8 +100,16 @@ hr {
 	margin-right: 6px;
 	max-width: 36em;
 }
-.power div, .statblock div{
+.power div, .statblock div, .spell div{
 	margin-bottom: .3em;
+}
+div.spell {
+	border-top: 1px solid black;
+	padding-top: 1em;
+}
+.wand h3 {
+	border-bottom: none;
+	margin-top: 0em;
 }
 div.maneuvers, div.stats{
 	display: grid;
