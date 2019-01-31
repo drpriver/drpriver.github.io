@@ -106,7 +106,7 @@
       }
       .power_text {
       }
-      .power, .statblock, .wand{
+      .power, .statblock, .wand, .circle_magic{
       border: 1px solid grey;
       padding: 12px;
       margin-bottom: .5em;
@@ -195,6 +195,7 @@
             <li><a href="#feinsten-clan-dwarf">Feinsten Clan Dwarf</a></li>
             <li><a href="#leafcrown-elf">Leafcrown Elf</a></li>
             <li><a href="#loxodon">Loxodon</a></li>
+            <li><a href="#mage-of-the-seven-circles">Mage of the Seven Circles</a></li>
             <li><a href="#master-of-the-five-humors">Master of the Five Humors</a></li>
             <li><a href="#ranger-of-the-southfae-woods">Ranger of the Southfae Woods</a></li>
             <li><a href="#shapechanger">Shapechanger</a></li>
@@ -2358,6 +2359,622 @@
           </ul>
         </div>
         <div class="class_description">
+          <h2 id="mage-of-the-seven-circles">Mage of the Seven Circles</h2>
+          <h3 id="mage-class-table">Mage Class Table</h3>
+          <table class="small class_table">
+            <thead>
+              <tr class="table_header">
+                <th>Level</th>
+                <th>HP</th>
+                <th>BAB</th>
+                <th>BSB</th>
+                <th>Circles Known</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd">
+                <td>1</td>
+                <td>9</td>
+                <td>+0</td>
+                <td>+1</td>
+                <td>2</td>
+              </tr>
+              <tr class="even">
+                <td>2</td>
+                <td>3d6</td>
+                <td>+1</td>
+                <td>+2</td>
+                <td>3</td>
+              </tr>
+              <tr class="odd">
+                <td>3</td>
+                <td>4d6</td>
+                <td>+1</td>
+                <td>+3</td>
+                <td>4</td>
+              </tr>
+              <tr class="even">
+                <td>4</td>
+                <td>4d6</td>
+                <td>+2</td>
+                <td>+4</td>
+                <td>5</td>
+              </tr>
+              <tr class="odd">
+                <td>5</td>
+                <td>5d6</td>
+                <td>+2</td>
+                <td>+5</td>
+                <td>6</td>
+              </tr>
+              <tr class="even">
+                <td>6</td>
+                <td>5d6</td>
+                <td>+3</td>
+                <td>+6</td>
+                <td>7</td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 id="mage-class-details">Mage Class Details</h3>
+          <ul>
+            <li>+2 Will Saves</li>
+            <li>Proficiency with the dagger and crossbow</li>
+            <li>Proficiency with scrolls, wands and staves</li>
+          </ul>
+          <h3 id="circle-magic">Circle Magic</h3>
+          <p>
+            As a mage of the Seven Circles, you have mastered two of the namesake circles of magic.
+            Their descriptions are given below. The number of circles you know is given in your
+            class table.
+          </p>
+          <p>
+            Choose two circles of magic at level 1 and once whenever you level up.
+          </p>
+          <p>
+            You can cast these spells whenver you want, given you have your wand.
+            Some of these spells require your concentration to maintain the magic.
+            You must be conscious and focused upon the magic and can only focus
+            on one at a time.
+          </p>
+          <p>
+            
+          </p>
+          <div class="circle_magic">
+            <h4 id="circle-of-the-flame">Circle of the Flame</h4>
+            <div class="spell">
+              <div class="spell_title">
+                Firebolt
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                100'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  d10+level fire damage ranged attack
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Flameburst
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                60'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Grenade-like attack in a 5’ radius, d6+level fire damage, DC 15 reflex for half
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Control Flames
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                30'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Make flames grow or shrink by up to 2x, dance, etc.  If the flames deal damage, they can deal +1d6 or -1d6 damage.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Explosion
+              </div>
+              <div class="spell_action">
+                Full Round Action
+              </div>
+              <div class="spell_range">
+                1 mile
+              </div>
+              <div class="spell_effect">
+                <p>
+                  nuke an area, you save or die against DC 20.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Fireworks
+              </div>
+              <div class="spell_action">
+                Full Round Action
+              </div>
+              <div class="spell_range">
+                200'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Shoot a rocket into the sky that then explodes brightly.  Deals no damage to creatures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="circle_magic">
+            <h4 id="circle-of-the-unseen-hand">Circle of the Unseen Hand</h4>
+            <div class="spell">
+              <div class="spell_title">
+                Mage Hand
+              </div>
+              <div class="spell_action">
+                Move Action
+              </div>
+              <div class="spell_range">
+                60'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  10 pounds * level of telekinesis
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Floating Disk (requires your concentration)
+              </div>
+              <div class="spell_action">
+                1 minute
+              </div>
+              <div class="spell_range">
+                Next to you
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Invisible disk that can carry 10+level slots or 1 person, floats behind you. You cannot get on it as it maintains a fixed distance from your center of mass.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Mage Shield
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                30'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Target creature gets +2+level AC, reflex saves until your next turn
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Arcane Dart
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                60'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Target creature takes 1d4+level damage (no attack roll)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="circle_magic">
+            <h4 id="circle-of-the-transient">Circle of the Transient</h4>
+            <div class="spell">
+              <div class="spell_title">
+                Make Malleable
+              </div>
+              <div class="spell_action">
+                1 minute
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Make a stone, metal, or wooden object that has no dimension
+                  greater than 2ft malleable like cloth.
+                  Maintains its weight and hardness.
+                  The object must be one single object, not part of a larger
+                  object. For example, it cannot affect a lock in a door.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Make Clear
+              </div>
+              <div class="spell_action">
+                1 minute
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Up to one cubic foot of non-living material becomes
+                  mostly transparent.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Gaseous Form
+              </div>
+              <div class="spell_action">
+                Free Action
+              </div>
+              <div class="spell_range">
+                Self
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Cannot cast spells or attack.
+                  Resistance to damage. Auto-fail damage saves.
+                  AC set to 7. Movespeed set to 1.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Animate Rope (Requires your concentration)
+              </div>
+              <div class="spell_action">
+                Full-round Action
+              </div>
+              <div class="spell_range">
+                10'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Your Rope animates under your control.
+                  It acts under your audible directions.
+                  The rope will tie itself in knots, move like a snake, etc.
+                  The rope has 13 AC and 6 HP. It can grapple creatures
+                  with a +4 bonus. It can make a squeeze attack against
+                  creatures it has grappled for 1d6 damage at +4 bonus.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="circle_magic">
+            <h4 id="circle-of-the-trickster">Circle of the Trickster</h4>
+            <div class="spell">
+              <div class="spell_title">
+                Ventriloquism
+              </div>
+              <div class="spell_action">
+                Move Action
+              </div>
+              <div class="spell_range">
+                50'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Create sound originating from a point.
+                  Can be any non-damaging sound.
+                  Voices, sounds of fighting, etc.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Arcane Eye
+              </div>
+              <div class="spell_action">
+                1 minute
+              </div>
+              <div class="spell_range">
+                Next to you
+              </div>
+              <div class="spell_effect">
+                <p>
+                  One of your eyes leaves your eye socket and begins floating.
+                  You can still see through it.
+                  Movespeed = 3, move it as an action. AC 12 HP 1.
+                  If it dies (from damage, as opposed to ending the spell yourself),
+                  you are blinded in one eye for 8 hours. Your eye will grow back
+                  during that time, but it will be obviously different than a normal
+                  eye (white of they eye is purple, black aura, etc.)
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Alter Appearance (Requires your concentration)
+              </div>
+              <div class="spell_action">
+                1 minute
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Change the coloration of the targets skin, hair, and eyes.
+                  Change the shape of their face and their body structure by
+                  small degrees. It would be difficult to make a man look like
+                  a woman unless they were already feminine. Can also do things
+                  like make elf ears, etc. Lasts until you dismiss it. If they
+                  are unwilling, they can make a DC 13 fortitude save.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Confuse
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                30'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Target humanoid creature must DC 13 will save or be confused
+                  on their next turn (see the condition).
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="circle_magic">
+            <h4 id="circle-of-the-zephyr">Circle of the Zephyr</h4>
+            <div class="spell">
+              <div class="spell_title">
+                Favorable Winds (requires your concentration)
+              </div>
+              <div class="spell_action">
+                1 minute
+              </div>
+              <div class="spell_range">
+                Self
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Ranged attacks have disadvantage against you.
+                  You fall slowly and are immune to fall damage.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Breathe (requires your concentration)
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Creature has a constant supply of sweet air in their lungs.
+                  Can breathe with no air, immune to poison cloud like effects.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Gust of Wind
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Create a powerful blast of wind, that is 10' long and 5' wide.
+                  Anyone in the wind must make a DC 14 fortitude save or be
+                  knocked down and pushed back 10 feet.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Fog Cloud (requires your concentration)
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                Self
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Create a 10' radius zone of heavy fog, effectively obscuring
+                  the area.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="circle_magic">
+            <h4 id="circle-of-circles">Circle of Circles</h4>
+            <div class="spell">
+              <div class="spell_title">
+                Circle of Protection (requires your concentration)
+              </div>
+              <div class="spell_action">
+                Full Round Action
+              </div>
+              <div class="spell_range">
+                
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Choose a type: angel, demon, undead, or elemental.
+                  You conjure a magic circle on the ground that is 5' radius.
+                </p>
+                <p>
+                  When creatures of that type attempt to enter the area
+                  (including melee attacks), they must save or take d4
+                  damage and be repelled. Attacking from inside
+                  the area ends the spell. Once a creature makes its save,
+                  it is immune to the spell's effects for 24 hours.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Circle of Summoning
+              </div>
+              <div class="spell_action">
+                10 minutes
+              </div>
+              <div class="spell_range">
+                
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Choose a type: I-VI
+                </p>
+                <p>
+                  You must make an offering commensurate with the power of the demon.
+                </p>
+                <p>
+                  A demon of that type is summoned through the circle.
+                </p>
+                <p>
+                  You can attempt to bribe it or convince it to join your side.
+                </p>
+                <p>
+                  Else, it does whatever it wants.
+                </p>
+                <p>
+                  TODO: write a table of example offerings.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Circle of Regrouping
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                30'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  You and any number of allies you choose teleport from up to 30 feet
+                  from you to your location. Any allies
+                  who were sleeping are now awake and any allies who were prone are
+                  now standing.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="circle_magic">
+            <h4 id="circle-of-foresight">Circle of Foresight</h4>
+            <div class="spell">
+              <div class="spell_title">
+                Remote Vision
+              </div>
+              <div class="spell_action">
+                1 minute
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Draw an eye on an object. Touch the eye, and activate spell.
+                  As long as spell is in effect, you can see through the drawn
+                  eye when you close your eyes.
+                  Eye can be made ineffective by damaging it.
+                  Doing so deals 1 damage to the caster.
+                  You may only have one eye active at a time.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Disciplined Mind (requires your concentration)
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                Touch
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Target creature has advantage vs charm and fear effects.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                Alarm (requires your concentration)
+              </div>
+              <div class="spell_action">
+                10 minutes
+              </div>
+              <div class="spell_range">
+                
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Designate an area up to 20' square.
+                  Caster is immediately aware of anything that enters the area.
+                  They are alerted mentally.
+                </p>
+              </div>
+            </div>
+            <div class="spell">
+              <div class="spell_title">
+                True Strike
+              </div>
+              <div class="spell_action">
+                Standard Action
+              </div>
+              <div class="spell_range">
+                30'
+              </div>
+              <div class="spell_effect">
+                <p>
+                  Target creature gets +5 to their next attack.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="class_description">
           <h2 id="master-of-the-five-humors">Master of the Five Humors</h2>
           
           <h3 id="master-class-table">Master Class Table</h3>
@@ -2441,7 +3058,7 @@
             tragedy ensue. However, he also knows how to manipulate these humors
             for temporary positive effects. It is dangerous to manipulate a person's
             humors too frequently. They can do so to a single creature once per
-            hour and each concoction lasts for 1 minute.
+            minute and each concoction lasts for 1 minute.
           </p>
           <p>
             The master can create his concoctions by spending an hour. Each
