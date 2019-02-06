@@ -80,6 +80,12 @@
       width: 100%;
       }
       .personal td, .personal th {
+      /*text-align: center;*/
+      }
+      .personal .roll tr td:first-child, .personal .roll tr th:first-child {
+      text-align: right;
+      }
+      .personal .roll tr td:last-child, .personal .roll tr th:last-child {
       text-align: center;
       }
       hr {
@@ -349,7 +355,7 @@
           What race you can be is restricted by your class.
           Consult the following table:
         </p>
-        <table class="medium">
+        <table class="text_table medium">
           <thead>
             <tr class="table_header">
               <th>Class</th>
@@ -358,7 +364,7 @@
           </thead>
           <tbody>
             <tr class="odd">
-              <td>Accolyte of Boccob</td>
+              <td>Accolyte&nbsp;of&nbsp;Boccob</td>
               <td>Human, Elf or Half-elf</td>
             </tr>
             <tr class="even">
@@ -366,23 +372,23 @@
               <td>Human</td>
             </tr>
             <tr class="odd">
-              <td>Crusader of Venrik</td>
+              <td>Crusader&nbsp;of&nbsp;Venrik</td>
               <td>Human</td>
             </tr>
             <tr class="even">
-              <td>Disciple of the Enlightened</td>
+              <td>Disciple&nbsp;of&nbsp;the&nbsp;Enlightened</td>
               <td>Human, Half-Orc, or Orc</td>
             </tr>
             <tr class="odd">
-              <td>Dragon Knight of Bahamut</td>
+              <td>Dragon&nbsp;Knight&nbsp;of&nbsp;Bahamut</td>
               <td>Human or Half-Elf</td>
             </tr>
             <tr class="even">
-              <td>Feinstein Clan Dwarf</td>
+              <td>Feinstein&nbsp;Clan&nbsp;Dwarf</td>
               <td>Dwarf</td>
             </tr>
             <tr class="odd">
-              <td>Leafcrown Elf</td>
+              <td>Leafcrown&nbsp;Elf</td>
               <td>Elf (can be from the ugly or pretty tribe)</td>
             </tr>
             <tr class="even">
@@ -390,15 +396,15 @@
               <td>Loxodon</td>
             </tr>
             <tr class="odd">
-              <td>Mage of the Seven Circles</td>
+              <td>Mage&nbsp;of&nbsp;the&nbsp;Seven&nbsp;Circles</td>
               <td>Human</td>
             </tr>
             <tr class="even">
-              <td>Master of the Five Humors</td>
+              <td>Master&nbsp;of&nbsp;the&nbsp;Five&nbsp;Humors</td>
               <td>Human or Gnome</td>
             </tr>
             <tr class="odd">
-              <td>Ranger of the Southfae Woods</td>
+              <td>Ranger&nbsp;of&nbsp;the&nbsp;Southfae&nbsp;Woods</td>
               <td>Human or Half-Elf</td>
             </tr>
             <tr class="even">
@@ -421,7 +427,7 @@
           Height is determined by your race.
           Roll on the following table:
         </p>
-        <table class="small">
+        <table class="text_table small">
           <thead>
             <tr class="table_header">
               <th>Race</th>
@@ -477,7 +483,7 @@
           Age is determined by your race.
           Roll on the following table:
         </p>
-        <table class="small">
+        <table class="text_table small">
           <thead>
             <tr class="table_header">
               <th>Race</th>
@@ -524,6 +530,160 @@
             <tr class="even">
               <td>Orc</td>
               <td>  10 + 1d8  </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 id="languages">Languages</h3>
+        <p>
+          Each player character can speak the common tongue -- Fairish.
+        </p>
+        <p>
+          Additionally, you speak one other language according to your race.
+        </p>
+        <p>
+          
+        </p>
+        <table class="text_table small">
+          <thead>
+            <tr class="table_header">
+              <th>Race</th>
+              <th>Language</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td>Dwarf</td>
+              <td>Dwarven</td>
+            </tr>
+            <tr class="even">
+              <td>Elf</td>
+              <td>Elven</td>
+            </tr>
+            <tr class="odd">
+              <td>Gnome</td>
+              <td>Gnomish</td>
+            </tr>
+            <tr class="even">
+              <td>Half-elf</td>
+              <td>Elven</td>
+            </tr>
+            <tr class="odd">
+              <td>Half-orc</td>
+              <td>Orcish</td>
+            </tr>
+            <tr class="even">
+              <td>Halfling</td>
+              <td>Halfling</td>
+            </tr>
+            <tr class="odd">
+              <td>Human</td>
+              <td>Any other language</td>
+            </tr>
+            <tr class="even">
+              <td>Kobold</td>
+              <td>Draconic</td>
+            </tr>
+            <tr class="odd">
+              <td>Loxodon</td>
+              <td>Loxodon</td>
+            </tr>
+            <tr class="even">
+              <td>Orc</td>
+              <td>Orcish</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          In addition to the above languages, roll a DC 15 intelligence check until you fail at character creation.
+          Every time you succeed, roll on the language table below. If you roll a language you already know, reroll.
+        </p>
+        <table class="text_table small roll">
+          <thead>
+            <tr class="table_header">
+              <th>d20</th>
+              <th>Language</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td> 1</td>
+              <td>Angelic</td>
+            </tr>
+            <tr class="even">
+              <td> 2</td>
+              <td>Aquan</td>
+            </tr>
+            <tr class="odd">
+              <td> 3</td>
+              <td>Auran</td>
+            </tr>
+            <tr class="even">
+              <td> 4</td>
+              <td>Demonic</td>
+            </tr>
+            <tr class="odd">
+              <td> 5</td>
+              <td>Draconic</td>
+            </tr>
+            <tr class="even">
+              <td> 6</td>
+              <td>Dwarven</td>
+            </tr>
+            <tr class="odd">
+              <td> 7</td>
+              <td>Egyptian</td>
+            </tr>
+            <tr class="even">
+              <td> 8</td>
+              <td>Elven</td>
+            </tr>
+            <tr class="odd">
+              <td> 9</td>
+              <td>Giant</td>
+            </tr>
+            <tr class="even">
+              <td>10</td>
+              <td>Gnomish</td>
+            </tr>
+            <tr class="odd">
+              <td>11</td>
+              <td>Goblin</td>
+            </tr>
+            <tr class="even">
+              <td>12</td>
+              <td>Greek</td>
+            </tr>
+            <tr class="odd">
+              <td>13</td>
+              <td>Halfling</td>
+            </tr>
+            <tr class="even">
+              <td>14</td>
+              <td>Ignan</td>
+            </tr>
+            <tr class="odd">
+              <td>15</td>
+              <td>Loxodon</td>
+            </tr>
+            <tr class="even">
+              <td>16</td>
+              <td>Orcish</td>
+            </tr>
+            <tr class="odd">
+              <td>17</td>
+              <td>Savage</td>
+            </tr>
+            <tr class="even">
+              <td>18</td>
+              <td>Sylvan</td>
+            </tr>
+            <tr class="odd">
+              <td>19</td>
+              <td>Terran</td>
+            </tr>
+            <tr class="even">
+              <td>20</td>
+              <td>Troglodyte</td>
             </tr>
           </tbody>
         </table>
@@ -3172,7 +3332,7 @@
           <p>
             You are an intelligent magical weapon. Unlike other characters, you must pick
             an alignment - Good, Neutral or Evil, and Lawful, Chaotic or Neutral.
-            You can speak common, and roll for bonus languages.
+            You can speak Fairish, and roll for bonus languages.
             You have no biology and thus are immune to things like poison,
             bleeding, exhaustion, etc.
           </p>
