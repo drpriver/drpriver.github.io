@@ -46,6 +46,12 @@
       font-size: 16px;
       display: block;
       color: black;
+      border-bottom: none;
+      }
+      a {
+      text-decoration: none;
+      color: black;
+      border-bottom: 1px grey dotted;
       }
       .center {
       margin-left: calc(var(--sidebar) + 20px);
@@ -186,10 +192,11 @@
             <li><a href="#xp-rewards">XP Rewards</a></li>
             <li><a href="#xp-tables">XP Tables</a></li>
           </ul></li>
-          <li><a href="#adventuring-rules">Adventuring Rules</a><ul>
-            <li><a href="#jumping">Jumping</a></li>
+          <li><a href="#adventuring">Adventuring</a><ul>
             <li><a href="#double-jeopardy">Double Jeopardy</a></li>
-            <li><a href="#natural-healing">Natural Healing</a></li>
+            <li><a href="#hit-points">Hit Points</a></li>
+            <li><a href="#dying">Dying</a></li>
+            <li><a href="#jumping">Jumping</a></li>
             <li><a href="#food-and-water">Food and Water</a></li>
             <li><a href="#heat-and-humidity">Heat and Humidity</a></li>
             <li><a href="#cold-and-freezing">Cold and Freezing</a></li>
@@ -201,7 +208,7 @@
             <li><a href="#crusader-of-venrik">Crusader of Venrik</a></li>
             <li><a href="#disciple-of-the-enlightened">Disciple of the Enlightened</a></li>
             <li><a href="#dragon-knight-of-bahamut">Dragon Knight of Bahamut</a></li>
-            <li><a href="#feinsten-clan-dwarf">Feinsten Clan Dwarf</a></li>
+            <li><a href="#feinstein-clan-dwarf">Feinstein Clan Dwarf</a></li>
             <li><a href="#leafcrown-elf">Leafcrown Elf</a></li>
             <li><a href="#loxodon">Loxodon</a></li>
             <li><a href="#mage-of-the-seven-circles">Mage of the Seven Circles</a></li>
@@ -232,17 +239,25 @@
             <li><a href="#loyalty">Loyalty</a></li>
             <li><a href="#hireling-stat-blocks">Hireling Stat Blocks</a></li>
           </ul></li>
-          <li><a href="#combat">Combat</a><ul>
+          <li><a href="#combat-rules">Combat Rules</a><ul>
             <li><a href="#initiative-and-the-flow-of-combat">Initiative and the Flow of Combat</a></li>
             <li><a href="#actions-in-combat">Actions in Combat</a></li>
             <li><a href="#calculating-attack-bonus">Calculating Attack Bonus</a></li>
             <li><a href="#critical-hits">Critical Hits</a></li>
             <li><a href="#attack-of-opportunity">Attack of Opportunity</a></li>
-            <li><a href="#actions">Actions</a></li>
             <li><a href="#movement">Movement</a></li>
-            <li><a href="#dying">Dying</a></li>
-            <li><a href="#circumstantial-rules">Circumstantial Rules</a></li>
+            <li><a href="#no-merry-go-rounds">No Merry Go Rounds</a></li>
+            <li><a href="#firing-into-a-crowd">Firing into a crowd</a></li>
+            <li><a href="#high-ground">High Ground</a></li>
+            <li><a href="#concealment">Concealment</a></li>
             <li><a href="#mounted-combat">Mounted Combat</a></li>
+          </ul></li>
+          <li><a href="#combat-actions">Combat Actions</a><ul>
+            <li><a href="#movement-actions">Movement Actions</a></li>
+            <li><a href="#melee-or-ranged-attacks">Melee or Ranged Attacks</a></li>
+            <li><a href="#melee-only-attacks">Melee Only Attacks</a></li>
+            <li><a href="#ranged-only-attacks">Ranged Only Attacks</a></li>
+            <li><a href="#other-actions">Other Actions</a></li>
           </ul></li>
           <li><a href="#conditions">Conditions</a><ul>
             <li><a href="#ablaze">Ablaze</a></li>
@@ -270,15 +285,16 @@
           <h1 id="how-to-make-a-character">How to Make a Character</h1>
           
           <ul>
-            <li>Roll your attributes</li>
-            <li>Pick a class</li>
-            <li>Choose equipment</li>
+            <li>Roll your <a href="#attributes">attributes</a></li>
+            <li>Pick a <a href="#classes">class</a></li>
+            <li>Choose <a href="#equipment">equipment</a></li>
             <li>Name your character</li>
-            <li>Roll height and age</li>
+            <li>Roll <a href="#height">height</a> and <a href="#age">age</a></li>
+            <li>Determine your <a href="#languages">languages</a></li>
             <li>Decide on other personal characteristics (personality, eye color, etc.)</li>
           </ul>
           <p>
-            You can choose to do these in any order you like
+            You can choose to do these in any order you like, but you probably want to roll your attributes first.
           </p>
           <p>
             Players may make as many characters as they like. The referee may limit the number of player-characters playable at once.
@@ -358,7 +374,7 @@
           What race you can be is restricted by your class.
           Consult the following table:
         </p>
-        <table class="text_table medium">
+        <table class="medium">
           <thead>
             <tr class="table_header">
               <th>Class</th>
@@ -367,59 +383,63 @@
           </thead>
           <tbody>
             <tr class="odd">
-              <td>Accolyte&nbsp;of&nbsp;Boccob</td>
+              <td><a href="#acolyte-of-boccob">Acolyte of Boccob</a></td>
               <td>Human, Elf or Half-elf</td>
             </tr>
             <tr class="even">
-              <td>Champion</td>
+              <td><a href="#champion">Champion</a></td>
               <td>Human or Orc</td>
             </tr>
             <tr class="odd">
-              <td>Crusader&nbsp;of&nbsp;Venrik</td>
+              <td><a href="#crusader-of-venrik">Crusader of Venrik</a></td>
               <td>Human</td>
             </tr>
             <tr class="even">
-              <td>Disciple&nbsp;of&nbsp;the&nbsp;Enlightened</td>
+              <td><a href="#disciple-of-the-enlightened">Disciple of the Enlightened</a></td>
               <td>Human, Half-Orc, or Orc</td>
             </tr>
             <tr class="odd">
-              <td>Dragon&nbsp;Knight&nbsp;of&nbsp;Bahamut</td>
+              <td><a href="#dragon-knight-of-bahamut">Dragon Knight of Bahamut</a></td>
               <td>Human or Half-Elf</td>
             </tr>
             <tr class="even">
-              <td>Feinstein&nbsp;Clan&nbsp;Dwarf</td>
+              <td><a href="#feinstein-clan-dwarf">Feinstein Clan Dwarf</a></td>
               <td>Dwarf</td>
             </tr>
             <tr class="odd">
-              <td>Leafcrown&nbsp;Elf</td>
+              <td><a href="#leafcrown-elf">Leafcrown Elf</a></td>
               <td>Elf (can be from the ugly or pretty tribe)</td>
             </tr>
             <tr class="even">
-              <td>Loxodon</td>
+              <td><a href="#loxodon">Loxodon</a></td>
               <td>Loxodon</td>
             </tr>
             <tr class="odd">
-              <td>Mage&nbsp;of&nbsp;the&nbsp;Seven&nbsp;Circles</td>
+              <td><a href="#magic-sword">Magic Sword</a></td>
+              <td>Normal or Exotic Weapons</td>
+            </tr>
+            <tr class="even">
+              <td><a href="#mage-of-the-seven-circles">Mage of the Seven Circles</a></td>
               <td>Human or Elf</td>
             </tr>
-            <tr class="even">
-              <td>Master&nbsp;of&nbsp;the&nbsp;Five&nbsp;Humors</td>
+            <tr class="odd">
+              <td><a href="#master-of-the-five-humors">Master of the Five Humors</a></td>
               <td>Human or Gnome</td>
             </tr>
-            <tr class="odd">
-              <td>Ranger&nbsp;of&nbsp;the&nbsp;Southfae&nbsp;Woods</td>
+            <tr class="even">
+              <td><a href="#ranger-of-the-southfae-woods">Ranger of the Southfae Woods</a></td>
               <td>Human or Half-Elf</td>
             </tr>
-            <tr class="even">
-              <td>Shapechanger</td>
+            <tr class="odd">
+              <td><a href="#shapechanger">Shapechanger</a></td>
               <td>Any</td>
             </tr>
-            <tr class="odd">
-              <td>Thief</td>
+            <tr class="even">
+              <td><a href="#thief">Thief</a></td>
               <td>Human, Halfling, or Kobold</td>
             </tr>
-            <tr class="even">
-              <td>Weaponmaster</td>
+            <tr class="odd">
+              <td><a href="#weaponmaster">Weaponmaster</a></td>
               <td>Human</td>
             </tr>
           </tbody>
@@ -538,7 +558,7 @@
         </table>
         <h3 id="languages">Languages</h3>
         <p>
-          Each player character can speak the common tongue -- Fairish.
+          Each player character can speak the common tongue — Fairish.
         </p>
         <p>
           Additionally, you speak one other language according to your race.
@@ -769,6 +789,8 @@
               <td>
                               1,000&nbsp;XP for reaching each level of the dungeon
                               beyond the first (multiplied by the depth reached).
+              
+                              Rewarded to the first player party to reach this depth.
                               </td>
             </tr>
           </tbody>
@@ -823,7 +845,76 @@
         </table>
         <hr>
       </div><div class="rules">
-        <h1 id="adventuring-rules">Adventuring Rules</h1>
+        <h1 id="adventuring">Adventuring</h1>
+        <h2 id="double-jeopardy">Double Jeopardy</h2>
+        <p>
+          In almost all cases, the same action cannot be attempted twice.
+          For example, if a character fails to pick a lock, the party cannot
+          retry that lock. They will need to do something substantively
+          different, usually escalating the situation.
+        </p>
+        <h2 id="hit-points">Hit Points</h2>
+        <p>
+          Characters and creatures have hit points (HP), representing how much damage they can take before they
+          are in trouble. Whenever a character or  creature suffers damage, that many hit points is subtracted
+          from their current HP total.
+        </p>
+        <h3 id="maximum-hit-points">Maximum Hit Points</h3>
+        <p>
+          Characters and creatures have a maximum number of hit points that they can have at any one time.
+          This number is typically increased by gaining levels.
+        </p>
+        <p>
+          If an effect such as healing would increase a creature's current hit point total above their
+          maximum hit points, their current hit points is instead set to their maximum hit points.
+        </p>
+        <p>
+          Temporary Hit Points
+        </p>
+        <p>
+          Hit points are normally permanent and are only lost through damage. In contrast, temporary hit points
+          are just that - temporary. They only last for a specified duration, or until the end of the
+          adventure session, whichever comes first.
+        </p>
+        <p>
+          These temporary hit points are lost first when the creature suffers damage and are not counted
+          when determining a creature's current hit points. Thus temporary hit points are a way to have
+          more hit points than your maximum hit points.
+        </p>
+        <p>
+          Temporary hit points do not stack. If you currently have temporary hit points and would gain more
+          temporary hit points, you instead take the larger of the two.
+        </p>
+        <h3 id="natural-healing">Natural Healing</h3>
+        <p>
+          Characters heal (regain) their level in hit points each night.
+          If they rest all day, they heal twice as much.
+        </p>
+        <h2 id="dying">Dying</h2>
+        <p>
+          Characters die at −10 HP or when circumstances dictate they should
+          die.
+        </p>
+        <p>
+          If in combat, measure time in rounds as usual. If not in combat,
+          then begin measuring time in rounds to determine if you are able to
+          save the character in time.
+        </p>
+        <p>
+          A character at negative HP must roll to stabilize at a 10% chance
+          at the beginning of their turn.
+        </p>
+        <p>
+          Characters who are not stable loses 1 HP at the beginning of their
+          turn.
+        </p>
+        <p>
+          A character who is healed or granted temporary hit points stabilizes.
+        </p>
+        <p>
+          A character can be stabilized by a DC 15 wisdom check as a full-round
+          action. Only one character may make this check each round.
+        </p>
         <h2 id="jumping">Jumping</h2>
         
         <p>
@@ -859,19 +950,6 @@
         <p>
           In combat, you cannot jump farther than your remaining movement
           for the round.
-        </p>
-        <h2 id="double-jeopardy">Double Jeopardy</h2>
-        <p>
-          In almost all cases, the same action cannot be attempted twice.
-          For example, if a character fails to pick a lock, the party cannot
-          retry that lock. They will need to do something substantively
-          different, usually escalating the situation.
-        </p>
-        <h2 id="natural-healing">Natural Healing</h2>
-        
-        <p>
-          Characters heal their level in hit points each night.
-          If they rest all day, they heal twice as much.
         </p>
         <h2 id="food-and-water">Food and Water</h2>
         <p>
@@ -982,7 +1060,7 @@
             <li>+2 Will Saves</li>
             <li>Proficiency with normal weapons, light armor</li>
             <li>Proficiency with scrolls, wands and staves</li>
-            <li>May start play with a wand of fire or a wand of healing</li>
+            <li>May start play with a <a href="#wand-of-fire">wand of fire</a> or a <a href="#wand-of-healing">wand of healing</a></li>
           </ul>
           <h3 id="finder-of-secrets">Finder of Secrets</h3>
           <p>
@@ -991,7 +1069,7 @@
           </p>
           <h3 id="keeper-of-magic">Keeper of Magic</h3>
           <p>
-            An Acolyte of Boccob can add their level to attacks with spells
+            An Acolyte of Boccob can add their level to attack rolls with spells
             from wands, staves and scrolls. They can also add their level to
             the saving throw DCs from wands, staves and scrolls.
           </p>
@@ -1001,6 +1079,35 @@
             They must attempt to use the item in a manner appropriate to the
             item (wear a helmet, swing a sword, etc.)
           </p>
+          <p>
+            Example DCs are given below:
+          </p>
+          <table class="puny">
+            <thead>
+              <tr class="table_header">
+                <th>Item</th>
+                <th>DC</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="odd">
+                <td>Weapon</td>
+                <td>10</td>
+              </tr>
+              <tr class="even">
+                <td>Armor</td>
+                <td>10</td>
+              </tr>
+              <tr class="odd">
+                <td>Ring</td>
+                <td>15</td>
+              </tr>
+              <tr class="even">
+                <td>Helmet</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
           <h3 id="artificer-of-magic">Artificer of Magic</h3>
           <p>
             An Acolyte of Boccob can add their level to checks to create magic items.
@@ -1078,7 +1185,7 @@
           <h3 id="remarkable-athlete">Remarkable Athlete</h3>
           <p>
             Champions can add their level to any ability check to perform a
-            physical stunt. Additionally, they can jump 5 feet farther than normal.
+            physical stunt. Additionally, they can <a href="#jumping">jump</a> 5 feet farther than normal.
           </p>
         </div>
         <div class="class_description">
@@ -1190,7 +1297,7 @@
           <h4 id="1st-level-crusader-maneuvers">1st Level Crusader Maneuvers</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="battle-blessing">
                 Battle Blessing
               </div>
               <div class="power_type">
@@ -1202,7 +1309,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="burning-smite">
                 Burning Smite
               </div>
               <div class="power_type">
@@ -1214,7 +1321,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="cleansing-fire">
                 Cleansing Fire
               </div>
               <div class="power_type">
@@ -1227,7 +1334,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="douse-the-flames">
                 Douse the Flames
               </div>
               <div class="power_type">
@@ -1239,7 +1346,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="heros-strike">
                 Hero's Strike
               </div>
               <div class="power_type">
@@ -1253,7 +1360,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="ironskin">
                 Ironskin
               </div>
               <div class="power_type">
@@ -1264,7 +1371,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="leading-the-attack">
                 Leading the Attack
               </div>
               <div class="power_type">
@@ -1276,7 +1383,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="shield-of-faith">
                 Shield of Faith
               </div>
               <div class="power_type">
@@ -1288,7 +1395,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="thunderous-smite">
                 Thunderous Smite
               </div>
               <div class="power_type">
@@ -1300,7 +1407,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="wrathful-smite">
                 Wrathful Smite
               </div>
               <div class="power_type">
@@ -1315,7 +1422,7 @@
           <h4 id="3rd-level-crusader-maneuvers">3rd Level Crusader Maneuvers</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="armorcrushing-strike">
                 Armorcrushing Strike
               </div>
               <div class="power_type">
@@ -1326,7 +1433,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="defensive-rebuke">
                 Defensive Rebuke
               </div>
               <div class="power_type">
@@ -1338,7 +1445,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="overwhelming-strike">
                 Overwhelming Strike
               </div>
               <div class="power_type">
@@ -1349,7 +1456,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="venriks-mercy">
                 Venrik's Mercy
               </div>
               <div class="power_type">
@@ -1361,7 +1468,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="venriks-gambit">
                 Venrik's Gambit
               </div>
               <div class="power_type">
@@ -1382,7 +1489,7 @@
           <h4 id="5th-level-crusader-maneuvers">5th Level Crusader Maneuvers</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="deadly-rebuke">
                 Deadly Rebuke
               </div>
               <div class="power_type">
@@ -1396,7 +1503,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="order-forged-from-chaos">
                 Order Forged From Chaos
               </div>
               <div class="power_type">
@@ -1407,7 +1514,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="staggering-smite">
                 Staggering Smite
               </div>
               <div class="power_type">
@@ -1419,7 +1526,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="tactical-strike">
                 Tactical Strike
               </div>
               <div class="power_type">
@@ -1431,7 +1538,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="valor-of-venrik">
                 Valor of Venrik
               </div>
               <div class="power_type">
@@ -1455,7 +1562,7 @@
           </p>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="leading-the-charge">
                 Leading the Charge
               </div>
               <div class="power_type">
@@ -1467,7 +1574,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="martial-spirit">
                 Martial Spirit
               </div>
               <div class="power_type">
@@ -1481,7 +1588,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="master-tactics">
                 Master Tactics
               </div>
               <div class="power_type">
@@ -1492,7 +1599,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="protectors-vigil">
                 Protector's Vigil
               </div>
               <div class="power_type">
@@ -1503,7 +1610,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="punishers-glare">
                 Punisher's Glare
               </div>
               <div class="power_type">
@@ -1514,7 +1621,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="the-mountain">
                 The Mountain
               </div>
               <div class="power_type">
@@ -1525,7 +1632,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="thicket-of-blades">
                 Thicket of Blades
               </div>
               <div class="power_type">
@@ -1669,7 +1776,7 @@
           </p>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="abundant-step">
                 Abundant Step
               </div>
               <div class="power_type">
@@ -1689,7 +1796,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="deflection">
                 Deflection
               </div>
               <div class="power_type">
@@ -1704,7 +1811,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="empty-body">
                 Empty Body
               </div>
               <div class="power_type">
@@ -1721,7 +1828,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="laws-of-momentum">
                 Laws of Momentum
               </div>
               <div class="power_type">
@@ -1736,7 +1843,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="leap-of-the-clouds">
                 Leap of the Clouds
               </div>
               <div class="power_type">
@@ -1752,7 +1859,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="purity-of-body">
                 Purity of Body
               </div>
               <div class="power_type">
@@ -1766,7 +1873,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="thickness-of-air">
                 Thickness of Air
               </div>
               <div class="power_type">
@@ -1781,7 +1888,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="tongue-of-the-sun-and-moon">
                 Tongue of the Sun and Moon
               </div>
               <div class="power_type">
@@ -1796,7 +1903,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="uncanny-awareness">
                 Uncanny Awareness
               </div>
               <div class="power_type">
@@ -1924,7 +2031,7 @@
           <h4 id="1st-level-dragon-knight-maneuvers">1st Level Dragon Knight Maneuvers</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="tail-lash">
                 Tail Lash
               </div>
               <div class="power_type">
@@ -1935,7 +2042,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="brazen-strike">
                 Brazen Strike
               </div>
               <div class="power_type">
@@ -1946,7 +2053,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="counter-charge">
                 Counter Charge
               </div>
               <div class="power_type">
@@ -1957,7 +2064,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="focused-mind">
                 Focused Mind
               </div>
               <div class="power_type">
@@ -1968,7 +2075,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="sudden-leap">
                 Sudden Leap
               </div>
               <div class="power_type">
@@ -1979,7 +2086,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="the-dragons-claws">
                 The Dragon's Claws
               </div>
               <div class="power_type">
@@ -1990,7 +2097,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="douse-the-flames1">
                 Douse the Flames
               </div>
               <div class="power_type">
@@ -2001,7 +2108,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="dragonskin">
                 Dragonskin
               </div>
               <div class="power_type">
@@ -2012,7 +2119,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="leading-the-attack1">
                 Leading the Attack
               </div>
               <div class="power_type">
@@ -2026,7 +2133,7 @@
           <h4 id="3rd-level-dragon-knight-maneuvers">3rd Level Dragon Knight Maneuvers</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="dragons-fury">
                 Dragon's Fury
               </div>
               <div class="power_type">
@@ -2037,7 +2144,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="wall-of-teeth">
                 Wall of Teeth
               </div>
               <div class="power_type">
@@ -2048,7 +2155,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="clever-positioning">
                 Clever Positioning
               </div>
               <div class="power_type">
@@ -2059,7 +2166,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="armorcrushing-strike1">
                 Armorcrushing Strike
               </div>
               <div class="power_type">
@@ -2070,7 +2177,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="overwhelming-strike1">
                 Overwhelming Strike
               </div>
               <div class="power_type">
@@ -2081,7 +2188,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="leap-attack">
                 Leap Attack
               </div>
               <div class="power_type">
@@ -2097,7 +2204,7 @@
           <h4 id="5th-level-dragon-knight-maneuvers">5th Level Dragon Knight Maneuvers</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="dragon-heart-surge">
                 Dragon Heart Surge 
               </div>
               <div class="power_type">
@@ -2108,7 +2215,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="crippling-strike">
                 Crippling Strike 
               </div>
               <div class="power_type">
@@ -2119,7 +2226,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="lightning-recovery">
                 Lightning Recovery 
               </div>
               <div class="power_type">
@@ -2130,7 +2237,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="roar-of-the-dragon">
                 Roar of the Dragon 
               </div>
               <div class="power_type">
@@ -2153,7 +2260,7 @@
           </p>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="punishing-stance">
                 Punishing Stance 
               </div>
               <div class="power_type">
@@ -2164,7 +2271,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="challengers-stance">
                 Challenger's Stance 
               </div>
               <div class="power_type">
@@ -2175,7 +2282,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="dragons-hunger">
                 Dragon's Hunger 
               </div>
               <div class="power_type">
@@ -2186,7 +2293,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="intimidating-dragon">
                 Intimidating Dragon 
               </div>
               <div class="power_type">
@@ -2197,7 +2304,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="rampaging-dragon">
                 Rampaging Dragon 
               </div>
               <div class="power_type">
@@ -2208,7 +2315,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="leaping-dragon">
                 Leaping Dragon 
               </div>
               <div class="power_type">
@@ -2221,7 +2328,7 @@
           </div>
         </div>
         <div class="class_description">
-          <h2 id="feinsten-clan-dwarf">Feinsten Clan Dwarf</h2>
+          <h2 id="feinstein-clan-dwarf">Feinstein Clan Dwarf</h2>
           
           <h3 id="dwarf-class-table">Dwarf Class Table</h3>
           <table class="small class_table">
@@ -2538,16 +2645,17 @@
             <li>        Illiterate</li>
             <li>        Great Memory</li>
             <li>        Prehensile Trunk -- cannot be used to wield weapons or
-                    shields, but can be used to grab, grapple, draw potions,
-                    etc.</li>
+                    shields, but can be used to <a href="#grab-attack">grab</a>,
+                    <a href="#grapple">grapple</a>, 
+                    <a href="#draw-an-item">draw potions</a>, etc.</li>
             <li>        8' tall</li>
             <li>        Stampede: +4 to overrun and bull rush. Upon a succesful
                     overrun, deals an extra d6 bludgeoning damage.</li>
             <li>        Unable to ride horses or similar sized mounts or smaller.
                     However, when travelling overland they move at 4mph instead
                     of 3mph (they move as fast as a horse when travelling long
-                    distance).</li>
-            <li>        </li>
+                    distance).
+                    </li>
           </ul>
         </div>
         <div class="class_description">
@@ -2637,7 +2745,7 @@
           <div class="circle_magic">
             <h4 id="circle-of-the-flame">Circle of the Flame</h4>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="firebolt">
                 Firebolt
               </div>
               <div class="spell_action">
@@ -2653,7 +2761,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="flameburst">
                 Flameburst
               </div>
               <div class="spell_action">
@@ -2669,7 +2777,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="control-flames">
                 Control Flames
               </div>
               <div class="spell_action">
@@ -2685,7 +2793,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="explosion">
                 Explosion
               </div>
               <div class="spell_action">
@@ -2713,7 +2821,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="fireworks">
                 Fireworks
               </div>
               <div class="spell_action">
@@ -2732,7 +2840,7 @@
           <div class="circle_magic">
             <h4 id="circle-of-the-unseen-hand">Circle of the Unseen Hand</h4>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="mage-hand">
                 Mage Hand
               </div>
               <div class="spell_action">
@@ -2760,7 +2868,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="floating-disk-requires-your-concentration">
                 Floating Disk (requires your concentration)
               </div>
               <div class="spell_action">
@@ -2776,7 +2884,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="mage-shield">
                 Mage Shield
               </div>
               <div class="spell_action">
@@ -2792,7 +2900,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="arcane-dart">
                 Arcane Dart
               </div>
               <div class="spell_action">
@@ -2811,7 +2919,7 @@
           <div class="circle_magic">
             <h4 id="circle-of-the-transient">Circle of the Transient</h4>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="make-malleable">
                 Make Malleable
               </div>
               <div class="spell_action">
@@ -2834,7 +2942,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="make-clear">
                 Make Clear
               </div>
               <div class="spell_action">
@@ -2854,7 +2962,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="gaseous-form">
                 Gaseous Form
               </div>
               <div class="spell_action">
@@ -2882,7 +2990,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="animate-rope-requires-your-concentration">
                 Animate Rope (Requires your concentration)
               </div>
               <div class="spell_action">
@@ -2906,7 +3014,7 @@
           <div class="circle_magic">
             <h4 id="circle-of-the-trickster">Circle of the Trickster</h4>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="ventriloquism">
                 Ventriloquism
               </div>
               <div class="spell_action">
@@ -2924,7 +3032,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="arcane-eye">
                 Arcane Eye
               </div>
               <div class="spell_action">
@@ -2946,7 +3054,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="alter-appearance-requires-your-concentration">
                 Alter Appearance (Requires your concentration)
               </div>
               <div class="spell_action">
@@ -2967,7 +3075,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="confuse">
                 Confuse
               </div>
               <div class="spell_action">
@@ -2987,7 +3095,7 @@
           <div class="circle_magic">
             <h4 id="circle-of-the-zephyr">Circle of the Zephyr</h4>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="favorable-winds-requires-your-concentration">
                 Favorable Winds (requires your concentration)
               </div>
               <div class="spell_action">
@@ -3004,7 +3112,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="breathe-requires-your-concentration">
                 Breathe (requires your concentration)
               </div>
               <div class="spell_action">
@@ -3021,7 +3129,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="gust-of-wind">
                 Gust of Wind
               </div>
               <div class="spell_action">
@@ -3039,7 +3147,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="fog-cloud-requires-your-concentration">
                 Fog Cloud (requires your concentration)
               </div>
               <div class="spell_action">
@@ -3060,7 +3168,7 @@
           <div class="circle_magic">
             <h4 id="circle-of-circles">Circle of Circles</h4>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="circle-of-protection-requires-your-concentration">
                 Circle of Protection (requires your concentration)
               </div>
               <div class="spell_action">
@@ -3084,7 +3192,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="circle-of-summoning">
                 Circle of Summoning
               </div>
               <div class="spell_action">
@@ -3115,7 +3223,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="circle-of-regrouping">
                 Circle of Regrouping
               </div>
               <div class="spell_action">
@@ -3136,7 +3244,7 @@
           <div class="circle_magic">
             <h4 id="circle-of-foresight">Circle of Foresight</h4>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="remote-vision">
                 Remote Vision
               </div>
               <div class="spell_action">
@@ -3157,7 +3265,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="disciplined-mind-requires-your-concentration">
                 Disciplined Mind (requires your concentration)
               </div>
               <div class="spell_action">
@@ -3173,7 +3281,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="alarm-requires-your-concentration">
                 Alarm (requires your concentration)
               </div>
               <div class="spell_action">
@@ -3192,7 +3300,7 @@
               </div>
             </div>
             <div class="spell">
-              <div class="spell_title">
+              <div class="spell_title" id="true-strike">
                 True Strike
               </div>
               <div class="spell_action">
@@ -3361,6 +3469,7 @@
           </p>
           <p>
             As long as you are being wielded, you can take a standard action to attack.
+            You do not threaten and cannot take attacks of opportunity.
           </p>
           <p>
             You can be sundered, however you have advantage on the defense roll as long
@@ -4016,7 +4125,7 @@
                 <li>HP 15 (3d10 hit dice)</li>
                 <li>Attack: +3 (or +1 if attacking with both claws)</li>
                 <li>Saves: +3</li>
-                <li>Two Claws: 1d4 damage each + free action grab against targets smaller than it.</li>
+                <li>Two Claws: 1d4 damage each + free action <a href="#grab-attack">grab</a> against targets smaller than it.</li>
                 <li>Speed 30</li>
                 <li>Swim 20</li>
               </ul>
@@ -4582,7 +4691,7 @@
           <h4 id="level-1-weaponmaster-talents">Level 1 Weaponmaster Talents</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="single-weapon-fighting">
                 Single Weapon Fighting
               </div>
               <div class="power_text">
@@ -4594,19 +4703,21 @@
                 <ul>
                   <li>You get +2 attack (does not stack with other fighting styles).</li>
                   <li>
-                                  When you attack a creature, you do not provoke attacks of
-                                  opportunity from that creature this turn.
+                                  When you attack a creature, you do not provoke 
+                                  <a href="#attack-of-opportunity">attacks of opportunity</a>
+                                  from that creature this turn.
                                   </li>
                 </ul>
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="dual-weapon-fighting">
                 Dual-Weapon Fighting
               </div>
               <div class="power_text">
                 <p>
-                  You can dual-wield without penalties and gain a +1 bonus
+                  You can <a href="#dual-wield-attack">dual-wield</a>
+                  without penalties and gain a +1 bonus
                   to AC while dual-wielding.
                 </p>
                 <p>
@@ -4615,7 +4726,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="great-weapon-fighting">
                 Great-Weapon Fighting
               </div>
               <div class="power_text">
@@ -4633,7 +4744,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="small-weapon-fighting">
                 Small-Weapon Fighting
               </div>
               <div class="power_text">
@@ -4649,7 +4760,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="ranged-weapon-fighting">
                 Ranged-Weapon Fighting
               </div>
               <div class="power_text">
@@ -4657,7 +4768,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="shield-fighting">
                 Shield Fighting
               </div>
               <div class="power_text">
@@ -4673,7 +4784,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="crossbow-fighting">
                 Crossbow Fighting
               </div>
               <div class="power_text">
@@ -4686,7 +4797,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="bow-fighting">
                 Bow Fighting
               </div>
               <div class="power_text">
@@ -4702,7 +4813,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="axe-fighting">
                 Axe-fighting
               </div>
               <div class="power_text">
@@ -4716,7 +4827,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="sword-fighting">
                 Sword-fighting
               </div>
               <div class="power_text">
@@ -4730,7 +4841,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="hammer-fighting">
                 Hammer-fighting
               </div>
               <div class="power_text">
@@ -4743,7 +4854,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="spear-fighting">
                 Spear-fighting
               </div>
               <div class="power_text">
@@ -4757,7 +4868,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="flail-fighting">
                 Flail-fighting
               </div>
               <div class="power_text">
@@ -4767,7 +4878,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="unarmed-fighting">
                 Unarmed-fighting
               </div>
               <div class="power_text">
@@ -4777,27 +4888,34 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="master-tripper">
                 Master Tripper
               </div>
               <div class="power_text">
                 <p>
-                  You get a +4 bonus to trip attempts. Additionally, if you succeed on your trip attempt you may immediately make an extra standard melee attack on the victim.
+                  You get a +4 bonus to <a href="#trip-attack">trip attempts</a>.
+                  Additionally, if you succeed on your trip attempt you may
+                  immediately make an extra <a href="#standard-attack">standard melee attack</a>
+                  on the victim.
                 </p>
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="master-grappler">
                 Master Grappler
               </div>
               <div class="power_text">
                 <p>
-                  You get a +4 bonus to grapple attempts and grapple checks. Additionally, if you succeed on your grapple attempt, you may immediately deal grapple damage (thus you deal double grapple damage when initiating a grapple and whenever trying to deal damage in a grapple).
+                  You get a +4 bonus to <a href="#grapple">grapple attempts and grapple checks</a>.
+                  Additionally, if you succeed on your grapple attempt, you may
+                  immediately deal grapple damage (thus you deal double grapple
+                  damage when initiating a grapple and whenever trying to deal
+                  damage in a grapple).
                 </p>
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="master-disarmer">
                 Master Disarmer
               </div>
               <div class="power_text">
@@ -4812,7 +4930,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="master-sunderer">
                 Master Sunderer
               </div>
               <div class="power_text">
@@ -4827,7 +4945,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="master-bull">
                 Master Bull
               </div>
               <div class="power_text">
@@ -4841,7 +4959,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="cleave">
                 Cleave
               </div>
               <div class="power_text">
@@ -4853,7 +4971,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="combat-reflexes">
                 Combat Reflexes
               </div>
               <div class="power_text">
@@ -4863,7 +4981,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="dodge">
                 Dodge
               </div>
               <div class="power_text">
@@ -4873,7 +4991,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="diehard">
                 Diehard
               </div>
               <div class="power_text">
@@ -4885,7 +5003,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="quick-draw">
                 Quick-draw
               </div>
               <div class="power_text">
@@ -4897,8 +5015,8 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
-                Run
+              <div class="power_title" id="sprinter">
+                Sprinter
               </div>
               <div class="power_text">
                 <p>
@@ -4908,7 +5026,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="punisher">
                 Punisher
               </div>
               <div class="power_text">
@@ -4927,7 +5045,7 @@
               Great-weapon specialization for example.
             </p>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="great-weapon-specialization">
                 Great-Weapon Specialization
               </div>
               <div class="power_text">
@@ -4935,7 +5053,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="small-weapon-specialization">
                 Small-Weapon Specialization
               </div>
               <div class="power_text">
@@ -4943,7 +5061,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="dual-weapon-specialization">
                 Dual-Weapon Specialization
               </div>
               <div class="power_text">
@@ -4951,7 +5069,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="shield-specialization">
                 Shield Specialization
               </div>
               <div class="power_text">
@@ -4959,7 +5077,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="axe-specialization">
                 Axe Specialization
               </div>
               <div class="power_text">
@@ -4967,7 +5085,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="sword-specialization">
                 Sword Specialization
               </div>
               <div class="power_text">
@@ -4975,7 +5093,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="hammer-specialization">
                 Hammer Specialization
               </div>
               <div class="power_text">
@@ -4983,7 +5101,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="spear-specialization">
                 Spear Specialization
               </div>
               <div class="power_text">
@@ -4991,7 +5109,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="flail-specialization">
                 Flail Specialization
               </div>
               <div class="power_text">
@@ -4999,7 +5117,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="unarmed-specialization">
                 Unarmed Specialization
               </div>
               <div class="power_text">
@@ -5007,7 +5125,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="bow-specialization">
                 Bow Specialization
               </div>
               <div class="power_text">
@@ -5015,7 +5133,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="crossbow-specialization">
                 Crossbow Specialization
               </div>
               <div class="power_text">
@@ -5023,7 +5141,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="anvil-amp-thunder-hammer--axe">
                 Anvil &amp; Thunder (Hammer + Axe)
               </div>
               <div class="power_text">
@@ -5034,7 +5152,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="slice-amp-dice-sword--axe">
                 Slice &amp; Dice (Sword + Axe)
               </div>
               <div class="power_text">
@@ -5045,7 +5163,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="chain-amp-sword-flail--sword">
                 Chain &amp; Sword (Flail + Sword)
               </div>
               <div class="power_text">
@@ -5058,7 +5176,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="ringing-bell-flail--hammer">
                 Ringing Bell (Flail + Hammer)
               </div>
               <div class="power_text">
@@ -5070,7 +5188,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="deflect-arrows">
                 Deflect Arrows
               </div>
               <div class="power_text">
@@ -5081,7 +5199,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="stand-still">
                 Stand Still
               </div>
               <div class="power_text">
@@ -5094,7 +5212,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="deft-charge">
                 Deft Charge
               </div>
               <div class="power_text">
@@ -5108,7 +5226,7 @@
           <h4 id="level-5-weaponmaster-talents">Level 5 Weaponmaster Talents</h4>
           <div class="maneuvers">
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="more-critical">
                 More Critical
               </div>
               <div class="power_text">
@@ -5120,7 +5238,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="better-critical">
                 Better Critical
               </div>
               <div class="power_text">
@@ -5132,7 +5250,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="whirlwind-attack">
                 Whirlwind Attack
               </div>
               <div class="power_text">
@@ -5142,7 +5260,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="volley">
                 Volley
               </div>
               <div class="power_text">
@@ -5154,7 +5272,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="resilience">
                 Resilience
               </div>
               <div class="power_text">
@@ -5164,7 +5282,7 @@
               </div>
             </div>
             <div class="power">
-              <div class="power_title">
+              <div class="power_title" id="too-hard-to-die">
                 Too Hard to Die
               </div>
               <div class="power_text">
@@ -7097,7 +7215,7 @@
             <p>
               Barding may be created for a destrier, in the form of either chain or plate. All barding is bespoke and thus negotiated with the armorer.
             </p>
-            <h4 id="traveling-statistics">Traveling Statistics</h4>
+            <h4 id="traveling-statistics1">Traveling Statistics</h4>
             <ul>
               <li>Long Distance Overland Speed: 4mph</li>
               <li>Tactical Ground Speed: 40'/round</li>
@@ -7109,7 +7227,7 @@
                 </ul>
               </li>
             </ul>
-            <h4 id="combat-statistics">Combat Statistics</h4>
+            <h4 id="combat-statistics1">Combat Statistics</h4>
             <ul>
               <li>AC: 12</li>
               <li>HP: 30</li>
@@ -7157,7 +7275,7 @@
             <p>
               The following statistics are for an average male adult drake.
             </p>
-            <h4 id="traveling-statistics">Traveling Statistics</h4>
+            <h4 id="traveling-statistics2">Traveling Statistics</h4>
             <ul>
               <li>Daily Flying Distance: 40 miles</li>
               <li>Tactical Flight Speed: 120'/round</li>
@@ -7175,7 +7293,7 @@
               A drake bearing a rider or more than 30 slots of gear cannot fight
               without risking dislodging the rider.
             </p>
-            <h4 id="combat-statistics">Combat Statistics</h4>
+            <h4 id="combat-statistics2">Combat Statistics</h4>
             <ul>
               <li>AC: 16</li>
               <li>HP: 55</li>
@@ -7269,7 +7387,7 @@
             <p>
               Barding may be created for a pegasus like a destrier, but anything heavier than mithral leaves them unable to fly.
             </p>
-            <h4 id="traveling-statistics">Traveling Statistics</h4>
+            <h4 id="traveling-statistics3">Traveling Statistics</h4>
             <ul>
               <li>Daily Flying Distance: 60 miles</li>
               <li>Long Distance Overland Speed: 4mph</li>
@@ -7283,7 +7401,7 @@
                 </ul>
               </li>
             </ul>
-            <h4 id="combat-statistics">Combat Statistics</h4>
+            <h4 id="combat-statistics3">Combat Statistics</h4>
             <ul>
               <li>AC: 12</li>
               <li>HP: 30</li>
@@ -7454,9 +7572,8 @@
           More to come…
         </p>
       </div><div class="combat rules">
-        <h1 id="combat">Combat</h1>
+        <h1 id="combat-rules">Combat Rules</h1>
         <h2 id="initiative-and-the-flow-of-combat">Initiative and the Flow of Combat</h2>
-        
         <p>
           At the beginning of combat, each side rolls a d20.
           The side of the high roller gets to go first.
@@ -7526,7 +7643,6 @@
           may be limited in how many times they can be repeated.
         </p>
         <h2 id="calculating-attack-bonus">Calculating Attack Bonus</h2>
-        
         <p>
           Normally, your attack bonus is your Base Attack Bonus
           (BAB) from your class, plus any circumstantial modifiers.
@@ -7563,7 +7679,6 @@
           
         </p>
         <h2 id="attack-of-opportunity">Attack of Opportunity</h2>
-        
         <p>
           An attack of opportunity is a reaction that is performed
           in response to some activity that lowers the opponent's
@@ -7618,12 +7733,192 @@
           than one creature, only two creatures may actually make
           an attack of opportunity.
         </p>
-        <h2 id="actions">Actions</h2>
-        <h3 id="movement-actions">Movement Actions</h3>
-        
+        <h2 id="movement">Movement</h2>
+        <p>
+          You can spend movement before or after actions, given that
+          something has granted you movement this turn such as the walk
+          action. For example, you can take the walk action (to be able
+          to move your speed this round), move 10 feet, make a standard
+          action attack against a goblin, kill it, and then move 20 more feet.
+        </p>
+        <p>
+          You can attempt to move through other creatures by making an
+          Overrun attempt.
+        </p>
+        <p>
+          You may overrun during the course of a charge.
+        </p>
         <div class="maneuvers">
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="overrun">
+              Overrun
+            </div>
+            <div class="power_type">
+              Special
+            </div>
+            <div class="power_text">
+              <p>
+                You may make a single overrun attempt during your turn.
+              </p>
+              <p>
+                You can only overrun creatures at most one size
+                category larger than you.
+              </p>
+              <p>
+                If you allow them to move aside and they choose to move
+                aside, then you move through their space with no consequence
+                (not even an attack of opportunity from the movement) and
+                this does not count as your overrun attempt.
+              </p>
+              <p>
+                Otherwise, you and your opponent make opposed attack rolls,
+                adding your BAB.
+              </p>
+              <p>
+                A creature larger than medium gets +4 for every size category
+                larger and creatures smaller than medium get a −4 penalty for
+                each category smaller.
+              </p>
+              <p>
+                If you win the opposed check, then you knock your opponent
+                prone and keep moving through them, without provoking attacks
+                of opportunity.
+              </p>
+              <p>
+                You must move at least 10' straight through them and are
+                not allowed to double back.
+              </p>
+              <p>
+                If you or your mount deal trample damage, the damage is
+                automatically inflicted if you win.
+              </p>
+              <p>
+                Otherwise, you are knocked prone instead and your movement
+                immediately ends.
+              </p>
+              <p>
+                Some creatures (like horses) are not knocked prone on a failed
+                attempt and can attempt multiple overruns in a round. If they
+                fail, their movement instead ceases.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2 id="no-merry-go-rounds">No Merry Go Rounds</h2>
+        <h2 id="firing-into-a-crowd">Firing into a crowd</h2>
+        <p>
+          Ranged attackers are obligated to target randomly between potential
+          enemy targets who are near one another
+        </p>
+        <p>
+          You can ignore this penalty by suffering a −4 penalty to your attack
+          roll(s).
+        </p>
+        <h3 id="cover">Cover</h3>
+        <p>
+          A target behind cover receives a bonus to AC from attacks on the other
+          side of cover, dependent on the extend of the cover.
+        </p>
+        <p>
+          A creature can use a move action to &quot;take cover&quot;. This doubles
+          the benefit of the cover until they leave it, either because they move or
+          they take an action that requires leaving the cover.
+        </p>
+        <p>
+          A creature behind total cover cannot be directly targeted or attacked.
+        </p>
+        <table class="small">
+          <thead>
+            <tr class="table_header">
+              <th>Cover</th>
+              <th>Bonus</th>
+              <th>Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd">
+              <td>Partial</td>
+              <td>+2</td>
+              <td>
+                              Standing behind a waist-high table or wall.
+                              Hiding around a corner of a wall
+                              </td>
+            </tr>
+            <tr class="even">
+              <td>Greater</td>
+              <td>+4</td>
+              <td>Standing behind a crenellation or chest high wall</td>
+            </tr>
+            <tr class="odd">
+              <td>Near Total</td>
+              <td>+8</td>
+              <td>Standing behind an arrow-slit</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 id="high-ground">High Ground</h2>
+        <p>
+          Attacks from the high ground receive a +1 bonus.
+        </p>
+        <p>
+          The difference in height needs to be at least 2 feet
+          for melee attacks and 6 feet for ranged attacks.
+        </p>
+        <h2 id="concealment">Concealment</h2>
+        <p>
+          Some effects (such as fog, blindness, invisbility or darkness) grant
+          some degree of concealment.
+        </p>
+        <p>
+          Concealment is rated at either 20% or 50%.
+        </p>
+        <p>
+          Whenever an attack is made against a target with concealment, first
+          roll the concealment percentage to see if it misses due to concealment.
+        </p>
+        <p>
+          If it does not, then roll the attack roll as normal.
+        </p>
+        <p>
+          In some circumstances, the DM may rule your attack will still need to
+          be rolled, just not against who you intended. For example, firing at a
+          figure you can barely see when he has a crowd behind him.
+        </p>
+        <h2 id="mounted-combat">Mounted Combat</h2>
+        <p>
+          In battle, mounts move faster than when out of combat. A warhorse
+          has a speed of 60 feet when in combat.
+        </p>
+        <p>
+          If you are riding a mount, you use your actions to move the mount,
+          but use the mount's speed. Your mount is not allowed to take actions
+          while ridden.
+        </p>
+        <p>
+          For example, if you want to charge while riding a destrier, you take
+          a full-round action. The destrier moves 120 feet, at the end of which
+          you can make a reckless attack, etc.
+        </p>
+        <p>
+          Mounts can overrun as part of their movement. They use your attack
+          bonus, but their size. A mount's description will list if this inflicts
+          any trample damage.
+        </p>
+        <p>
+          While you are mounted, you can only use 1-handed weapons, not light
+          weapons or two-handed weapons.
+        </p>
+        <p>
+          While you are mounted and your opponent is not, you are considered
+          to have the high ground.
+        </p>
+        <hr>
+      </div><div class="combat rules">
+        <h1 id="combat-actions">Combat Actions</h1>
+        <h2 id="movement-actions">Movement Actions</h2>
+        <div class="maneuvers">
+          <div class="power">
+            <div class="power_title" id="walk">
               Walk
             </div>
             <div class="power_type">
@@ -7634,7 +7929,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="hustle">
               Hustle
             </div>
             <div class="power_type">
@@ -7645,7 +7940,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="run">
               Run
             </div>
             <div class="power_type">
@@ -7653,13 +7948,13 @@
             </div>
             <div class="power_text">
               
-                          This round you can move 4x your speed. You are 
+                          This round you can move 4x your speed. You are
                           considered flat-footed against any attack.
                           
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="stand-up">
               Stand Up
             </div>
             <div class="power_type">
@@ -7670,7 +7965,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="widthdraw">
               Widthdraw
             </div>
             <div class="power_type">
@@ -7678,37 +7973,36 @@
             </div>
             <div class="power_text">
               
-                          This round you can move double your speed. 
+                          This round you can move double your speed.
                           Creatures who started your turn threatening you
                           cannot take attacks of opportunity against you.
                           
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="reposition">
               Reposition
             </div>
             <div class="power_type">
               Free Action*
             </div>
             <div class="power_text">
-              You can only take this action if you haven't 
-                          otherwise moved. After taking this action, you 
-                          also cannot move. You can move 5 feet without 
-                          provoking attacks of opportunity as long as you 
-                          remain within the reach of everyone who threatens 
+              You can only take this action if you haven't
+                          otherwise moved. After taking this action, you
+                          also cannot move. You can move 5 feet without
+                          provoking attacks of opportunity as long as you
+                          remain within the reach of everyone who threatens
                           attacks of opportunity against you.
             </div>
           </div>
         </div>
-        <h3 id="melee-or-ranged-attacks">Melee or Ranged Attacks</h3>
-        
+        <h2 id="melee-or-ranged-attacks">Melee or Ranged Attacks</h2>
         <p>
           All ranged attacks provoke an attack of opportunity.
         </p>
         <div class="maneuvers">
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="standard-attack">
               Standard Attack
             </div>
             <div class="power_type">
@@ -7725,7 +8019,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="dual-wield-attack">
               Dual Wield Attack
             </div>
             <div class="power_type">
@@ -7746,7 +8040,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="rapid-attack">
               Rapid Attack
             </div>
             <div class="power_type">
@@ -7760,7 +8054,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="called-shot">
               Called Shot
             </div>
             <div class="power_type">
@@ -7779,9 +8073,13 @@
               <p>
                 You must be able to see your target clearly (no
                 concealment or blindness).
+              </p>
+              <p>
                 The DM may make specific rulings to allow other
                 called shots or variant effects (such as attacking
                 a tentacle in order to free a comrade from a grab).
+              </p>
+              <p>
                 The penalty from arms and hands do not stack with
                 one another.
               </p>
@@ -7836,11 +8134,10 @@
             </div>
           </div>
         </div>
-        <h3 id="melee-only-attacks">Melee Only Attacks</h3>
-        
+        <h2 id="melee-only-attacks">Melee Only Attacks</h2>
         <div class="maneuvers">
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="reckless-attack">
               Reckless Attack
             </div>
             <div class="power_type">
@@ -7858,7 +8155,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="guarded-attack">
               Guarded Attack
             </div>
             <div class="power_type">
@@ -7866,13 +8163,13 @@
             </div>
             <div class="power_text">
               
-                          Make a single attack at −2 attack, but gain +2 AC 
+                          Make a single attack at −2 attack, but gain +2 AC
                           until the beginning of your next turn.
                           
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="charge-attack">
               Charge Attack
             </div>
             <div class="power_type">
@@ -7883,13 +8180,15 @@
                 Move up to double your speed in a straight line,
                 at the end of which make a Reckless Attack, Drive
                 Back or Bull Rush Attack.
+              </p>
+              <p>
                 If you charge on a mount, you deal double damage
                 with a lance if you hit.
               </p>
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="drive-back-attack">
               Drive Back Attack
             </div>
             <div class="power_type">
@@ -7904,6 +8203,8 @@
                 If they move back 5 feet, you can follow for free
                 and make a single standard attack against them at
                 −2.
+              </p>
+              <p>
                 If they choose to stand still, you can make a
                 single standard attack against them at +2.
               </p>
@@ -7918,7 +8219,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="grapple">
               Grapple
             </div>
             <div class="power_type">
@@ -8001,21 +8302,21 @@
                 <li>                Move the grapple. You can move the grapple up to half
                                 your speed by winning an opposed grapple check.</li>
                 <li>                Escape the grapple. You must win an opposed grapple check
-                                (you may use Escape) against the enemy grappler in the 
+                                (you may use Escape) against the enemy grappler in the
                                 grapple. He gets +2 to this check for every ally he has
                                 in the grapple.</li>
                 <li>                Pin an opponent. You must win an opposed grapple check
-                                (he may use Escape) against the enemy grappler in the 
-                                grapple. You get +2 to this check for every ally you 
+                                (he may use Escape) against the enemy grappler in the
+                                grapple. You get +2 to this check for every ally you
                                 have in the grapple.</li>
-                <li>                Break a pin on self or other. You must win an opposed 
-                                grapple check against the grappler pinning. He gets +2 
+                <li>                Break a pin on self or other. You must win an opposed
+                                grapple check against the grappler pinning. He gets +2
                                 to this check for every ally he has in the grapple.</li>
-                <li>                Attack with another's light weapon. You must win an 
+                <li>                Attack with another's light weapon. You must win an
                                 opposed grapple check against them. If you succeed, you
                                 can make a normal attack against them without penalty with
                                 that weapon.</li>
-                <li>                Other: the DM will need to rule on what other things are 
+                <li>                Other: the DM will need to rule on what other things are
                                 possible or impossible.
                                 </li>
               </ul>
@@ -8024,11 +8325,11 @@
               </p>
               <ul>
                 <li>
-                                You can't do anything but attempt to escape the pin. This 
-                                is the same as trying to escape the grapple, but you are 
+                                You can't do anything but attempt to escape the pin. This
+                                is the same as trying to escape the grapple, but you are
                                 at −4 and if you succeed you are still grappled, just not
                                 pinned.</li>
-                <li>                You suffer a −2 penalty to AC in addition to the 
+                <li>                You suffer a −2 penalty to AC in addition to the
                                 flat-footed penalty from grappling against those not in
                                 the grapple.</li>
                 <li>                Other grappling consequences still apply.
@@ -8042,7 +8343,7 @@
                                 You may make the normal grapple actions above, but they
                                 must be directed against who you are pinning. You get +4
                                 on these checks.</li>
-                <li>                You may also attempt to disarm them of well-secured items. 
+                <li>                You may also attempt to disarm them of well-secured items.
                                 They get +4 to resist this disarm.</li>
                 <li>                You can release them from the pin as a free action.
                                 </li>
@@ -8050,7 +8351,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="grab-attack">
               Grab Attack
             </div>
             <div class="power_type">
@@ -8075,7 +8376,7 @@
                 <li>                You are considered flat-footed against anyone but the monster.</li>
                 <li>                You can't move.</li>
                 <li>                If the monster moves, you move with him.</li>
-                <li>                You can't attack with weapons larger than light 
+                <li>                You can't attack with weapons larger than light
                                 (and even so at a −4 penalty).</li>
                 <li>                You can't cast most spells (exception: instant teleports)</li>
                 <li>                You can't attack anyone but the monster.</li>
@@ -8098,17 +8399,17 @@
                 <li>                Can fling you away as an attack.  You are flung 10' per
                                 size category of the monster above medium (10 for large,
                                 20 for huge, etc.), minimum 10'.
-                                You suffer 1d6 damage for every 10' you are flung 
+                                You suffer 1d6 damage for every 10' you are flung
                                 (doubled if you hit a rigid object like a wall).</li>
                 <li>                Can fling you at a creature as an attack. This works the
-                                same as above, except the monster needs to make an attack 
+                                same as above, except the monster needs to make an attack
                                 roll against the target. If they hit, both you and the
                                 target take the same amount of damage. If they miss, you
                                 still take the flinging damage.</li>
                 <li>                Can deal damage with the grabbing limb or appendage by
                                 winning an opposed grapple check. Some monsters deal bonus
                                 damage by doing this.</li>
-                <li>                Can use the held creature as a shield (+2 shield bonus 
+                <li>                Can use the held creature as a shield (+2 shield bonus
                                 to AC). This requires a move action.</li>
                 <li>                Otherwise suffers no consequences.
                                 </li>
@@ -8116,7 +8417,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="mark">
               Mark
             </div>
             <div class="power_type">
@@ -8138,7 +8439,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="trip-attack">
               Trip Attack
             </div>
             <div class="power_type">
@@ -8164,7 +8465,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="bull-rush-attack">
               Bull-rush Attack
             </div>
             <div class="power_type">
@@ -8208,7 +8509,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="disarm-attack">
               Disarm Attack
             </div>
             <div class="power_type">
@@ -8254,7 +8555,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="lock-weapons">
               Lock Weapons
             </div>
             <div class="power_type">
@@ -8263,6 +8564,8 @@
             <div class="power_text">
               <p>
                 Make a disarm attack, but at +4.
+              </p>
+              <p>
                 If you succeed, you have locked weapons with
                 your opponent.
               </p>
@@ -8293,7 +8596,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="sunder-weapon">
               Sunder Weapon
             </div>
             <div class="power_type">
@@ -8331,7 +8634,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="sunder-armorshield-attack">
               Sunder Armor/Shield Attack
             </div>
             <div class="power_type">
@@ -8367,13 +8670,13 @@
             </div>
           </div>
         </div>
-        <h3 id="ranged-only-attacks">Ranged Only Attacks</h3>
+        <h2 id="ranged-only-attacks">Ranged Only Attacks</h2>
         <p>
           All ranged attacks provoke an attack of opportunity.
         </p>
         <div class="maneuvers">
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="grenade-like-attack">
               Grenade-like Attack
             </div>
             <div class="power_type">
@@ -8407,10 +8710,10 @@
             </div>
           </div>
         </div>
-        <h3 id="other-actions">Other Actions</h3>
+        <h2 id="other-actions">Other Actions</h2>
         <div class="maneuvers">
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="total-defense">
               Total Defense
             </div>
             <div class="power_type">
@@ -8418,13 +8721,13 @@
             </div>
             <div class="power_text">
               
-                          You receive a +4 bonus to AC and Reflex saves until 
+                          You receive a +4 bonus to AC and Reflex saves until
                           the beginning of your next turn.
                           
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="draw-an-item">
               Draw an Item
             </div>
             <div class="power_type">
@@ -8452,7 +8755,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="stow-an-item">
               Stow an Item
             </div>
             <div class="power_type">
@@ -8468,7 +8771,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="ready-equip-a-shield">
               Ready (equip) a Shield
             </div>
             <div class="power_type">
@@ -8479,7 +8782,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="loose-remove-a-shield">
               Loose (remove) a Shield
             </div>
             <div class="power_type">
@@ -8490,7 +8793,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="take-cover">
               Take Cover
             </div>
             <div class="power_type">
@@ -8501,7 +8804,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="shield-shatter">
               Shield Shatter
             </div>
             <div class="power_type">
@@ -8512,7 +8815,7 @@
             </div>
           </div>
           <div class="power">
-            <div class="power_title">
+            <div class="power_title" id="cast-a-spell">
               Cast a Spell
             </div>
             <div class="power_type">
@@ -8530,210 +8833,6 @@
           Class and Items may have specified actions you can take
           during the turn. When in doubt, assume a standard action.
         </p>
-        <h2 id="movement">Movement</h2>
-        
-        <p>
-          You can spend movement before or after actions, given that
-          something has granted you movement this turn such as the walk
-          action. For example, you can take the walk action (to be able
-          to move your speed this round), move 10 feet, make a standard
-          action attack against a goblin, kill it, and then move 20 more feet.
-        </p>
-        <p>
-          You can attempt to move through other creatures by making an
-          Overrun attempt.
-        </p>
-        <p>
-          You may overrun during the course of a charge.
-        </p>
-        <div class="maneuvers">
-          <div class="power">
-            <div class="power_title">
-              Overrun
-            </div>
-            <div class="power_type">
-              Special
-            </div>
-            <div class="power_text">
-              <p>
-                You may make a single overrun attempt during your turn.
-              </p>
-              <p>
-                You can only overrun creatures at most one size
-                category larger than you.
-              </p>
-              <p>
-                If you allow them to move aside and they choose to move
-                aside, then you move through their space with no consequence
-                (not even an attack of opportunity from the movement) and
-                this does not count as your overrun attempt.
-              </p>
-              <p>
-                Otherwise, you and your opponent make opposed attack rolls,
-                adding your BAB.
-              </p>
-              <p>
-                A creature larger than medium gets +4 for every size category
-                larger and creatures smaller than medium get a −4 penalty for
-                each category smaller.
-              </p>
-              <p>
-                If you win the opposed check, then you knock your opponent
-                prone and keep moving through them, without provoking attacks
-                of opportunity.
-              </p>
-              <p>
-                You must move at least 10' straight through them and are
-                not allowed to double back.
-              </p>
-              <p>
-                If you or your mount deal trample damage, the damage is
-                automatically inflicted if you win.
-              </p>
-              <p>
-                Otherwise, you are knocked prone instead and your movement
-                immediately ends.
-              </p>
-              <p>
-                Some creatures (like horses) are not knocked prone on a failed
-                attempt and can attempt multiple overruns in a round. If they
-                fail, their movement instead ceases.
-              </p>
-            </div>
-          </div>
-        </div>
-        <h2 id="dying">Dying</h2>
-        
-        <p>
-          Characters die at −10 HP or when circumstances dictate they should
-          die.
-        </p>
-        <p>
-          A character at negative HP must roll to stabilize at a 10% chance
-          at the beginning of their turn.
-        </p>
-        <p>
-          Characters who are not stable loses 1 HP at the beginning of their
-          turn.
-        </p>
-        <p>
-          A character who is healed or granted temporary hit points stabilizes.
-        </p>
-        <p>
-          A character can be stabilized by a DC 15 wisdom check as a full-round
-          action.
-        </p>
-        <h2 id="circumstantial-rules">Circumstantial Rules</h2>
-        <h3 id="no-merry-go-rounds">No Merry Go Rounds</h3>
-        <h3 id="firing-into-a-crowd">Firing into a crowd</h3>
-        <p>
-          Ranged attackers are obligated to target randomly between potential
-          enemy targets who are near one another
-        </p>
-        <p>
-          You can ignore this penalty by suffering a −4 penalty to your attack
-          roll(s).
-        </p>
-        <h3 id="cover">Cover</h3>
-        
-        <p>
-          A target behind cover receives a bonus to AC from attacks on the other
-          side of cover, dependent on the extend of the cover.
-        </p>
-        <p>
-          A creature can use a move action to &quot;take cover&quot;. This doubles
-          the benefit of the cover until they leave it, either because they move or
-          they take an action that requires leaving the cover.
-        </p>
-        <p>
-          A creature behind total cover cannot be directly targeted or attacked.
-        </p>
-        <table class="small">
-          <thead>
-            <tr class="table_header">
-              <th>Cover</th>
-              <th>Bonus</th>
-              <th>Example</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="odd">
-              <td>Partial</td>
-              <td>+2</td>
-              <td>
-                              Standing behind a waist-high table or wall. 
-                              Hiding around a corner of a wall
-                              </td>
-            </tr>
-            <tr class="even">
-              <td>Greater</td>
-              <td>+4</td>
-              <td>Standing behind a crenellation or chest high wall</td>
-            </tr>
-            <tr class="odd">
-              <td>Near Total</td>
-              <td>+8</td>
-              <td>Standing behind an arrow-slit</td>
-            </tr>
-          </tbody>
-        </table>
-        <h3 id="high-ground">High Ground</h3>
-        
-        <p>
-          Attacks from the high ground receive a +1 bonus.
-        </p>
-        <p>
-          The difference in height needs to be at least 2 feet
-          for melee attacks and 6 feet for ranged attacks.
-        </p>
-        <h3 id="concealment">Concealment</h3>
-        <p>
-          Some effects (such as fog, blindness, invisbility or darkness) grant
-          some degree of concealment.
-        </p>
-        <p>
-          Concealment is rated at either 20% or 50%.
-        </p>
-        <p>
-          Whenever an attack is made against a target with concealment, first
-          roll the concealment percentage to see if it misses due to concealment.
-        </p>
-        <p>
-          If it does not, then roll the attack roll as normal.
-        </p>
-        <p>
-          In some circumstances, the DM may rule your attack will still need to
-          be rolled, just not against who you intended. For example, firing at a
-          figure you can barely see when he has a crowd behind him.
-        </p>
-        <h2 id="mounted-combat">Mounted Combat</h2>
-        
-        <p>
-          In battle, mounts move faster than when out of combat. A warhorse
-          has a speed of 60 feet when in combat.
-        </p>
-        <p>
-          If you are riding a mount, you use your actions to move the mount,
-          but use the mount's speed. Your mount is not allowed to take actions
-          while ridden.
-        </p>
-        <p>
-          For example, if you want to charge while riding a destrier, you take
-          a full-round action. The destrier moves 120 feet, at the end of which
-          you can make a reckless attack, etc.
-        </p>
-        <p>
-          Mounts can overrun as part of their movement. They use your attack
-          bonus, but their size. A mount's description will list if this inflicts
-          any trample damage.
-        </p>
-        <p>
-          While you are mounted, you can only use 1-handed weapons, not light
-          weapons or two-handed weapons.
-          While you are mounted and your opponent is not, you are considered
-          to have the high ground.
-        </p>
-        <hr>
       </div><div>
         <h1 id="conditions">Conditions</h1>
         <div class="condition">
