@@ -58,7 +58,7 @@
       padding: 0 10px;
       max-width: 100em;
       }
-      .center p {
+      .center p, .center ol, .center ul {
       max-width: 50em;
       }
       @media only screen and (max-width: 720px) {
@@ -140,9 +140,11 @@
       div.maneuvers, div.stats{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      max-width: 60em;
       }
       .combat div.maneuvers, .combat div.stats{
       grid-template-columns: repeat(1, 1fr);
+      max-width: 60em;
       }
       .even {
       background-color: #cccccc;
@@ -175,6 +177,9 @@
       }
       table.medium {
       max-width: 40em;
+      }
+      table.large {
+      max-width: 50em;
       }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
@@ -225,6 +230,7 @@
             <li><a href="#mapping">Mapping</a></li>
             <li><a href="#light">Light</a></li>
             <li><a href="#saving-throw">Saving Throw</a></li>
+            <li><a href="#magic-item-division">Magic Item Division</a></li>
           </ul></li>
           <li><a href="#classes">Classes</a><ul>
             <li><a href="#acolyte-of-boccob">Acolyte of Boccob</a></li>
@@ -1168,6 +1174,28 @@
         <p>
           A saving throw is made by rolling a d20 + bonuses against a DC.
         </p>
+        <h2 id="magic-item-division">Magic Item Division</h2>
+        <p>
+          Magic items and other useful items that are not easily divisible should
+          be given out according to the following method:
+        </p>
+        <ol>
+          <li>
+              The magic items are sorted in order of most desirable to
+              least desirable.</li>
+          <li>    The most desirable item remaining is up for claim.</li>
+          <li>    Any character who could reasonably use that item may make a claim.
+              Each player can only make a single claim, no matter the number of
+              characters they control.</li>
+          <li>    Amongst those who made a claim for an item, each rolls a d20 and
+              whoever rolls the highest number is the owner of the item.
+              In the event of a tie, there should be a roll-off between the
+              highest rollers.</li>
+          <li>    Repeat this process until each item is claimed. It is courtesy to
+              not make a claim for items once you have won one, unless no one
+              else wants it.
+              </li>
+        </ol>
         <hr>
       </div><div class="classes">
         <h1 id="classes">Classes</h1>
@@ -1219,6 +1247,24 @@
                 <td>5d6</td>
                 <td>+3</td>
                 <td>+6</td>
+              </tr>
+              <tr class="odd">
+                <td>7</td>
+                <td>6d6</td>
+                <td>+3</td>
+                <td>+7</td>
+              </tr>
+              <tr class="even">
+                <td>8</td>
+                <td>6d6</td>
+                <td>+4</td>
+                <td>+8</td>
+              </tr>
+              <tr class="odd">
+                <td>9</td>
+                <td>7d6</td>
+                <td>+4</td>
+                <td>+9</td>
               </tr>
             </tbody>
           </table>
@@ -1336,6 +1382,27 @@
                 <td>+8</td>
                 <td>+8</td>
                 <td>+6</td>
+              </tr>
+              <tr class="odd">
+                <td>7</td>
+                <td>6d10</td>
+                <td>+9</td>
+                <td>+9</td>
+                <td>+7</td>
+              </tr>
+              <tr class="even">
+                <td>8</td>
+                <td>6d10</td>
+                <td>+10</td>
+                <td>+10</td>
+                <td>+8</td>
+              </tr>
+              <tr class="odd">
+                <td>9</td>
+                <td>7d10</td>
+                <td>+11</td>
+                <td>+11</td>
+                <td>+9</td>
               </tr>
             </tbody>
           </table>
@@ -3783,7 +3850,7 @@
             If you roll an ability you already have, roll again.
           </p>
           <h4 id="minor-table">Minor Table:</h4>
-          <table class="text_table ">
+          <table class="text_table large">
             <thead>
               <tr class="table_header">
                 <th>d6</th>
@@ -3829,7 +3896,7 @@
             </tbody>
           </table>
           <h4 id="major-table">Major Table</h4>
-          <table class="text_table ">
+          <table class="text_table large">
             <thead>
               <tr class="table_header">
                 <th>d6</th>
@@ -3871,7 +3938,7 @@
             </tbody>
           </table>
           <h4 id="supreme-table">Supreme Table</h4>
-          <table class="text_table ">
+          <table class="text_table large">
             <thead>
               <tr class="table_header">
                 <th>d3</th>
@@ -3914,7 +3981,7 @@
             </tbody>
           </table>
           <h4 id="alignment-options">Alignment Options</h4>
-          <table class="text_table ">
+          <table class="text_table large">
             <thead>
               <tr class="table_header">
                 <th>Alignment</th>
@@ -4004,7 +4071,7 @@
             Each time you gain the sword art class feature pick 1 sword art of the appropriate tier.
           </p>
           <h4 id="basic-sword-arts">Basic Sword Arts</h4>
-          <table class="text_table ">
+          <table class="text_table large">
             <thead>
               <tr class="table_header">
                 <th>Sword Art</th>
@@ -4060,7 +4127,7 @@
             </tbody>
           </table>
           <h4 id="high-sword-arts">High Sword Arts</h4>
-          <table class="text_table ">
+          <table class="text_table large">
             <thead>
               <tr class="table_header">
                 <th>Sword Art</th>
@@ -4094,7 +4161,7 @@
             </tbody>
           </table>
           <h4 id="supreme-sword-art">Supreme Sword Art</h4>
-          <table class="text_table ">
+          <table class="text_table large">
             <thead>
               <tr class="table_header">
                 <th>Sword Art</th>
@@ -5577,9 +5644,13 @@
               <div class="power_title" id="whirlwind-attack">
                 Whirlwind Attack
               </div>
+              <div class="power_type">
+                Standard Action
+              </div>
               <div class="power_text">
                 
-                            You can attack all creatures within your reach as a standard action.
+                            Attack all creatures within your reach, including any allies.
+                            Roll a single attack roll and apply this single result to each target.
                             
               </div>
             </div>
@@ -5587,11 +5658,14 @@
               <div class="power_title" id="volley">
                 Volley
               </div>
+              <div class="power_type">
+                Standard Action
+              </div>
               <div class="power_text">
                 
                             You may make a single ranged attack against 6 creatures you can
-                            see, none of which are more than 30 feet apart. Roll an attack
-                            roll for each one.
+                            see, none of which are more than 30 feet apart. Roll a single
+                            attack roll and apply this single result to each target.
                             
               </div>
             </div>
