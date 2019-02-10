@@ -1007,6 +1007,9 @@
         <p>
           Damage Reduction is applied separately to each instance of damage.
         </p>
+        <p>
+          If you have multiple sources of Damage Reduction, only the best one applies.
+        </p>
         <h3 id="resistance">Resistance</h3>
         <p>
           Resistance to a type of damage means you take half damage from that kind of
@@ -2867,6 +2870,24 @@
                 <td>+8</td>
                 <td>+6</td>
               </tr>
+              <tr class="odd">
+                <td>7</td>
+                <td>6d12</td>
+                <td>+9</td>
+                <td>+7</td>
+              </tr>
+              <tr class="even">
+                <td>8</td>
+                <td>6d12</td>
+                <td>+10</td>
+                <td>+8</td>
+              </tr>
+              <tr class="odd">
+                <td>9</td>
+                <td>7d12</td>
+                <td>+11</td>
+                <td>+9</td>
+              </tr>
             </tbody>
           </table>
           <h3 id="loxodon-class-details">Loxodon Class Details</h3>
@@ -2886,8 +2907,8 @@
                     <a href="#grapple">grapple</a>, 
                     <a href="#draw-an-item">draw potions</a>, etc.</li>
             <li>        8' tall</li>
-            <li>        Stampede: +4 to overrun and bull rush. Upon a succesful
-                    overrun, deals an extra d6 bludgeoning damage.</li>
+            <li>        Stampede: +4 to <a href="#overrun">overrun</a> and <a href="#bull-rush">bull rush</a>.
+                    Upon a successful overrun, deals an extra d6 bludgeoning damage.</li>
             <li>        Unable to ride horses or similar sized mounts or smaller.
                     However, when travelling overland they move at 4mph instead
                     of 3mph (they move as fast as a horse when travelling long
@@ -2976,7 +2997,7 @@
             on one spell that requires your concentration at a time.
           </p>
           <p>
-            If a spell is a grenade-like attack, they are considered attacking with
+            If a spell is a <a href="#grenade-like-attack">grenade-like attack</a>, they are considered attacking with
             a wand.
           </p>
           <div class="circle_magic">
@@ -3009,7 +3030,7 @@
               </div>
               <div class="spell_effect">
                 <p>
-                  Grenade-like attack in a 5’ radius, d6+level fire damage, DC 15 reflex for half
+                  <a href="#grenade-like-attack">Grenade-like attack</a> in a 5’ radius, d6+level fire damage, DC 15 reflex for half
                 </p>
               </div>
             </div>
@@ -3578,8 +3599,8 @@
                 <td>1</td>
                 <td>7</td>
                 <td>5</td>
+                <td>1</td>
                 <td>2</td>
-                <td>3</td>
                 <td>Basic</td>
                 <td>Minor</td>
                 <td></td>
@@ -3589,8 +3610,8 @@
                 <td>2</td>
                 <td>7</td>
                 <td>5</td>
+                <td>2</td>
                 <td>3</td>
-                <td>4</td>
                 <td>Basic</td>
                 <td>Minor</td>
                 <td>+1</td>
@@ -3600,8 +3621,8 @@
                 <td>3</td>
                 <td>8</td>
                 <td>6</td>
+                <td>3</td>
                 <td>4</td>
-                <td>5</td>
                 <td>Basic</td>
                 <td>Alignment</td>
                 <td></td>
@@ -3611,8 +3632,8 @@
                 <td>4</td>
                 <td>8</td>
                 <td>6</td>
+                <td>4</td>
                 <td>5</td>
-                <td>6</td>
                 <td></td>
                 <td>Major</td>
                 <td></td>
@@ -3622,8 +3643,8 @@
                 <td>5</td>
                 <td>9</td>
                 <td>7</td>
+                <td>5</td>
                 <td>6</td>
-                <td>7</td>
                 <td>High</td>
                 <td></td>
                 <td></td>
@@ -3633,8 +3654,8 @@
                 <td>6</td>
                 <td>9</td>
                 <td>7</td>
+                <td>6</td>
                 <td>7</td>
-                <td>8</td>
                 <td></td>
                 <td>Major</td>
                 <td>+2</td>
@@ -3644,8 +3665,8 @@
                 <td>7</td>
                 <td>10</td>
                 <td>8</td>
+                <td>7</td>
                 <td>8</td>
-                <td>9</td>
                 <td>High</td>
                 <td>Minor</td>
                 <td></td>
@@ -3655,8 +3676,8 @@
                 <td>8</td>
                 <td>10</td>
                 <td>8</td>
+                <td>8</td>
                 <td>9</td>
-                <td>10</td>
                 <td>Basic</td>
                 <td>Alignment</td>
                 <td></td>
@@ -3666,23 +3687,12 @@
                 <td>9</td>
                 <td>11</td>
                 <td>9</td>
+                <td>9</td>
                 <td>10</td>
-                <td>11</td>
                 <td>Supreme</td>
                 <td>Supreme</td>
                 <td></td>
                 <td>Artifact</td>
-              </tr>
-              <tr class="even">
-                <td>10</td>
-                <td>11</td>
-                <td>9</td>
-                <td>11</td>
-                <td>12</td>
-                <td>High</td>
-                <td>Major</td>
-                <td>+3</td>
-                <td></td>
               </tr>
             </tbody>
           </table>
@@ -3712,6 +3722,8 @@
             You can be sundered, however you have +4 on the defense roll as long
             as you are wielded. Additionally, you are more resistant to being sundered
             via your HP increment and Max Notches.
+          </p>
+          <p>
             However, if you are completely alone, every successful sunder increases your notches
             by a minimum of 1, regardless of your hp increment.
           </p>
@@ -3783,7 +3795,7 @@
               <tr class="odd">
                 <td>1</td>
                 <td>Alert</td>
-                <td>You and your user can't be surprised</td>
+                <td>You and your user can't be <a href="#surprise">surprised</a></td>
               </tr>
               <tr class="even">
                 <td>2</td>
@@ -3794,24 +3806,25 @@
                 <td>3</td>
                 <td>Extending</td>
                 <td>Free action, usable by you or user.
-                                                   Gain 5 additional feet of reach until the start of your next turn.
-                                                   Usable once per minute. If you roll this as a ranged weapon, reroll.
+                                                   Gain 5 additional feet of <a href="#reach">reach</a> until the start of your next turn.
+                                                   Usable once per minute.
+                                                   If you roll this as a ranged weapon, instead you can conjure ordinary ammunition for yourself.
                                                    </td>
               </tr>
               <tr class="even">
                 <td>4</td>
                 <td>Panacea</td>
-                <td>User has +4 and resistance against poison and disease</td>
+                <td>User has +4 and <a href="#resistance">resistance</a> against poison and disease</td>
               </tr>
               <tr class="odd">
                 <td>5</td>
                 <td>Agile</td>
-                <td>User has +4 against shove/grapple/trip</td>
+                <td>User has +4 against <a href="#bull-rush">bull rush</a>/<a href="#grapple">grapple</a>/<a href="#trip-attack">trip</a></td>
               </tr>
               <tr class="even">
                 <td>6</td>
                 <td>Light</td>
-                <td>You can create light as if you were a torch. You can turn this on an off as a free action once each turn.</td>
+                <td>You can create <a href="#light">light</a> as if you were a torch. You can turn this on an off as a swift action.</td>
               </tr>
             </tbody>
           </table>
@@ -4020,8 +4033,8 @@
               </tr>
               <tr class="odd">
                 <td>Spellblade&nbsp;(R)</td>
-                <td>  You can cast Firebolt once per minute,
-                                                    and you can cast Gust of Wind as a swift action once per minute.
+                <td>  You can cast <a href="#firebolt">Firebolt</a> once per minute,
+                                                    and you can cast <a href="#gust-of-wind">Gust of Wind</a> as a swift action once per minute.
                                                     You don't need any somatic, verbal, or material component for these spells,
                                                     and they don't provoke AoO. Additionally, if you consume a wand with consume magic,
                                                     you can cast the spell(s) on that wand while attuned to that wand.
@@ -4061,7 +4074,7 @@
               </tr>
               <tr class="even">
                 <td>Double&nbsp;Strike</td>
-                <td>Make one attack that deals double damage. Usable once per minute</td>
+                <td>Make one <a href="#standard-attack">standard attack</a> that deals double damage. Usable once per minute</td>
               </tr>
               <tr class="odd">
                 <td>Wind&nbsp;Master&nbsp;(R)</td>
@@ -4364,7 +4377,7 @@
                 <li>HP 12 (3d8 hit dice)</li>
                 <li>Attack: +3</li>
                 <li>Saves: +3</li>
-                <li>Bite: 1d6 damage and free action trip</li>
+                <li>Bite: 1d6 damage and free action <a href="#trip-attack">trip</a></li>
                 <li>Speed: 40'</li>
               </ul>
             </div>
@@ -4460,7 +4473,7 @@
           </p>
           <h3 id="swords-and-bows">Swords and Bows</h3>
           <p>
-            Rangers can dual-wield without penalty and can fire into melees without penalty
+            Rangers can <a href="#dual-wield-attack">dual-wield</a> without penalty and can <a href="#firing-into-a-crowd">fire into crowds</a> without penalty
           </p>
           <h3 id="survivalist">Survivalist</h3>
           <p>
@@ -4482,12 +4495,12 @@
           </p>
           <h3 id="swords-and-bows-ii">Swords and Bows II</h3>
           <p>
-            Rangers can make an additional attack each round if dual-wielding or
-            using a bow.
+            Rangers can make a free action <a href="#standard-attack">standard attack</a> each round if <a href="#dual-wield-attack">dual-wielding</a> or
+            using a bow. They are graned this free action attack after making an attack with the bow or a dual wield attack.
           </p>
           <h3 id="ambusher">Ambusher</h3>
           <p>
-            A ranger's presence in the party gives the party +4 to initiative rolls.
+            A ranger's presence in the party gives the party +4 to <a href="#initiative-and-the-flow-of-combat">initiative rolls</a>.
           </p>
           <h3 id="evasion">Evasion</h3>
           <p>
@@ -4550,6 +4563,27 @@
                 <td>+6</td>
                 <td>+6</td>
                 <td>6</td>
+              </tr>
+              <tr class="odd">
+                <td>7</td>
+                <td>6d6</td>
+                <td>+7</td>
+                <td>+7</td>
+                <td>7</td>
+              </tr>
+              <tr class="even">
+                <td>8</td>
+                <td>6d6</td>
+                <td>+8</td>
+                <td>+8</td>
+                <td>8</td>
+              </tr>
+              <tr class="odd">
+                <td>9</td>
+                <td>7d6</td>
+                <td>+9</td>
+                <td>+9</td>
+                <td>9</td>
               </tr>
             </tbody>
           </table>
@@ -4627,7 +4661,7 @@
               <ul>
                 <li>AC 16</li>
                 <li>HP: +15</li>
-                <li>Claws: +2, 1d8 each, may dual-wield attack at no penalty</li>
+                <li>Claws: +2, 1d8 each, may <a href="#dual-wield-attack">dual wield attack</a> at no penalty</li>
                 <li>Bite: +3, 1d10+level.</li>
               </ul>
             </div>
@@ -4670,7 +4704,7 @@
               <ul>
                 <li>AC 16</li>
                 <li>HP: +10</li>
-                <li>Claws: +3, 1d8 each, may dual-wield attack at no penalty</li>
+                <li>Claws: +3, 1d8 each, may <a href="#dual-wield-attack">dual wield attack</a> at no penalty</li>
                 <li>Bite: +2, 1d8 + level</li>
                 <li>Pounce: May Claw+Claw+Bite on a charge.</li>
               </ul>
@@ -4698,7 +4732,7 @@
               <ul>
                 <li>AC 14</li>
                 <li>HP: +5</li>
-                <li>Bite: +2, 1d8 + level + free trip attempt on a hit</li>
+                <li>Bite: +2, 1d8 + level + free <a href="#trip-attack">trip</a> attempt on a hit</li>
               </ul>
             </div>
             <div class="statblock">
@@ -4769,6 +4803,27 @@
                 <td>+6</td>
                 <td>40</td>
               </tr>
+              <tr class="odd">
+                <td>7</td>
+                <td>6d6</td>
+                <td>+7</td>
+                <td>+7</td>
+                <td>44</td>
+              </tr>
+              <tr class="even">
+                <td>8</td>
+                <td>6d6</td>
+                <td>+8</td>
+                <td>+8</td>
+                <td>48</td>
+              </tr>
+              <tr class="odd">
+                <td>9</td>
+                <td>7d6</td>
+                <td>+9</td>
+                <td>+9</td>
+                <td>52</td>
+              </tr>
             </tbody>
           </table>
           <h3 id="thief-class-details">Thief Class Details</h3>
@@ -4783,7 +4838,7 @@
           <ul>
             <li>Climb Wall</li>
             <li>Disarm Trap</li>
-            <li>Escape (from grapples, combatants or shackles)</li>
+            <li>Escape (from <a href="#grapple">grapples</a>, combatants or shackles)</li>
             <li>Fast Talk</li>
             <li>Improvised Attacks</li>
             <li>Pick Lock</li>
@@ -4829,7 +4884,7 @@
                 <td>Escape</td>
                 <td>
                               If you have invested at least 3 skill points in escape,
-                              your movements do not provoke attacks of opportunity.
+                              your movements do not provoke <a href="#attack-of-opportunity">attacks of opportunity</a>.
                               </td>
               </tr>
               <tr class="even">
@@ -4874,7 +4929,7 @@
                 <td>Use&nbsp;Magic&nbsp;Device</td>
                 <td>
                               If you have invested at least 3 skill points in Use Magic
-                              Device, you can use scrolls without rolling
+                              Device, you can use scrolls without rolling.
                               </td>
               </tr>
             </tbody>
@@ -4996,7 +5051,7 @@
                   A great weapon is a two-handed weapon.
                 </p>
                 <p>
-                  All of your threatened critical hits confirm when fighting
+                  All of your threatened <a href="#critical-hit">critical hits</a> confirm when fighting
                   with great-weapons.
                 </p>
                 <p>
@@ -5014,7 +5069,7 @@
                   A small weapon is a one-handed or light weapon.
                 </p>
                 <p>
-                  You can't be disarmed of your small-weapons.
+                  You can't be <a href="#disarm">disarmed</a> of your small-weapons.
                 </p>
                 <p>
                   Additionally, you can reroll your natural 1s on attack rolls with small-weapons.
@@ -5026,7 +5081,7 @@
                 Ranged-Weapon Fighting
               </div>
               <div class="power_text">
-                You can fire at whoever you want
+                You can fire at <a href="#firing-into-a-crowd">whoever you want</a>
               </div>
             </div>
             <div class="power">
@@ -5038,10 +5093,8 @@
                   You get +1 AC when using a shield.
                 </p>
                 <p>
-                  Additionally, you can shatter your shield to save an ally instead of yourself.
-                </p>
-                <p>
-                  
+                  Additionally, you can <a href="#shield-shatter">shatter your shield</a>
+                  to save an ally instead of yourself.
                 </p>
               </div>
             </div>
@@ -5054,7 +5107,7 @@
                   You receive a +2 bonus to attacks with crossbows.
                 </p>
                 <p>
-                  Called-shots with crossbows impose half the normal penalty.
+                  <a href="#called-shot">Called-shots</a> with crossbows impose half the normal penalty.
                 </p>
               </div>
             </div>
@@ -5081,7 +5134,7 @@
               <div class="power_text">
                 <p>
                   If you drop an enemy with an axe, you immediately get a free
-                  attack with it.
+                  <a href="#standard-attack">standard attack</a> with it.
                 </p>
                 <p>
                   Additionally, you have +1 attack when fighting with axes.
@@ -5095,7 +5148,7 @@
               <div class="power_text">
                 <p>
                   If you are using a sword, you get double the benefit of
-                  guarded attacks.
+                  <a href="#guarded-attack">guarded attacks</a>.
                 </p>
                 <p>
                   Additionally, you have +1 attack when fighting with swords.
@@ -5108,7 +5161,7 @@
               </div>
               <div class="power_text">
                 <p>
-                  Your critical hits with hammers also knock the target down.
+                  Your <a href="#critical-hit">critical hits</a> with hammers also knock the target down.
                 </p>
                 <p>
                   Additionally, you have +1 attack when fighting with hammers.
@@ -5121,7 +5174,7 @@
               </div>
               <div class="power_text">
                 <p>
-                  You do not suffer a dead-zone when fighting with spears
+                  You do not suffer a <a href="#reach">dead-zone</a> when fighting with spears
                   and polearms.
                 </p>
                 <p>
@@ -5135,7 +5188,11 @@
               </div>
               <div class="power_text">
                 <p>
-                  Your critical hits with flails disarm your opponent.  Additionally, you have +1 attack when fighting with flails.
+                  Your <a href="#critical-hit">critical hits</a> with flails <a href="#disarm">disarm</a> your opponent,
+                  with no need to roll opposed checks.
+                </p>
+                <p>
+                  Additionally, you have +1 attack when fighting with flails.
                 </p>
               </div>
             </div>
@@ -5145,7 +5202,11 @@
               </div>
               <div class="power_text">
                 <p>
-                  Your unarmed attacks deal 1d6 damage, deal lethal damage and do not provoke attacks of opportunity. Additionally, you have +1 attack when fighting unarmed and +1 to grapple checks. Unarmed attacks may be dual-wielded.
+                  Your unarmed attacks deal 1d6 damage, deal lethal damage and do not provoke attacks of opportunity.
+                </p>
+                <p>
+                  Additionally, you have +1 attack when fighting unarmed and +1 to <a href="#grapple">grapple</a> checks.
+                  Unarmed attacks may be <a href="#dual-wield-attack">dual-wielded</a>.
                 </p>
               </div>
             </div>
@@ -5182,7 +5243,7 @@
               </div>
               <div class="power_text">
                 <p>
-                  You get a +4 bonus to disarm attempts.
+                  You get a +4 bonus to <a href="#disarm">disarm</a> attempts.
                 </p>
                 <p>
                   Additionally, if you have a free hand or can free your hand
@@ -5197,11 +5258,11 @@
               </div>
               <div class="power_text">
                 <p>
-                  You get a +4 bonus to sunder attempts.
+                  You get a +4 bonus to <a href="#sunder-weapon">sunder weapon</a> and <a href="#sunder-armorshield">sunder armor</a> attempts.
                 </p>
                 <p>
                   Additionally, if you succeed on your sunder attempt you
-                  may immediately make an extra standard melee attack on the
+                  may immediately make an extra melee <a href="#standard-attack">standard attack</a> on the
                   victim.
                 </p>
               </div>
@@ -5212,7 +5273,7 @@
               </div>
               <div class="power_text">
                 <p>
-                  You get a +4 bonus to bull rush and overrun attempts.
+                  You get a +4 bonus to <a href="#bull-rush">bull rush</a> and <a href="#overrun">overrun</a> attempts.
                 </p>
                 <p>
                   Additionally, if you succeed on your overrun attempt,
@@ -5227,8 +5288,8 @@
               <div class="power_text">
                 <p>
                   When you drop an enemy with a melee attack, you may make
-                  an extra standard attack as a free action.  This stacks
-                  with axe-fighting.
+                  an extra melee <a href="#standard-attack">standard attack</a> as a free action.
+                  This stacks with axe-fighting.
                 </p>
               </div>
             </div>
@@ -5293,8 +5354,8 @@
               </div>
               <div class="power_text">
                 <p>
-                  You receive a +4 bonus to attacks of opportunity and
-                  deal +1d6 damage if you hit with them.
+                  You receive a +4 bonus to <a href="#attack-of-opportunity">attacks of opportunity</a>
+                  and deal +1d6 damage if you hit with them.
                 </p>
               </div>
             </div>
@@ -5335,7 +5396,8 @@
                 Shield Specialization
               </div>
               <div class="power_text">
-                You may lend your shield bonus to an adjacent ally in addition to yourself until the beginning of your next turn. Note that shield bonuses to AC do not stack.
+                You may lend your shield bonus to an adjacent ally in addition to yourself until the beginning of your next turn.
+                            Note that shield bonuses to AC do not stack.
               </div>
             </div>
             <div class="power">
@@ -5420,7 +5482,7 @@
               <div class="power_text">
                 
                             If you hit a creature with both your sword and axe,
-                            you may make an immediate free attack with one of them.
+                            you may make an immediate free <a href="#standard-attack">standard attack</a> with one of them.
                             
               </div>
             </div>
@@ -5431,7 +5493,7 @@
               <div class="power_text">
                 
                             If you hit a creature with both your flail and your sword,
-                            they become entangled (DC 15) by the flail until the beginning
+                            they become <a href="#entangled">entangled</a> (DC 15) by the flail until the beginning
                             of your next turn. You cannot attack with the flail or drop the
                             flail without freeing the creature.
                             
@@ -5466,8 +5528,8 @@
               </div>
               <div class="power_text">
                 
-                            When an enemy's movement away from you triggers an attack of
-                            opportunity, you may opt to try to stop them instead of dealing
+                            When an enemy's movement away from you triggers an <a href="#attack-of-opportunity">attack of opportunity</a>,
+                            you may opt to try to stop them instead of dealing
                             damage. If you hit them, you deal no damage and they must
                             immediately stop moving. Their speed is reduced to 0.
                             
@@ -5479,8 +5541,8 @@
               </div>
               <div class="power_text">
                 
-                            Your movement while charging does not provoke attacks
-                            of opportunity.
+                            Your movement while <a href="#charge-attack">charging</a> does not
+                            provoke <a href="#attack-of-opportunity">attacks of opportunity</a>.
                             
               </div>
             </div>
@@ -5539,7 +5601,7 @@
               </div>
               <div class="power_text">
                 
-                            You gain DR 3
+                            You gain <a href="#damage-reduction">DR</a> 3
                             
               </div>
             </div>
@@ -7468,7 +7530,7 @@
             <p>
               Typical Price: 100gp (common)
             </p>
-            <h4 id="traveling-statistics">Traveling Statistics</h4>
+            <h4 id="arabian-traveling-statistics">Arabian Traveling Statistics</h4>
             <ul>
               <li>Long Distance Overland Speed: 4mph</li>
               <li>Tactical ground Speed: 45'/round</li>
@@ -7480,7 +7542,7 @@
                 </ul>
               </li>
             </ul>
-            <h4 id="combat-statistics">Combat Statistics</h4>
+            <h4 id="arabian-combat-statistics">Arabian Combat Statistics</h4>
             <p>
               An arabian horse will normally panic during combat.
             </p>
@@ -7503,7 +7565,7 @@
             <p>
               Barding may be created for a destrier, in the form of either chain or plate. All barding is bespoke and thus negotiated with the armorer.
             </p>
-            <h4 id="traveling-statistics1">Traveling Statistics</h4>
+            <h4 id="destrier-traveling-statistics">Destrier Traveling Statistics</h4>
             <ul>
               <li>Long Distance Overland Speed: 4mph</li>
               <li>Tactical Ground Speed: 40'/round</li>
@@ -7515,7 +7577,7 @@
                 </ul>
               </li>
             </ul>
-            <h4 id="combat-statistics1">Combat Statistics</h4>
+            <h4 id="destrier-combat-statistics">Destrier Combat Statistics</h4>
             <ul>
               <li>AC: 12</li>
               <li>HP: 30</li>
@@ -7563,7 +7625,7 @@
             <p>
               The following statistics are for an average male adult drake.
             </p>
-            <h4 id="traveling-statistics2">Traveling Statistics</h4>
+            <h4 id="drake-traveling-statistics">Drake Traveling Statistics</h4>
             <ul>
               <li>Daily Flying Distance: 40 miles</li>
               <li>Tactical Flight Speed: 120'/round</li>
@@ -7581,7 +7643,7 @@
               A drake bearing a rider or more than 30 slots of gear cannot fight
               without risking dislodging the rider.
             </p>
-            <h4 id="combat-statistics2">Combat Statistics</h4>
+            <h4 id="drake-combat-statistics">Drake Combat Statistics</h4>
             <ul>
               <li>AC: 16</li>
               <li>HP: 55</li>
@@ -7675,7 +7737,7 @@
             <p>
               Barding may be created for a pegasus like a destrier, but anything heavier than mithral leaves them unable to fly.
             </p>
-            <h4 id="traveling-statistics3">Traveling Statistics</h4>
+            <h4 id="pegasus-traveling-statistics">Pegasus Traveling Statistics</h4>
             <ul>
               <li>Daily Flying Distance: 60 miles</li>
               <li>Long Distance Overland Speed: 4mph</li>
@@ -7689,7 +7751,7 @@
                 </ul>
               </li>
             </ul>
-            <h4 id="combat-statistics3">Combat Statistics</h4>
+            <h4 id="pegasus-combat-statistics">Pegasus Combat Statistics</h4>
             <ul>
               <li>AC: 12</li>
               <li>HP: 30</li>
