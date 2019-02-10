@@ -198,6 +198,8 @@
             <li><a href="#xp-tables">XP Tables</a></li>
           </ul></li>
           <li><a href="#adventuring">Adventuring</a><ul>
+            <li><a href="#marching-order">Marching Order</a></li>
+            <li><a href="#attribute-checks">Attribute Checks</a></li>
             <li><a href="#double-jeopardy">Double Jeopardy</a></li>
             <li><a href="#hit-points">Hit Points</a><ul>
               <li><a href="#maximum-hit-points">Maximum Hit Points</a></li>
@@ -209,12 +211,15 @@
             <li><a href="#dying">Dying</a></li>
             <li><a href="#encumbrance">Encumbrance</a></li>
             <li><a href="#jumping">Jumping</a></li>
+            <li><a href="#falling">Falling</a></li>
             <li><a href="#survival">Survival</a><ul>
               <li><a href="#food-and-water">Food and Water</a></li>
               <li><a href="#heat-and-humidity">Heat and Humidity</a></li>
               <li><a href="#cold-and-freezing">Cold and Freezing</a></li>
               <li><a href="#suffocation">Suffocation</a></li>
             </ul></li>
+            <li><a href="#mapping">Mapping</a></li>
+            <li><a href="#light">Light</a></li>
           </ul></li>
           <li><a href="#classes">Classes</a><ul>
             <li><a href="#acolyte-of-boccob">Acolyte of Boccob</a></li>
@@ -892,6 +897,17 @@
         <hr>
       </div><div class="rules">
         <h1 id="adventuring">Adventuring</h1>
+        <h2 id="marching-order">Marching Order</h2>
+        <p>
+          When travelling through potentially dangerous territory, such as the wilderness or dungeon,
+          the players must present a marching order for the DM. Unless otherwise stated or obviously
+          implied by the situation, the characters will be in their marching order.
+        </p>
+        <h2 id="attribute-checks">Attribute Checks</h2>
+        <p>
+          If you need to make an attribute check, roll a d20 + your attribute score
+          against a DC set by the referee.
+        </p>
         <h2 id="double-jeopardy">Double Jeopardy</h2>
         <p>
           In almost all cases, the same action cannot be attempted twice.
@@ -1023,6 +1039,10 @@
           In combat, you cannot jump farther than your remaining movement
           for the round.
         </p>
+        <h2 id="falling">Falling</h2>
+        <p>
+          Characters suffer 1d6 damage for every 10' fallen.
+        </p>
         <h2 id="survival">Survival</h2>
         <h3 id="food-and-water">Food and Water</h3>
         <p>
@@ -1071,6 +1091,34 @@
         <p>
           A character without air suffers 1d6 suffocation damage
           each minute without air, beginning at 2 minutes.
+        </p>
+        <h2 id="mapping">Mapping</h2>
+        <p>
+          The players may map the dungeon if they so desire.
+          The map is both an in-game and out of game object.
+          If it is lost in the game, the DM will take it away.
+          If it is lost out of game, the characters no longer
+          have access to it.
+        </p>
+        <p>
+          If a player character wishes to map, they must use both
+          hands and have paper and ink and quill.
+        </p>
+        <h2 id="light">Light</h2>
+        <p>
+          Torches shed bright light in a 20' radius and shadowy
+          light in a 20' radius beyond that. Torches burn for 1 hour.
+        </p>
+        <p>
+          Lanterns shed bright light in a 40' radius and shadowy
+          light in a 40' radius beyond that. Lanterns burn at the rate
+          of 1oz per hour.
+        </p>
+        <p>
+          The numbers above assume they are held in the hand by an adult
+          adventurer. If they are placed on the ground, they illuminate
+          half as much. Dropping them unexpectedly risks them going
+          out (50% chance).
         </p>
         <hr>
       </div><div class="classes">
@@ -3170,7 +3218,7 @@
               </div>
               <div class="spell_effect">
                 <p>
-                  Ranged attacks have disadvantage against you.
+                  Ranged attacks have -4 against you.
                   You fall slowly and are immune to fall damage.
                 </p>
               </div>
@@ -3340,7 +3388,7 @@
               </div>
               <div class="spell_effect">
                 <p>
-                  Target creature has advantage vs charm and fear effects.
+                  Target creature has +4 vs charm and fear effects.
                 </p>
               </div>
             </div>
@@ -3536,7 +3584,7 @@
             You do not threaten and cannot take attacks of opportunity.
           </p>
           <p>
-            You can be sundered, however you have advantage on the defense roll as long
+            You can be sundered, however you have +4 on the defense roll as long
             as you are wielded. Additionally, you are more resistant to being sundered
             via your HP increment and Max Notches.
             However, if you are completely alone, every successful sunder increases your notches
@@ -3628,12 +3676,12 @@
               <tr class="even">
                 <td>4</td>
                 <td>Panacea</td>
-                <td>User has advantage and resistance against poison and disease</td>
+                <td>User has +4 and resistance against poison and disease</td>
               </tr>
               <tr class="odd">
                 <td>5</td>
                 <td>Agile</td>
-                <td>User has advantage against shove/grapple/trip</td>
+                <td>User has +4 against shove/grapple/trip</td>
               </tr>
               <tr class="even">
                 <td>6</td>
@@ -3720,7 +3768,7 @@
                 <td>User can always breathe sweet air (immune to poison gas, never drowns, etc).
                                                   User is immune to fall damage.
                                                   User gets +10 speed, their jump distances are doubled. 
-                                                  AoO against user are all make at disadvantage.
+                                                  AoO against user are all make at -4.
                                                   Additionally, once per minute, you can make a ranged attack with compressed 
                                                   air that deals normal attack damage in a 60 foot line.
                                                   </td>
@@ -3753,7 +3801,7 @@
                 <td>Once per minute as a swift action, can become coated in poison that lasts up to 1 minute. 
                                                     The next successful attack also removes the poison.
                                                     The Creature makes a DC 15 save.
-                                                    On a failure, they have disadvantage on d20 rolls until the start of your next turn and they take d6 damage.
+                                                    On a failure, they have -4 on d20 rolls until the start of your next turn and they take d6 damage.
                                                     On a success they take no damage and are not poisoned.
                                                 </td>
               </tr>
@@ -3867,7 +3915,7 @@
               </tr>
               <tr class="even">
                 <td>Desperation</td>
-                <td> When your user is reduced to 0 hp, you can make an immediate free action attack with advantage.
+                <td> When your user is reduced to 0 hp, you can make an immediate free action attack with +4.
                                                 If you have flight, you can use flight to make this attack.
                                                 </td>
               </tr>
@@ -3884,7 +3932,7 @@
             <tbody>
               <tr class="odd">
                 <td>Supreme&nbsp;Parry</td>
-                <td>Reaction, Give attack against user disadvantage</td>
+                <td>Reaction, Give attack against user -4</td>
               </tr>
               <tr class="even">
                 <td>Double&nbsp;Strike</td>
@@ -3918,7 +3966,7 @@
             <tbody>
               <tr class="odd">
                 <td>Spell&nbsp;Reflection</td>
-                <td>If you or your user would be affected by a spell, roll an attack roll with advantage.
+                <td>If you or your user would be affected by a spell, roll an attack roll with +4.
                                                     If you roll higher that the attack/DC of the spell, you can redirect the spell to a
                                                     new target/area or simply dispel it. Usable once per minute.
                                                     </td>
@@ -6280,36 +6328,42 @@
             </thead>
             <tbody>
               <tr class="odd">
+                <td>Backpack</td>
+                <td>1gp</td>
+                <td>1</td>
+                <td>Without a backpack, you can only carry what you can hold in your hands.</td>
+              </tr>
+              <tr class="even">
                 <td>Cast-Iron&nbsp;Pan</td>
                 <td>1gp</td>
                 <td>1</td>
                 <td> </td>
               </tr>
-              <tr class="even">
+              <tr class="odd">
                 <td>Crowbar</td>
                 <td>1gp</td>
                 <td>1</td>
                 <td> </td>
               </tr>
-              <tr class="odd">
+              <tr class="even">
                 <td>2&nbsp;Days&nbsp;of&nbsp;Food</td>
                 <td>.2gp</td>
                 <td>1</td>
                 <td> </td>
               </tr>
-              <tr class="even">
+              <tr class="odd">
                 <td>Grappling&nbsp;Hook</td>
                 <td>3gp</td>
                 <td>1</td>
                 <td> </td>
               </tr>
-              <tr class="odd">
+              <tr class="even">
                 <td>Hammer</td>
                 <td>1gp</td>
                 <td>1/2</td>
                 <td> </td>
               </tr>
-              <tr class="even">
+              <tr class="odd">
                 <td>Healing&nbsp;Kit</td>
                 <td>25gp</td>
                 <td>1</td>
@@ -6318,41 +6372,47 @@
                                 A healing kit has 5 uses.
                                 </td>
               </tr>
-              <tr class="odd">
+              <tr class="even">
                 <td>Jug</td>
                 <td>.1gp</td>
                 <td>1</td>
                 <td> </td>
               </tr>
-              <tr class="even">
+              <tr class="odd">
                 <td>Lantern</td>
                 <td>2gp</td>
                 <td>1</td>
                 <td> </td>
               </tr>
-              <tr class="odd">
+              <tr class="even">
                 <td>Lantern&nbsp;Oil</td>
-                <td>1gp</td>
+                <td>1gp per oz.</td>
                 <td>10&nbsp;oz.&nbsp;for&nbsp;1&nbsp;slot</td>
                 <td> </td>
               </tr>
-              <tr class="even">
+              <tr class="odd">
                 <td>Lock&nbsp;Picks</td>
                 <td>5gp</td>
                 <td>1/2</td>
                 <td> </td>
               </tr>
-              <tr class="odd">
+              <tr class="even">
                 <td>Magic Orb</td>
                 <td>100gp</td>
                 <td>1</td>
                 <td>Necessary for circle mages to use magic.</td>
               </tr>
-              <tr class="even">
+              <tr class="odd">
                 <td>Manacles</td>
                 <td>5gp</td>
                 <td>1</td>
                 <td> </td>
+              </tr>
+              <tr class="even">
+                <td>Map/Scroll Case</td>
+                <td>10gp</td>
+                <td>1</td>
+                <td>Protects stored maps and scrolls from danger, such as water and fireballs</td>
               </tr>
               <tr class="odd">
                 <td>Mining&nbsp;Pick</td>
@@ -6364,7 +6424,7 @@
                 <td>Mirror</td>
                 <td>5gp</td>
                 <td>1</td>
-                <td> </td>
+                <td>Hand-held</td>
               </tr>
               <tr class="odd">
                 <td>Net</td>
@@ -6373,16 +6433,28 @@
                 <td> </td>
               </tr>
               <tr class="even">
+                <td>Paper</td>
+                <td>1gp per sheet</td>
+                <td>—</td>
+                <td>Corresponds to a real life sheet of paper</td>
+              </tr>
+              <tr class="odd">
                 <td>Pitons</td>
                 <td>1gp</td>
                 <td>20&nbsp;for&nbsp;1&nbsp;slot</td>
                 <td> </td>
               </tr>
-              <tr class="odd">
+              <tr class="even">
                 <td>Rope</td>
                 <td>1gp</td>
                 <td>1</td>
                 <td> </td>
+              </tr>
+              <tr class="odd">
+                <td>Sack</td>
+                <td>.1gp</td>
+                <td></td>
+                <td></td>
               </tr>
               <tr class="even">
                 <td>Shovel</td>
@@ -6413,6 +6485,18 @@
                 <td>5gp</td>
                 <td>20&nbsp;arrows&nbsp;to&nbsp;the&nbsp;slot</td>
                 <td> </td>
+              </tr>
+              <tr class="odd">
+                <td>Quill and Ink</td>
+                <td>25gp</td>
+                <td>1</td>
+                <td>You do not need to track how much ink if you buy this.</td>
+              </tr>
+              <tr class="even">
+                <td>Waterskin</td>
+                <td>1gp</td>
+                <td>1</td>
+                <td>Holds 4 pounds (half-gallon) of water</td>
               </tr>
             </tbody>
           </table>
