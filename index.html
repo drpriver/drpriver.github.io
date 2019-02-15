@@ -339,6 +339,7 @@
             <li><a href="#entangled">Entangled</a></li>
             <li><a href="#fatigued-n">Fatigued (N)</a></li>
             <li><a href="#flat-footed">Flat-footed</a></li>
+            <li><a href="#frightened-n">Frightened (N)</a></li>
             <li><a href="#paralyzed">Paralyzed</a></li>
             <li><a href="#prone">Prone</a></li>
             <li><a href="#stunned">Stunned</a></li>
@@ -5777,6 +5778,10 @@
             </tbody>
           </table>
           <h3 id="witch-class-details">Witch Class Details</h3>
+          <ul>
+            <li>Proficiency with the dagger and crossbow</li>
+            <li>Proficiency with scrolls, wands and staves</li>
+          </ul>
           <h3 id="brew-potion">Brew Potion</h3>
           <p>
             Witches know how to brew potions. When at home with their cauldron, they
@@ -5784,7 +5789,7 @@
             potions during downtime and can bring a number of the following potions
             equal to 2 + their level.
           </p>
-          <table class="text_table ">
+          <table class="text_table medium">
             <thead>
               <tr class="table_header">
                 <th>Potion</th>
@@ -5814,7 +5819,15 @@
               </tr>
               <tr class="even">
                 <td>Potion&nbsp;of&nbsp;the&nbsp;Dancing&nbsp;Skeleton</td>
-                <td>Your flesh vanishes and you become a skellington for 12 hours, at which point your flesh reappears.</td>
+                <td>Your flesh vanishes and you become a skellington for 12 hours, at which point your flesh reappears. You count as undead for the duration.</td>
+              </tr>
+              <tr class="odd">
+                <td>Sleeping&nbsp;Potion</td>
+                <td>Anyone who drinks this potion must make a DC 15 will save or fall asleep for 3 months</td>
+              </tr>
+              <tr class="even">
+                <td>Antidote</td>
+                <td>Drinking this removes a poison from the body or revives someone who died within the last minute from poison.</td>
               </tr>
             </tbody>
           </table>
@@ -5985,7 +5998,7 @@
               Curse Item
             </div>
             <div class="spell_action">
-              Casting Time: 10 minutes
+              Casting Time: 1 minute
             </div>
             <div class="spell_range">
               Range: Touch
@@ -6038,6 +6051,40 @@
                 Make an attack roll against a living humanoid. If you hit, they are <a href="#paralyzed">paralyzed</a>
                 for 1d20 rounds and give off a ghastly odor. All within 10' radius must make a DC 12
                 fortitude save or be <a href="#weakened">weakened</a> by the odor for 1d3 rounds.
+              </p>
+            </div>
+          </div>
+          <div class="spell">
+            <div class="spell_title" id="spook">
+              Spook
+            </div>
+            <div class="spell_action">
+              Casting Time: Standard Action
+            </div>
+            <div class="spell_range">
+              Range: 30'
+            </div>
+            <div class="spell_effect">
+              <p>
+                You gain a horrifying visage. Target creature who can see you must
+                make a DC 13 will save or be <a href="#frightened-n">frightened</a> of you for 1 minute.
+              </p>
+            </div>
+          </div>
+          <div class="spell">
+            <div class="spell_title" id="charm-soul-binding">
+              Charm (Soul-binding)
+            </div>
+            <div class="spell_action">
+              Casting Time: Move Action
+            </div>
+            <div class="spell_range">
+              Range: 5'
+            </div>
+            <div class="spell_effect">
+              <p>
+                Target humanoid must make a DC 10 will save or become your devoted friend or lover. If the charm ever ends, they will hate with the fury of a thousand suns.
+                A creature who has resisted your charms can never be charmed by you again.
               </p>
             </div>
           </div>
@@ -9696,6 +9743,17 @@
           <h2 id="flat-footed">Flat-footed</h2>
           <p>
             A flat-footed creatures gets −2 AC.
+          </p>
+        </div>
+        <div class="condition">
+          <h2 id="frightened-n">Frightened (N)</h2>
+          <p>
+            A creature suffers −2 to attacks, saves and ability
+            checks for each level of fear they have.
+          </p>
+          <p>
+            An NPC with frightened 2 or 3 must immediately check
+            morale.
           </p>
         </div>
         <div class="condition">
