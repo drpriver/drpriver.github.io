@@ -836,6 +836,7 @@
                   <li>1,000&nbsp;XP per plus or plus equivelant</li>
                   <li>1,000&nbsp;XP or more for weird non-plus items</li>
                   <li>10,000&nbsp;XP for artifacts</li>
+                  <li>Consumables (potions, wands, scrolls) do not reward XP.</li>
                 </ul>
                 This XP is split amongst the party
               </div></td>
@@ -1097,6 +1098,13 @@
         </p>
         <p>
           Each day of water heals 1d6 of this damage.
+        </p>
+        <p>
+          When traveling through terrain with ample supplies of water,
+          a character with a waterskin or jug is assumed to gather enough
+          water each day to hydrate themselves from streams, springs, etc.
+          Only when traveling through harsh or arid terrain does water need to
+          be tracked.
         </p>
         <p>
           If characters go on half-rations,
@@ -3784,7 +3792,8 @@
             If your alignment is altered, repick your alignment bonuses to match.
           </p>
           <p>
-            As long as you are being wielded, you can take a standard action to attack.
+            As long as you are being wielded, you can take a standard action to make a
+            <a href="#standard-attack">standard attack</a> or a full-round action to make a <a href="#rapid-attack">rapid attack</a>.
             You do not threaten and cannot take attacks of opportunity.
           </p>
           <p>
@@ -5788,6 +5797,7 @@
             can brew the following potions. The witch gathers enough ingredients for their
             potions during downtime and can bring a number of the following potions
             equal to 2 + their level.
+            Unlike other potions, these potions go bad at the end of the play session.
           </p>
           <table class="text_table medium">
             <thead>
@@ -5907,7 +5917,7 @@
                 dealing 1d6+your level damage on a hit.
               </p>
               <p>
-                You may also have it <a href="#standard-attack">attack</a>.
+                You may also have it <a href="#standard-attack">attack</a> on your turn.
               </p>
             </div>
           </div>
@@ -6207,7 +6217,7 @@
             </thead>
             <tbody>
               <tr class="odd">
-                <td>Battleaxe</td>
+                <td><span id="battleaxe">Battleaxe</span></td>
                 <td>25gp</td>
                 <td>1d8</td>
                 <td>1&#8209;handed</td>
@@ -6216,7 +6226,7 @@
                 <td>+2 to <a href="#sunder-weapon">Sunder Weapon</a> and <a href="#sunder-armorshield">sundering shields</a></td>
               </tr>
               <tr class="even">
-                <td>Club</td>
+                <td><span id="club">Club</span></td>
                 <td>Free</td>
                 <td>1d6</td>
                 <td>1&#8209;handed</td>
@@ -6225,7 +6235,7 @@
                 <td>Easy to make</td>
               </tr>
               <tr class="odd">
-                <td>Dagger</td>
+                <td><span id="dagger">Dagger</span></td>
                 <td>25gp</td>
                 <td>1d4</td>
                 <td>Light</td>
@@ -6234,7 +6244,7 @@
                 <td>Can be easily hidden and thrown with 15' range increment.</td>
               </tr>
               <tr class="even">
-                <td>Flail</td>
+                <td><span id="flail">Flail</span></td>
                 <td>25gp</td>
                 <td>1d8</td>
                 <td>1&#8209;handed</td>
@@ -6243,7 +6253,7 @@
                 <td>+2 to <a href="#disarm">disarm</a> and <a href="#trip-attack">trip</a>, ignores shield bonus of enemies</td>
               </tr>
               <tr class="odd">
-                <td>Glaive</td>
+                <td><span id="glaive">Glaive</span></td>
                 <td>25gp</td>
                 <td>1d10</td>
                 <td>2&#8209;handed</td>
@@ -6252,7 +6262,7 @@
                 <td>10' of <a href="#reach">reach</a> (with 5' deadzone)</td>
               </tr>
               <tr class="even">
-                <td>Greataxe</td>
+                <td><span id="greataxe">Greataxe</span></td>
                 <td>50gp</td>
                 <td>1d12</td>
                 <td>2&#8209;handed</td>
@@ -6261,7 +6271,7 @@
                 <td>+2 to <a href="#sunder-weapon">Sunder Weapon</a> and <a href="#sunder-armorshield">sundering shields</a></td>
               </tr>
               <tr class="odd">
-                <td>Greatclub</td>
+                <td><span id="greatclub">Greatclub</span></td>
                 <td>Free</td>
                 <td>1d10</td>
                 <td>2&#8209;handed</td>
@@ -6270,7 +6280,7 @@
                 <td></td>
               </tr>
               <tr class="even">
-                <td>Greatflail</td>
+                <td><span id="greatflail">Greatflail</span></td>
                 <td>50gp</td>
                 <td>1d12</td>
                 <td>2&#8209;handed</td>
@@ -6279,7 +6289,7 @@
                 <td>+2 to <a href="#disarm">disarm</a> and <a href="#trip-attack">trip</a>, ignores shield bonus of enemies</td>
               </tr>
               <tr class="odd">
-                <td>Greathammer</td>
+                <td><span id="greathammer">Greathammer</span></td>
                 <td>50gp</td>
                 <td>1d12</td>
                 <td>2&#8209;handed</td>
@@ -6288,7 +6298,7 @@
                 <td>+2 to <a href="#sunder-armorshield">Sunder Armor</a></td>
               </tr>
               <tr class="even">
-                <td>Greatsword</td>
+                <td><span id="greatsword">Greatsword</span></td>
                 <td>50gp</td>
                 <td>1d12</td>
                 <td>2&#8209;handed</td>
@@ -6297,7 +6307,7 @@
                 <td></td>
               </tr>
               <tr class="odd">
-                <td>Halberd</td>
+                <td><span id="halberd">Halberd</span></td>
                 <td>25gp</td>
                 <td>1d10</td>
                 <td>2&#8209;handed</td>
@@ -6306,7 +6316,7 @@
                 <td>10' of <a href="#reach">reach</a> (with 5' deadzone)</td>
               </tr>
               <tr class="even">
-                <td>Handaxe</td>
+                <td><span id="handaxe">Handaxe</span></td>
                 <td>25gp</td>
                 <td>1d6</td>
                 <td>Light</td>
@@ -6315,7 +6325,7 @@
                 <td></td>
               </tr>
               <tr class="odd">
-                <td>Lance</td>
+                <td><span id="lance">Lance</span></td>
                 <td>25gp</td>
                 <td>1d8</td>
                 <td>1&#8209;handed*</td>
@@ -6327,7 +6337,7 @@
                                 </td>
               </tr>
               <tr class="even">
-                <td>Longsword</td>
+                <td><span id="longsword">Longsword</span></td>
                 <td>25gp</td>
                 <td>1d8</td>
                 <td>1&#8209;handed</td>
@@ -6336,7 +6346,7 @@
                 <td></td>
               </tr>
               <tr class="odd">
-                <td>Mace</td>
+                <td><span id="mace">Mace</span></td>
                 <td>5gp</td>
                 <td>1d8</td>
                 <td>1&#8209;handed</td>
@@ -6345,7 +6355,7 @@
                 <td></td>
               </tr>
               <tr class="even">
-                <td>Morningstar</td>
+                <td><span id="morningstar">Morningstar</span></td>
                 <td>25gp</td>
                 <td>1d8</td>
                 <td>1&#8209;handed</td>
@@ -6354,7 +6364,7 @@
                 <td>+2 to sunder armor</td>
               </tr>
               <tr class="odd">
-                <td>Pike</td>
+                <td><span id="pike">Pike</span></td>
                 <td>25gp</td>
                 <td>1d8</td>
                 <td>2&#8209;handed</td>
@@ -6363,7 +6373,7 @@
                 <td>15' of <a href="#reach">reach</a> (with 5' deadzone). Cannot be brought indoors.</td>
               </tr>
               <tr class="even">
-                <td>Quarterstaff</td>
+                <td><span id="quarterstaff">Quarterstaff</span></td>
                 <td>1gp</td>
                 <td>1d6</td>
                 <td>2&#8209;handed</td>
@@ -6372,7 +6382,7 @@
                 <td>Double&nbsp;weapon</td>
               </tr>
               <tr class="odd">
-                <td>Scimitar</td>
+                <td><span id="scimitar">Scimitar</span></td>
                 <td>25gp</td>
                 <td>1d6</td>
                 <td>1&#8209;handed</td>
@@ -6381,7 +6391,7 @@
                 <td></td>
               </tr>
               <tr class="even">
-                <td>Shortspear</td>
+                <td><span id="shortspear">Shortspear</span></td>
                 <td>25gp</td>
                 <td>1d6</td>
                 <td>1&#8209;handed</td>
@@ -6390,7 +6400,7 @@
                 <td>Can be thrown with 20' range increment</td>
               </tr>
               <tr class="odd">
-                <td>Shortsword</td>
+                <td><span id="shortsword">Shortsword</span></td>
                 <td>25gp</td>
                 <td>1d6</td>
                 <td>Light</td>
@@ -6399,7 +6409,7 @@
                 <td></td>
               </tr>
               <tr class="even">
-                <td>Spear</td>
+                <td><span id="spear">Spear</span></td>
                 <td>25gp</td>
                 <td>1d6</td>
                 <td>1&#8209;handed</td>
@@ -6409,7 +6419,7 @@
                                 can be thrown with20' range increment</td>
               </tr>
               <tr class="odd">
-                <td>Throwing&nbsp;Axe</td>
+                <td><span id="throwingnbspaxe">Throwing&nbsp;Axe</span></td>
                 <td>25gp</td>
                 <td>1d4</td>
                 <td>Light</td>
@@ -6418,7 +6428,7 @@
                 <td>Can be thrown with 15' range increment</td>
               </tr>
               <tr class="even">
-                <td>Warhammer</td>
+                <td><span id="warhammer">Warhammer</span></td>
                 <td>25gp</td>
                 <td>1d8</td>
                 <td>1&#8209;handed</td>
@@ -6427,7 +6437,7 @@
                 <td>+2 to <a href="#sunder-armorshield">Sunder Armor</a></td>
               </tr>
               <tr class="odd">
-                <td>Warpick</td>
+                <td><span id="warpick">Warpick</span></td>
                 <td>25gp</td>
                 <td>1d6</td>
                 <td>1&#8209;handed</td>
@@ -6436,7 +6446,7 @@
                 <td>+2 to <a href="#sunder-armorshield">Sunder Armor</a></td>
               </tr>
               <tr class="even">
-                <td>Warscythe</td>
+                <td><span id="warscythe">Warscythe</span></td>
                 <td>25gp</td>
                 <td>1d10</td>
                 <td>2&#8209;handed</td>
@@ -6450,8 +6460,8 @@
                 <td>1d3</td>
                 <td>Special</td>
                 <td>x2</td>
-                <td>5 HP</td>
                 <td></td>
+                <td>Non-lethal damage</td>
               </tr>
             </tbody>
           </table>
@@ -6464,7 +6474,8 @@
                 <th>Weapon</th>
                 <th>Price</th>
                 <th>Damage</th>
-                <th>Range&nbsp;Inc.Size</th>
+                <th>Range&nbsp;Inc.</th>
+                <th>Size</th>
                 <th>Critical</th>
                 <th>Item&nbsp;HP&nbsp;Inc.</th>
                 <th>Properties</th>
@@ -6476,6 +6487,7 @@
                 <td>50gp</td>
                 <td>1d6</td>
                 <td>60'</td>
+                <td>2-handed</td>
                 <td>x3</td>
                 <td>3 HP</td>
                 <td></td>
@@ -6485,6 +6497,7 @@
                 <td>50gp</td>
                 <td>1d8</td>
                 <td>80'</td>
+                <td>2-handed</td>
                 <td>19&#8209;20, x2</td>
                 <td>3 HP</td>
                 <td>Must spend move action to reload.</td>
@@ -6495,6 +6508,7 @@
                 <td>1d10</td>
                 <td>80'</td>
                 <td>19&#8209;20, x2</td>
+                <td>2-handed</td>
                 <td>3 HP</td>
                 <td>Must spend standard action to reload. Weighs 3 slots</td>
               </tr>
@@ -6503,24 +6517,29 @@
                 <td>1gp</td>
                 <td>1d6</td>
                 <td>30'</td>
+                <td>1-handed</td>
                 <td>x2</td>
                 <td>5 HP</td>
-                <td>1-handed, thrown weapon</td>
+                <td>thrown weapon</td>
               </tr>
               <tr class="odd">
                 <td>Sling</td>
                 <td>1gp</td>
                 <td>1d4</td>
                 <td>50'</td>
+                <td>1-handed</td>
                 <td>x4</td>
                 <td>3 HP</td>
-                <td>1-handed, but other hand must not have a shield</td>
+                <td>other hand must not have a shield</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div>
           <h2 id="exotic-melee-weapons">Exotic Melee Weapons</h2>
+          <p>
+            Note that most characters can't use exotic weapons
+          </p>
           <table>
             <thead>
               <tr class="table_header">
@@ -6535,7 +6554,7 @@
             </thead>
             <tbody>
               <tr class="odd">
-                <td>Double&nbsp;Axe</td>
+                <td><span id="doublenbspaxe">Double&nbsp;Axe</span></td>
                 <td>50gp</td>
                 <td>1d8</td>
                 <td>2&#8209;handed</td>
@@ -6544,7 +6563,7 @@
                 <td>Double&nbsp;Weapon,+2 to <a href="#sunder-weapon">Sunder Weapon</a> and <a href="#sunder-armorshield">sundering shields</a></td>
               </tr>
               <tr class="even">
-                <td>Double&nbsp;sword</td>
+                <td><span id="doublenbspsword">Double&nbsp;sword</span></td>
                 <td>50gp</td>
                 <td>1d8</td>
                 <td>2&#8209;handed</td>
@@ -6553,7 +6572,7 @@
                 <td>Double&nbsp;Weapon</td>
               </tr>
               <tr class="odd">
-                <td>Hooked&nbsp;Hammer</td>
+                <td><span id="hookednbsphammer">Hooked&nbsp;Hammer</span></td>
                 <td>50gp</td>
                 <td>1d8</td>
                 <td>2&#8209;handed</td>
@@ -6562,7 +6581,7 @@
                 <td>Double&nbsp;Weapon, +2 to trip,+2 to <a href="#sunder-armorshield">Sunder Armor</a></td>
               </tr>
               <tr class="even">
-                <td>Dire&nbsp;Flail</td>
+                <td><span id="direnbspflail">Dire&nbsp;Flail</span></td>
                 <td>50gp</td>
                 <td>1d8</td>
                 <td>2&#8209;handed</td>
@@ -6575,7 +6594,7 @@
                                 </td>
               </tr>
               <tr class="odd">
-                <td>Katana</td>
+                <td><span id="katana">Katana</span></td>
                 <td>100gp</td>
                 <td>1d10</td>
                 <td>1&#8209;handed</td>
@@ -6588,13 +6607,17 @@
         </div>
         <div>
           <h2 id="exotic-ranged-weapons">Exotic Ranged Weapons</h2>
+          <p>
+            Note that most characters can't use exotic weapons
+          </p>
           <table>
             <thead>
               <tr class="table_header">
                 <th>Weapon</th>
                 <th>Price</th>
                 <th>Damage</th>
-                <th>Range&nbsp;Inc.Size</th>
+                <th>Range&nbsp;Inc.</th>
+                <th>Size</th>
                 <th>Critical</th>
                 <th>Item&nbsp;HP&nbsp;Inc.</th>
                 <th>Properties</th>
@@ -6606,9 +6629,10 @@
                 <td>10gp</td>
                 <td>1d12</td>
                 <td>20'</td>
+                <td>2-handed</td>
                 <td>x3</td>
                 <td>15 HP</td>
-                <td>2-handed, thrown, exotic, 3 slots</td>
+                <td>thrown, 3 slots</td>
               </tr>
             </tbody>
           </table>
@@ -8559,6 +8583,10 @@
           guard.
         </p>
         <p>
+          You must be able to see your opponent clearly — they are
+          not concealed and you are not blinded.
+        </p>
+        <p>
           Some actions specify they provoke an attack of opportunity.
         </p>
         <p>
@@ -8748,7 +8776,6 @@
           You can take other actions in combat, which will be resolved in the spirit
           of the following rules. The actions below cover the most common ones.
         </p>
-        
         <h2 id="movement-actions">Movement Actions</h2>
         <div class="maneuvers">
           <div class="power">
@@ -9548,7 +9575,9 @@
                 Read the number as number of 5' spaces.
               </p>
               <p>
-                Grenades must travel at least 15' from you.
+                Grenades must travel at least 15' from you,
+                unless you were trying to throw them 15' or less,
+                in which case the minimum distance is 5'.
               </p>
               <p>
                 Where you rolled is where the grenade lands for the
