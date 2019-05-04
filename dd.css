@@ -33,20 +33,26 @@ img {
 	top: 0;
 	left: 0;
 	overflow-x:hidden;
-	padding-top:20px;
 }
 .left a {
 	text-decoration: none;
-	font-size: 16px;
-  display: block;
-  color: black;
+	font-size: 14px;
+	display: block;
+	color: black;
+	border-bottom: none;
+	height: 15px;
+}
+a { 
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px grey dotted;
 }
 .center {
 	margin-left: calc(var(--sidebar) + 20px);
 	padding: 0 10px;
 	max-width: 100em;
 }
-.center p {
+.center p, .center ol, .center ul {
 	max-width: 50em;
 }
 @media only screen and (max-width: 720px) {
@@ -74,6 +80,12 @@ table {
 	width: 100%;
 }
 .personal td, .personal th {
+	/*text-align: center;*/
+}
+.personal .roll tr td:first-child, .personal .roll tr th:first-child {
+	text-align: right;
+}
+.personal .roll tr td:last-child, .personal .roll tr th:last-child {
 	text-align: center;
 }
 hr {
@@ -100,7 +112,7 @@ hr {
 }
 .power_text {
 }
-.power, .statblock, .wand{
+.power, .statblock, .wand, .circle_magic{
 	border: 1px solid grey;
 	padding: 12px;
 	margin-bottom: .5em;
@@ -122,9 +134,11 @@ div.spell {
 div.maneuvers, div.stats{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+	max-width: 60em;
 }
 .combat div.maneuvers, .combat div.stats{
 	grid-template-columns: repeat(1, 1fr);
+	max-width: 60em;
 }
 .even {
 	background-color: #cccccc;
@@ -146,6 +160,9 @@ table ul {
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;
 }
+table.puny {
+	max-width: 10em;
+}
 table.tiny {
 	max-width: 20em;
 }
@@ -154,4 +171,7 @@ table.small {
 }
 table.medium {
 	max-width: 40em;
+}
+table.large {
+	max-width: 50em;
 }
